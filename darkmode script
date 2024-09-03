@@ -3771,7 +3771,7 @@ div.main {
 }
 
 @-moz-document url-prefix("https://www1.flightrising.com/play") {
-/* Fairgrounds + children
+/* Fairgrounds + children */
 #lucky-streak {
         color: #293f4b
     }
