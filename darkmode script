@@ -2742,7 +2742,18 @@ img[src*="/images/layout/bestiary/internal_bg.jpg"], [src*="/images/layout/ge/in
 }
 }
 
+@-moz-document url("https://www1.flightrising.com") {
+/* Home page */
+
+/* html body.twocol.threecol div.container div.banner {
+    background-image: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/banner_1_dm.png) !important;
+    background-size: 100%;
+}
+*/
+}
+
 @-moz-document url-prefix("https://www1.flightrising.com/trading/pinkpile"), url-prefix("https://www1.flightrising.com/trading/gift/receive") {
+/* Pinkerton's Plundered Pile */
 #pinkerton-text.common-npc-dialog:before {
     border-color: #060d11 transparent transparent transparent !important;
 }
@@ -3085,7 +3096,7 @@ img.lair-page-dragon-element {
 }
 
 @-moz-document url("https://www1.flightrising.com/"), url("https://www1.flightrising.com/handler") {
-/* Front Page */
+/* Front page */
 div#status-box-mid {
     background-color: #142732 !important;
     background-image: none !important;
@@ -3229,19 +3240,6 @@ a.intclue:after, a.clue:after {
 a.intclue:hover:after, a.clue:hover:after {
     background: #06232fe6;
     border-color: #06232fe6;
-}
-}
-
-@-moz-document url-prefix("https://www1.flightrising.com/trading/fantastic-familiars/feats"), url-prefix("https://www1.flightrising.com/trading/fantastic-familiars/flattery") {
-/* Fiona's Fantastic Familiars */
-div.main {
-    background-image: url(https://www1.flightrising.com/static/layout/fantastic-familiar/background.png) !important;
-    background-repeat: no-repeat;
-}
-div.main div.content {
-    background-image: url(https://www1.flightrising.com/static/layout/fantastic-familiar/background.png) !important;
-    background-repeat: no-repeat;
-    background-position: -10px -10px;
 }
 }
 
@@ -3504,6 +3502,19 @@ h2.dragon-profile-details-header {
 }
 }
 
+@-moz-document url-prefix("https://www1.flightrising.com/trading/fantastic-familiars/feats"), url-prefix("https://www1.flightrising.com/trading/fantastic-familiars/flattery") {
+/* Fiona's Fantastic Familiars */
+div.main {
+    background-image: url(https://www1.flightrising.com/static/layout/fantastic-familiar/background.png) !important;
+    background-repeat: no-repeat;
+}
+div.main div.content {
+    background-image: url(https://www1.flightrising.com/static/layout/fantastic-familiar/background.png) !important;
+    background-repeat: no-repeat;
+    background-position: -10px -10px;
+}
+}
+
 @-moz-document url-prefix("https://www1.flightrising.com/trading/trivia") {
 /* Tomo's Trivia Tablet */
 .tomo-question-frame {
@@ -3579,6 +3590,15 @@ div.main {
     .archaeology-dig-plot-complete span {
         color: #094886
     }
+}
+
+@-moz-document url-prefix("https://www1.flightrising.com/exchange") {
+/* Exchange page */
+
+img[src="/static/cms/custom-shop/buttons/custom-shop-button-64766aa1e99cf.png"] {
+    content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Exchange/acclaimed_dm.png) !important;
+	border-radius: 11px;
+}
 }
 
 @-moz-document url-prefix("https://www1.flightrising.com/exchange/acclaimed-achievements-association") {
