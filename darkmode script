@@ -1,5 +1,3 @@
-
-
 /* ==UserStyle==
 @name         Simple Dark Theme for Flight Rising
 @namespace    USO Archive
@@ -24,8 +22,12 @@ a.clock-tooltip {
     color: #dae0e7 !important;
 }
 /* Front Page */
+html body.onecol div.container div.banner button#skip-link.thingbutton.beigebutton {
+	display: none;
+	pointer-events: none;
+}
 body.onecol, body {
-    background-image: url(https://i.imgur.com/8hUzrQt.jpg) !important;
+	backdrop-filter: grayscale(0.75); 
 }
 div.announce-title a {
     color: #dae0e7 !important;
@@ -2752,16 +2754,53 @@ img[src*="/images/layout/bestiary/internal_bg.jpg"], [src*="/images/layout/ge/in
 */
 }
 
-@-moz-document url-prefix("https://www1.flightrising.com/trading/pinkpile"), url-prefix("https://www1.flightrising.com/trading/gift/receive") {
-/* Pinkerton's Plundered Pile */
-#pinkerton-text.common-npc-dialog:before {
-    border-color: #060d11 transparent transparent transparent !important;
+@-moz-document url-prefix("https://www1.flightrising.com/clan-profile") {
+/* User profile */
+i {
+	color: #6084a1 !important ;
 }
-.common-npc-dialog[data-tail="right"]:after, .common-npc-dialog[data-tail="right"]:before, .common-npc-dialog:before, .common-npc-dialog:after, .common-npc-dialog[data-tail="bottom"]:before, .common-npc-dialog[data-tail="bottom"]:after, .common-npc-dialog:after, .common-npc-dialog[data-tail="bottom"]:after, .common-npc-dialog:after, .common-npc-dialog[data-tail="bottom"]:before {
-    border-color: transparent transparent transparent #fff0 !important;
+#clan-profile-header .clan-profile-header-title {
+	color: #FFFFFE ;
 }
-#pinkerton-text div span {
-    color: #00f2ff !important;
+.clan-profile-lair-location-level {
+	color: #FFFFFE ;
+}
+div.clan-profile-lair-location-name a {
+	color: #6084a1 !important ;
+}
+div.clan-profile-forum-post-text a {
+	color: #6084a1 !important ;
+}
+.clan-profile-header {
+	font-weight: bold;
+	color: white;
+	outline-color: black;
+}
+div.main, div.main .content {
+	background-color: #262d32 !important ;
+}
+div.leftcolumn .content {
+	background-color: #22282b !important ;
+}
+.clan-profile-user-frame {
+	background: linear-gradient(to bottom, #262d32 0%, #22282b 100%) ;
+}
+.clan-profile-stat strong {
+	color: #fffffe ;
+}
+}
+
+@-moz-document url-prefix("https://www1.flightrising.com/nesting") {
+/* Nesting Grounds */
+html body.onecol div.container div#content div.contentcontainer div.main div.content div.inner-content div#nesting-page.nest-current-user ol.nest-list li#nest-35313403.nestbox div div span {
+	color: white !important;
+}
+
+#pagetut {
+	border-radius: 4px;
+}
+.nest-image-button:disabled {
+	border-radius: 10px;
 }
 }
 
@@ -2782,7 +2821,7 @@ body {
 }
 }
 
-@-moz-document url-prefix("https://flightrising.com/main.php?p=festive") {
+@-moz-document url-prefix("https://flightrising.com/exchange") {
 body div div.contentcontainer div.main div#super-container div {
     color: #646569 !important;
 }
@@ -2795,6 +2834,7 @@ div#super-container div div div div div {
 }
 
 @-moz-document url-prefix("https://www1.flightrising.com/trading/crim") {
+/* Crim */
 div.inner-content div div {
     color: #2571b8 !important;
 }
@@ -2865,6 +2905,14 @@ img[src="/static/layout/success_scavenge.png"] {
     content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_scavenge_dm.png) !important;
 }
 
+
+
+.gather_itemcount {
+	color: #fffffe !important;
+}
+#gather_success {
+	color: #fffffe !important;
+}
 }
 
 @-moz-document url-prefix("https://www1.flightrising.com/den/trade-in"), url-prefix("https://www1.flightrising.com/den/completed-tasks"), url-prefix("https://www1.flightrising.com/trading/fantastic-familiars/feats") {
@@ -2912,6 +2960,9 @@ div.den-slot-unlock-remaining-footer, div.content-header-sub, div.den-slot-unloc
 /* Lair and Hibernal Den */
 .common-dialog .common-dialog-diagram {
     background: #163a59 !important;
+}
+html body.onecol div#footer div#bottom-banner {
+	display: none;
 }
 #unlock-slots-dialog .unlock-slots-dialog-discount {
     color: #00faff !important;
@@ -3034,7 +3085,7 @@ a.lair-pagination-page:hover {
     background: url(https://i.imgur.com/tczQFQv.png);
 }
 .lair-page-dragons .lair-page-dragon .lair-page-dragon-box {
-    border: 2px solid #0b151c;
+    border: 1px solid #0b151c;
     background: linear-gradient(to bottom, #b9c9d9 0%, #3a4450 100%);
 }
 .lair-page-dragons .lair-page-dragon .lair-page-dragon-box .lair-page-dragon-energy-bar-full {
@@ -3059,8 +3110,8 @@ a.lair-pagination-page:hover {
 .lair-page-dragons .lair-page-dragon .lair-page-dragon-box .lair-page-dragon-energy-bar {
     height: 10px;
 }
-.lair-page-dragons .lair-page-dragon .lair-page-dragon-box .lair-page-dragon-icons {
-    margin-top: 3px;
+.lair-page-dragons .lair-page-dragon .lair-page-dragon-box {
+	background: linear-gradient(rgba(34,40,43,0.5), rgba(51,68,80,0.5));
 }
 img.lair-page-dragon-element {
     filter: contrast(150%) !important;
@@ -3221,7 +3272,7 @@ div.contentcontainer div.main div#super-container div span {
 }
 }
 
-@-moz-document url-prefix("https://flightrising.com/main.php?p=hoard"), url-prefix("https://flightrising.com/main.php?p=vault"), url-prefix("https://www1.flightrising.com/forums/"), url-prefix("https://flightrising.com/main.php?p=wiki&article=24") {
+@-moz-document url-prefix("https://flightrising.com/main.php?p=hoard"), url-prefix("https://flightrising.com/main.php?p=vault"), url-prefix("https://www1.flightrising.com/forums/") {
 /* Compatability for Item Counter style */
 a.intclue:before, a.clue:before {
     background: #06232fe6;
@@ -3499,6 +3550,22 @@ h2.dragon-profile-details-header {
 }
 #dragon-profile-likes[data-active="true"] .dragon-profile-likes-icon {
     background: url(https://i.imgur.com/WZChw75.png);
+}
+#dragon-profile-scene {
+	background-image: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/fire_dragon_bg_dm_1.png) !important;
+}
+}
+
+@-moz-document url-prefix("https://www1.flightrising.com/trading/pinkpile"), url-prefix("https://www1.flightrising.com/trading/gift/receive") {
+/* Pinkerton's Plundered Pile */
+#pinkerton-text.common-npc-dialog:before {
+    border-color: #060d11 transparent transparent transparent !important;
+}
+.common-npc-dialog[data-tail="right"]:after, .common-npc-dialog[data-tail="right"]:before, .common-npc-dialog:before, .common-npc-dialog:after, .common-npc-dialog[data-tail="bottom"]:before, .common-npc-dialog[data-tail="bottom"]:after, .common-npc-dialog:after, .common-npc-dialog[data-tail="bottom"]:after, .common-npc-dialog:after, .common-npc-dialog[data-tail="bottom"]:before {
+    border-color: transparent transparent transparent #fff0 !important;
+}
+#pinkerton-text div span {
+    color: #00f2ff !important;
 }
 }
 
@@ -3854,5 +3921,20 @@ div.common-message.custom-shops-common-message
     background-color: #000 !important;
     color: #4f697d;
     border-color: #cad7e1;
+}
+}
+
+@-moz-document url-prefix("https://www1.flightrising.com/dominance") {
+img[src="/static/layout/dominance/internal_bg.jpg"] {
+	content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/dominance_bg_dm.png);
+	max-width: 100%
+}
+}
+
+@-moz-document url-prefix("https://www1.flightrising.com/forums") {
+/* Forums */
+a.post-author-username, .post-author-username, .editor-author-username {
+	color: white;
+	outline-color: black;
 }
 }
