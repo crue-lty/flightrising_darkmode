@@ -5,7 +5,7 @@
 @description  A simple dark theme for Flight Rising, as the default interface is very bright and hard on the eyes. Works across the whole site, even the forums and coliseum.    ***NOTICE*** In order to get the usernames to display in the forums as in this theme, please download and install the free font "AR Cena", then restart your browser. You can get it <a href="https://fontzone.net/font-details/ar-cena">>> HERE <<</a> from FontZone.
 @version      20201122.09.02
 @license      CC-BY-NC-4.0
-@preprocessor uso
+@preprocessor stylus
 ==/UserStyle== */
 
 @-moz-document domain("flightrising.com") {
