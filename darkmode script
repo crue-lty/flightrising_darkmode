@@ -1,11 +1,14 @@
 /* ==UserStyle==
-@name         Simple Dark Theme for Flight Rising
+@name         Dark Theme for Flight Rising
 @namespace    USO Archive
-@author       Zoga
-@description  A simple dark theme for Flight Rising, as the default interface is very bright and hard on the eyes. Works across the whole site, even the forums and coliseum.    ***NOTICE*** In order to get the usernames to display in the forums as in this theme, please download and install the free font "AR Cena", then restart your browser. You can get it <a href="https://fontzone.net/font-details/ar-cena">>> HERE <<</a> from FontZone.
-@version      20201122.09.02
+@author       FCE300 and crue-lty (original by Zoga)
+@description  A dark theme for Flight Rising, with toggles for lower-saturation images. The bulk of this code was originally written by Zoga, and is being brought up to date and improved upon by FCE300 and crue-lty.
+@version      1
 @license      CC-BY-NC-4.0
 @preprocessor stylus
+
+@var checkbox monochromeGathering "Monochrome gathering images" 0
+
 ==/UserStyle== */
 
 @-moz-document domain("flightrising.com") {
@@ -2848,6 +2851,7 @@ html body.onecol div.container div#content div.contentcontainer div.main div.con
 }
 
 @-moz-document url-prefix("https://www1.flightrising.com/alerts") {
+/* Alerts */
 hr {
     border-color: #545f64 !important;
     margin-top: 5px !important;
@@ -2864,18 +2868,6 @@ body {
 }
 }
 
-@-moz-document url-prefix("https://flightrising.com/exchange") {
-body div div.contentcontainer div.main div#super-container div {
-    color: #646569 !important;
-}
-div.contentcontainer div.main div#super-container div span {
-    color: #298eec !important;
-}
-div#super-container div div div div div {
-    font-size: 14px !important;
-}
-}
-
 @-moz-document url-prefix("https://www1.flightrising.com/trading/crim") {
 /* Crim */
 div.inner-content div div {
@@ -2884,13 +2876,14 @@ div.inner-content div div {
 }
 
 @-moz-document url-prefix("https://flightrising.com/main.php?p=lair&tab=userpage&id=") {
+/* Friend Pending */
 img[src="/images/layout/friend_pending.png"] {
     content: url(https://i.imgur.com/ZBi5k6Z.png) !important;
 }
 }
 
 @-moz-document url-prefix("https://flightrising.com/main.php?p=gather") {
-/* Gathering UI*/
+/* Gathering UI */
 div#super-container div div div {
     background-color: #08101a !important;
     border: none !important;
@@ -2908,44 +2901,46 @@ div.contentcontainer div.main div#super-container div div div form div {
 }
 
 @-moz-document url-prefix("https://www1.flightrising.com/gathering"), url-prefix("https://flightrising.com/main.php?p=gather") {
-img[src="/static/layout/gathering_hunting.png"] {
-    content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_hunt_dm.png) !important;
-}
-img[src="/static/layout/gathering_fishing.png"] {
-    content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_fish_dm.png) !important;
-}
-img[src="/static/layout/gathering_insects.png"] {
-    content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_catch_dm.png) !important;
-}
-img[src="/static/layout/gathering_foraging.png"] {
-    content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_forage_dm.png) !important;
-}
-img[src="/static/layout/gathering_digging.png"] {
-    content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_dig_dm.png) !important;
-}
-img[src="/static/layout/gathering_scavenging.png"] {
-    content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_scavenge_dm.png) !important;
-}
+/*Monochrome Gathering Toggle*/
+    if monochromeGathering == 1 {
+          img[src="/static/layout/gathering_hunting.png"] {
+             content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_hunt_dm.png) !important;
+          }
+          img[src="/static/layout/gathering_fishing.png"] {
+             content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_fish_dm.png) !important;
+          }
+          img[src="/static/layout/gathering_insects.png"] {
+             content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_catch_dm.png) !important;
+          }
+          img[src="/static/layout/gathering_foraging.png"] {
+             content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_forage_dm.png) !important;
+          }
+          img[src="/static/layout/gathering_digging.png"] {
+             content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_dig_dm.png) !important;
+          }
+          img[src="/static/layout/gathering_scavenging.png"] {
+             content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_scavenge_dm.png) !important;
+          }
 
-
-
-img[src="/static/layout/success_hunt.png"] {
-    content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_hunt_dm.png) !important;
-}
-img[src="/static/layout/success_fish.png"] {
-    content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_fish_dm.png) !important;
-}
-img[src="/static/layout/success_catch.png"] {
-    content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_catch_dm.png) !important;
-}
-img[src="/static/layout/success_forage.png"] {
-    content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_forage_dm.png) !important;
-}
-img[src="/static/layout/success_dig.png"] {
-    content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_dig_dm.png) !important;
-}
-img[src="/static/layout/success_scavenge.png"] {
-    content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_scavenge_dm.png) !important;
+         img[src="/static/layout/success_hunt.png"] {
+             content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_hunt_dm.png) !important;
+         }
+         img[src="/static/layout/success_fish.png"] {
+             content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_fish_dm.png) !important;
+         }
+         img[src="/static/layout/success_catch.png"] {
+             content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_catch_dm.png) !important;
+         }
+         img[src="/static/layout/success_forage.png"] {
+             content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_forage_dm.png) !important;
+         }
+         img[src="/static/layout/success_dig.png"] {
+             content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_dig_dm.png) !important;
+         }
+         img[src="/static/layout/success_scavenge.png"] {
+             content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_scavenge_dm.png) !important;
+         }
+   }
 }
 
 
@@ -2955,7 +2950,6 @@ img[src="/static/layout/success_scavenge.png"] {
 }
 #gather_success {
 	color: #fffffe !important;
-}
 }
 
 @-moz-document url-prefix("https://www1.flightrising.com/den/trade-in"), url-prefix("https://www1.flightrising.com/den/completed-tasks"), url-prefix("https://www1.flightrising.com/trading/fantastic-familiars/feats") {
@@ -3190,7 +3184,7 @@ img.lair-page-dragon-element {
 }
 
 @-moz-document url("https://www1.flightrising.com/"), url("https://www1.flightrising.com/handler") {
-/* Front page */
+/* Front Page */
 div#status-box-mid {
     background-color: #142732 !important;
     background-image: none !important;
@@ -3247,14 +3241,16 @@ div.main #super-container div#market div {
 }
 }
 
-@-moz-document url-prefix("https://flightrising.com/main.php?p=ge") {
-div#super-container div div {
-    background-color: #1c262c !important;
-    border: 0px solid #0e1c22 !important;
-}
+@-moz-document url-prefix("https://www1.flightrising.com/buy-gems") {
+/* Buy Gems - READ ME */
+/* (Updated the URL as it previously was a redirect, but nothing on the page changed? Maybe yeet this section)  */
+   div#super-container div div {
+      background-color: #1c262c !important;
+      border: 0px solid #0e1c22 !important;
+   }
 }
 
-@-moz-document url-prefix("https://www1.flightrising.com/scrying/predict"), url-prefix("https://flightrising.com/main.php?p=scrying&view=morphintime") {
+@-moz-document url-prefix("https://www1.flightrising.com/scrying/predict") {
 /* Morphology */
 div.common-column {
     color: #002551 !important;
@@ -3283,7 +3279,7 @@ div.common-column {
 }
 }
 
-@-moz-document url-prefix("https://flightrising.com/main.php?p=scrying&view=bloodlines") {
+@-moz-document url-prefix("https://www1.flightrising.com/scrying/assay") {
 /* Bloodlines */
 div#dragon-preview-1, div#dragon-preview-2 {
     border: 2px solid #0b151c !important;
@@ -3294,14 +3290,15 @@ strong {
 }
 }
 
-@-moz-document url-prefix("https://flightrising.com/main.php?p=hoard") {
-/* Hoard  Pagination */
+@-moz-document url-prefix("https://www1.flightrising.com/hoard") {
+/* Hoard Pagination - READ ME */
+/* URL for hoard & vault were redirects, updating them changed nothing. Yeet?*/
 div.contentcontainer div.main div#super-container div span {
     text-shadow: .5px 0 0 #000, 0 -.5px 0 #000, 0 .5px 0 #000, -.5px 0 0 #000, 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 }
 
-@-moz-document url-prefix("https://flightrising.com/main.php?p=vault") {
+@-moz-document url-prefix("https://www1.flightrising.com/vault") {
 /* Vault Pagination */
 div #super-container #inv_main div #invent div div a span#bling, div #super-container #inv_main div #invent div div a span#nodiving {
     color: #fff !important;
@@ -3315,8 +3312,8 @@ div.contentcontainer div.main div#super-container div span {
 }
 }
 
-@-moz-document url-prefix("https://flightrising.com/main.php?p=hoard"), url-prefix("https://flightrising.com/main.php?p=vault"), url-prefix("https://www1.flightrising.com/forums/") {
-/* Compatability for Item Counter style */
+@-moz-document url-prefix("https://www1.flightrising.com/hoard"), url-prefix("https://www1.flightrising.com/vault"), url-prefix("https://www1.flightrising.com/forums/") {
+/* Compatibility for Item Counter style */
 a.intclue:before, a.clue:before {
     background: #06232fe6;
     color: #c7d6d9;
@@ -3593,9 +3590,6 @@ h2.dragon-profile-details-header {
 }
 #dragon-profile-likes[data-active="true"] .dragon-profile-likes-icon {
     background: url(https://i.imgur.com/WZChw75.png);
-}
-#dragon-profile-scene {
-	background-image: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/fire_dragon_bg_dm_1.png) !important;
 }
 }
 
