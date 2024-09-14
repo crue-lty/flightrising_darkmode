@@ -7,7 +7,7 @@
 @license      CC-BY-NC-4.0
 @preprocessor stylus
 
-@var checkbox monochromeGathering "Monochrome gathering images" 0
+@var checkbox monochromeGathering "Monochrome gathering menu" 0
 
 ==/UserStyle== */
 
@@ -2747,49 +2747,6 @@ img[src*="/images/layout/bestiary/internal_bg.jpg"], [src*="/images/layout/ge/in
 }
 }
 
-@-moz-document url-prefix("https://www1.flightrising.com/gathering"), url-prefix("https://flightrising.com/main.php?p=gather") {
-/*Monochrome Gathering Toggle*/
-    if monochromeGathering == 1 {
-          img[src="/static/layout/gathering_hunting.png"] {
-             content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_hunt_dm.png) !important;
-          }
-          img[src="/static/layout/gathering_fishing.png"] {
-             content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_fish_dm.png) !important;
-          }
-          img[src="/static/layout/gathering_insects.png"] {
-             content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_catch_dm.png) !important;
-          }
-          img[src="/static/layout/gathering_foraging.png"] {
-             content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_forage_dm.png) !important;
-          }
-          img[src="/static/layout/gathering_digging.png"] {
-             content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_dig_dm.png) !important;
-          }
-          img[src="/static/layout/gathering_scavenging.png"] {
-             content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_scavenge_dm.png) !important;
-          }
-
-         img[src="/static/layout/success_hunt.png"] {
-             content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_hunt_dm.png) !important;
-         }
-         img[src="/static/layout/success_fish.png"] {
-             content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_fish_dm.png) !important;
-         }
-         img[src="/static/layout/success_catch.png"] {
-             content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_catch_dm.png) !important;
-         }
-         img[src="/static/layout/success_forage.png"] {
-             content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_forage_dm.png) !important;
-         }
-         img[src="/static/layout/success_dig.png"] {
-             content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_dig_dm.png) !important;
-         }
-         img[src="/static/layout/success_scavenge.png"] {
-             content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_scavenge_dm.png) !important;
-         }
-   }
-}
-
 @-moz-document url("https://www1.flightrising.com") {
 /* Home page */
 
@@ -2921,6 +2878,7 @@ div.contentcontainer div.main div#super-container div div div form div {
           img[src="/static/layout/gathering_scavenging.png"] {
              content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_scavenge_dm.png) !important;
           }
+    }
 
          img[src="/static/layout/success_hunt.png"] {
              content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_hunt_dm.png) !important;
@@ -2940,7 +2898,16 @@ div.contentcontainer div.main div#super-container div div div form div {
          img[src="/static/layout/success_scavenge.png"] {
              content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_scavenge_dm.png) !important;
          }
-   }
+         
+    .gather_container {
+        color: #293f4b
+    }
+    #gather_turn_count {
+        color: #dae0e7
+    }
+    #gather_turns {
+        color: #5f6c77
+    }
 }
 
 
@@ -3840,18 +3807,6 @@ div.main {
         background-image: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-62dcd85a4b611.png);
         background-repeat: no-repeat;
         background-position: -10px -10px
-    }
-}
-
-@-moz-document url-prefix("https://www1.flightrising.com/gathering") {
-.gather_container {
-        color: #293f4b
-    }
-    #gather_turn_count {
-        color: #dae0e7
-    }
-    #gather_turns {
-        color: #5f6c77
     }
 }
 
