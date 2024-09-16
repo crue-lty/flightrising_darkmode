@@ -649,6 +649,17 @@ div#ajax-bonding.ui-dialog-content.ui-widget-content, #bonding-dialog {
 #plus-button-container, #speech-bubble-button-tray {
     padding-top: 10px;
 }
+img[src="/static/layout/baldwin/button_transmute.png"] {
+    content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Trading%20Post/Baldwin/button_transmute_dm.png) !important;
+    height: 285px;
+}
+img[src="/static/layout/baldwin/button_create.png"] {
+    content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Trading%20Post/Baldwin/button_create_dm.png) !important;
+    height: 285px;
+}
+img[src="/static/layout/baldwin/cauldron_loading.gif"] {
+    content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Trading%20Post/Baldwin/cauldron_loading_dm.gif) !important;
+}
 .content-header, .baldwin-redtext, .recipe-cost, #itemprev #prevcaption span {
     color: #dae0e7 !important;
     text-shadow: 0 0 0.2em #000, 0 0 0.2em #000, 0 0 0.2em #000 !important;
@@ -2480,9 +2491,6 @@ img[src="/static/layout/revamp/right_status_top_green_small.png"] {
 }
 img[src="/static/layout/revamp/right_status_top_yellow_small.png"] {
     content: url(https://i.imgur.com/VbjXXg9.png) !important;
-}
-img[src="/static/layout/baldwin/cauldron_loading.gif"] {
-    content: url(https://i.imgur.com/RJaVVuu.gif) !important;
 }
 img[src="/static/layout/auctionhouse/searchtab_down.png"] {
     content: url(https://i.imgur.com/Wnjgwoz.png) !important;
