@@ -646,6 +646,9 @@ div#ajax-bonding.ui-dialog-content.ui-widget-content, #bonding-dialog {
     border-radius: 2px !important;
     padding: 3px 3px 1px 3px !important;
 }
+#plus-button-container, #speech-bubble-button-tray {
+    padding-top: 10px;
+}
 .content-header, .baldwin-redtext, .recipe-cost, #itemprev #prevcaption span {
     color: #dae0e7 !important;
     text-shadow: 0 0 0.2em #000, 0 0 0.2em #000, 0 0 0.2em #000 !important;
@@ -3726,7 +3729,7 @@ div.main {
     }
 }
 
-@moz-document url-prefix("https://www1.flightrising.com/exchange") {
+@-moz-document url-prefix("https://www1.flightrising.com/exchange") {
     /* TEST - Sage's Seasonal Sundries - Exchange page */
     img[src="/static/cms/custom-shop/buttons/custom-shop-button-64018837ee868.png"] /* Spring */ /* Placeholder */ {
         content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/placeholder_exchange.png) !important;
