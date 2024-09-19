@@ -8,6 +8,7 @@
 @preprocessor stylus
 
 @var checkbox monochromeGathering "Monochrome gathering menu" 0
+@var checkbox darkerBogwin "Darker Baldwin buttons" 0
 
 ==/UserStyle== */
 
@@ -649,14 +650,19 @@ div#ajax-bonding.ui-dialog-content.ui-widget-content, #bonding-dialog {
 #plus-button-container, #speech-bubble-button-tray {
     padding-top: 10px;
 }
-img[src="/static/layout/baldwin/button_transmute.png"] {
-    content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Trading%20Post/Baldwin/button_transmute_dm.png) !important;
-    height: 285px;
-}
-img[src="/static/layout/baldwin/button_create.png"] {
-    content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Trading%20Post/Baldwin/button_create_dm.png) !important;
-    height: 285px;
-}
+
+    if darkerBogwin == 1 {
+
+        img[src="/static/layout/baldwin/button_transmute.png"] {
+            content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Trading%20Post/Baldwin/button_transmute_dm.png) !important;
+            height: 285px;
+        }
+        img[src="/static/layout/baldwin/button_create.png"] {
+            content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Trading%20Post/Baldwin/button_create_dm.png) !important;
+            height: 285px;
+        }
+    }
+
 img[src="/static/layout/baldwin/cauldron_loading.gif"] {
     content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Trading%20Post/Baldwin/cauldron_loading_dm.gif) !important;
 }
@@ -2759,7 +2765,7 @@ img[src*="/images/layout/bestiary/internal_bg.jpg"], [src*="/images/layout/ge/in
 }
 
 @-moz-document url("https://www1.flightrising.com") {
-/* Home page */
+/* Home Page */
 
 /* html body.twocol.threecol div.container div.banner {
     background-image: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/banner_1_dm.png) !important;
@@ -2769,7 +2775,7 @@ img[src*="/images/layout/bestiary/internal_bg.jpg"], [src*="/images/layout/ge/in
 }
 
 @-moz-document url-prefix("https://www1.flightrising.com/clan-profile") {
-/* User profile */
+/* User Profile */
 i {
 	color: #6084a1 !important ;
 }
@@ -2839,7 +2845,7 @@ body {
 }
 
 @-moz-document url-prefix("https://www1.flightrising.com/trading/crim") {
-/* Crim */
+/* Crim's Collection Cart */
 div.inner-content div div {
     color: #2571b8 !important;
 }
@@ -3677,7 +3683,7 @@ div.main {
 }
 
 @-moz-document url-prefix("https://www1.flightrising.com/exchange") {
-/* Exchange page */
+/* Exchange Page */
 
 img[src="/static/cms/custom-shop/buttons/custom-shop-button-64766aa1e99cf.png"] /* Acclaimed */ {
     content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Exchange/acclaimed_achievements_association_dm.png) !important;
