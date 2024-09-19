@@ -2414,12 +2414,12 @@ img[src="/static/layout/auctionhouse/button_close.png"] {
 img[src="/content/battle/images/organize/spr_organize_unit_frame_02.png"] {
     content: url(https://i.imgur.com/3aSGoGx.png) !important;
 }
-img[src="/static/layout/lair/backgrounds/male.png"] {
+/* img[src="/static/layout/lair/backgrounds/male.png"] {
     content: url(https://i.imgur.com/lZJ6PTI.png) !important;
-}
-img[src="/static/layout/lair/backgrounds/female.png"] {
+} */
+/* img[src="/static/layout/lair/backgrounds/female.png"] {
     content: url(https://i.imgur.com/CgYsdY0.png) !important;
-}
+} */
 img[src="/static/layout/lair/buttons/move-to-lair.png"] {
     content: url(https://i.imgur.com/nw9cbhf.png) !important;
 }
@@ -2809,12 +2809,14 @@ div.leftcolumn .content {
 html body.onecol div.container div#content div.contentcontainer div.main div.content div.inner-content div#nesting-page.nest-current-user ol.nest-list li#nest-35313403.nestbox div div span {
 	color: white !important;
 }
-
 #pagetut {
 	border-radius: 4px;
 }
 .nest-image-button:disabled {
 	border-radius: 10px;
+}
+.boon_button {
+    border-radius: 11px;
 }
 }
 
@@ -3739,7 +3741,7 @@ div.main {
 
 @-moz-document url-prefix("https://www1.flightrising.com/exchange") {
     /* TEST - Sage's Seasonal Sundries - Exchange page */
-    img[src="/static/cms/custom-shop/buttons/custom-shop-button-64018837ee868.png"] /* Spring */ /* Placeholder */ {
+    img[src="/static/cms/custom-shop/buttons/custom-shop-button-64018844292c4.png"] /* Spring */ /* Placeholder */ {
         content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/placeholder_exchange.png) !important;
         border-radius: 11px;
     }
@@ -3747,11 +3749,11 @@ div.main {
         content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Exchange/sages_seasonal_sundries_summer_dm.png) !important;
         border-radius: 11px;
     }
-    img[src="/static/cms/custom-shop/buttons/custom-shop-button-64018837ee868.png"] /* Fall */ /* Placeholder */ {
+    img[src="/static/cms/custom-shop/buttons/custom-shop-button-6401881b231d6.png"] /* Fall */ /* Placeholder */ {
         content: url(hhttps://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/placeholder_exchange.png) !important;
         border-radius: 11px;
     }
-    img[src="/static/cms/custom-shop/buttons/custom-shop-button-64018837ee868.png"] /* Winter */ /* Placeholder */ {
+    img[src="/static/cms/custom-shop/buttons/custom-shop-button-?????.png"] /* Winter */ /* Placeholder */ {
         content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/placeholder_exchange.png) !important;
         border-radius: 11px;
     }
@@ -3788,7 +3790,16 @@ div.main {
 }
 
 @-moz-document url-prefix("https://www1.flightrising.com/exchange/sages-seasonal-sundries-winter") {
-
+/* Sage's Seasonal Sundries - Winter */
+div.main {
+    background: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-640181415ab84.png) !important;
+    background-repeat: no-repeat !important
+}
+div.main div.content {
+    background-image: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-640181415ab84.png);
+    background-repeat: no-repeat;
+    background-position: -10px -10px
+}
 }
 
 @-moz-document url-prefix("https://www1.flightrising.com/exchange/arvelles-adamant-armaments") {
