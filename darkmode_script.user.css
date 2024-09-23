@@ -3952,7 +3952,16 @@ div.main {
 }
 
 @-moz-document url-prefix("https://www1.flightrising.com/exchange/starfall-celebration-shop") {
-
+/* Shop Arcane */
+div.main {
+        background: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-62dcd8709d037.png) !important;
+        background-repeat: no-repeat !important
+    }
+    div.main div.content {
+        background-image: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-62dcd8709d037.png);
+        background-repeat: no-repeat;
+        background-position: -10px -10px
+    }
 }
 
 @-moz-document url-prefix("https://www1.flightrising.com/exchange/riot-of-rot-shop") {
