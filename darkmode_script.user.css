@@ -13,6 +13,16 @@
 ==/UserStyle== */
 
 @-moz-document domain("flightrising.com") {
+/* Defined variables */
+h2 {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    color: #FCE300 !important;
+}
+}
+
+@-moz-document domain("flightrising.com") {
 /* Cookies Banner */
 div.cc-window.cc-banner.cc-type-info.cc-theme-block.cc-top {
     background-color: #1c364a !important;
@@ -523,6 +533,7 @@ div#invwindow, fieldset#familiar div, div#familiar {
 form#changedragon fieldset div#window {
     border: none !important;
 }
+
 /* Start From Here */
 .dr-clothinglist-item, .choose-dragon-apparel-slot[data-parity="odd"] {
     background-color: #202f3c !important;
@@ -3701,7 +3712,7 @@ img[src="/static/cms/custom-shop/buttons/custom-shop-button-639d4e206bd20.png"] 
     content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Exchange/higgins_haunted_hollow_dm.png) !important;
 	border-radius: 11px;
 }
-img[src="/static/cms/custom-shop/buttons/custom-shop-button-62f9c108b5059.png"] /* Joxar */ {
+img[src="/static/cms/custom-shop/buttons/custom-shop-button-62f9c108b5059.png"] /* Joxar's Spare Inventory */ {
     content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Exchange/joxars_spare_inventory_dm.png) !important;
 	border-radius: 11px;
 }
@@ -3715,6 +3726,10 @@ img[src="/static/cms/custom-shop/buttons/custom-shop-button-6326385d8c3e5.png"] 
 }
 img[src="/static/cms/custom-shop/buttons/custom-shop-button-63eb1dddedbba.png"] /* Susie */ {
     content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Exchange/susies_sweet_sentiments_dm.png) !important;
+	border-radius: 11px;
+}
+img[src="/static/cms/custom-shop/buttons/custom-shop-button-62d9ebe74e45a.png"] /* Joxar's Festive Favors */ {
+    content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Exchange/joxars_festive_favors_dm.png) !important;
 	border-radius: 11px;
 }
 }
@@ -3744,6 +3759,8 @@ div.main {
         background-position: -10px -10px
     }
 }
+
+
 
 @-moz-document url-prefix("https://www1.flightrising.com/exchange") {
     /* TEST - Sage's Seasonal Sundries - Exchange page */
@@ -3792,7 +3809,16 @@ div.main {
 }
 
 @-moz-document url-prefix("https://www1.flightrising.com/exchange/sages-seasonal-sundries-fall") {
-
+/* Sage's Seasonal Sundries - Fall */
+div.main {
+    background: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-640185b305d97.png) !important;
+    background-repeat: no-repeat !important
+}
+div.main div.content {
+    background-image: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-640185b305d97.png);
+    background-repeat: no-repeat;
+    background-position: -10px -10px
+}
 }
 
 @-moz-document url-prefix("https://www1.flightrising.com/exchange/sages-seasonal-sundries-winter") {
