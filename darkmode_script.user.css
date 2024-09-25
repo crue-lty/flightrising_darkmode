@@ -763,11 +763,11 @@ div#recipe-no-results {
     border: 3px solid #060d12 !important;
     background-color: #14252f !important;
 }
-/*#baldwin #speech-bubble-content,
+/* #baldwin #speech-bubble-content,
 .baldwin-create-speech-bubble, .trade-desc,
-#super-container #pl_content #tomo_speechBubble div div#tomo_speechIntro,*/
-#crimswap/*#pinkerton #speechbubble
-div.baldwin-cauldron-status.baldwin-cauldron-done*/
+#super-container #pl_content #tomo_speechBubble div div#tomo_speechIntro, */
+#crimswap/* #pinkerton #speechbubble
+div.baldwin-cauldron-status.baldwin-cauldron-done */
 {
     color: #182730 !important;
 }
@@ -1355,6 +1355,10 @@ body div div div div#super-container div#inv_main div form#invent span span {
 div #super-container #inv_main div #invent div div a span#bling, div #super-container #inv_main div #invent div div a span#nodiving {
     color: #29343d !important;
 }
+#hoard-result-items {
+    min-height: 0px;
+}
+
 /* Genes Add */
 div#spec_drags div, body div #skinprev div#spec_drags div {
     border: 1px solid #14252f !important;
@@ -2431,12 +2435,14 @@ img[src="/static/layout/auctionhouse/button_close.png"] {
 img[src="/content/battle/images/organize/spr_organize_unit_frame_02.png"] {
     content: url(https://i.imgur.com/3aSGoGx.png) !important;
 }
-/* img[src="/static/layout/lair/backgrounds/male.png"] {
+img[src="/static/layout/lair/backgrounds/male.png"] {
+    opacity: 0.2;
     content: url(https://i.imgur.com/lZJ6PTI.png) !important;
-} */
-/* img[src="/static/layout/lair/backgrounds/female.png"] {
+}
+img[src="/static/layout/lair/backgrounds/female.png"] {
+    opacity: 0.2;
     content: url(https://i.imgur.com/CgYsdY0.png) !important;
-} */
+}
 img[src="/static/layout/lair/buttons/move-to-lair.png"] {
     content: url(https://i.imgur.com/nw9cbhf.png) !important;
 }
