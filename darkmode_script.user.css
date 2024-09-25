@@ -2436,11 +2436,11 @@ img[src="/content/battle/images/organize/spr_organize_unit_frame_02.png"] {
     content: url(https://i.imgur.com/3aSGoGx.png) !important;
 }
 img[src="/static/layout/lair/backgrounds/male.png"] {
-    opacity: 0.2;
+    opacity: 0.4;
     content: url(https://i.imgur.com/lZJ6PTI.png) !important;
 }
 img[src="/static/layout/lair/backgrounds/female.png"] {
-    opacity: 0.2;
+    opacity: 0.4;
     content: url(https://i.imgur.com/CgYsdY0.png) !important;
 }
 img[src="/static/layout/lair/buttons/move-to-lair.png"] {
@@ -2562,6 +2562,7 @@ img[src="/static/layout/button_search.png"] {
 }
 img[src="/images/layout/button_incubate.png"] {
     content: url(https://i.imgur.com/ryRuN8j.png) !important;
+    border-radius: 11px;
 }
 img[src="/images/layout/button_0boon.png"] {
     content: url(https://i.imgur.com/dikM8Wa.png) !important;
@@ -2602,6 +2603,7 @@ img[src="/static/layout/button_tradedetails.png"] {
 }
 img[src="/images/layout/button_hatch.png"] {
     content: url(https://i.imgur.com/qz8KrAq.png) !important;
+    border-radius: 11px;
 }
 img[src="/images/layout/button_nest_breed.png"] {
     content: url(https://i.imgur.com/JXYGDLO.png) !important;
@@ -3743,75 +3745,75 @@ img[src="/static/cms/custom-shop/buttons/custom-shop-button-62d9ebe74e45a.png"] 
 @-moz-document url-prefix("https://www1.flightrising.com/exchange/acclaimed-achievements-association") {
 /* Acclaimed Achievements Association */
 div.main {
-        background: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-64766d27d6072.png) !important;
-        background-repeat: no-repeat !important
-    }
-    div.main div.content {
-        background-image: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-64766d27d6072.png);
-        background-repeat: no-repeat;
-        background-position: -10px -10px
-    }
+    background: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-64766d27d6072.png) !important;
+    background-repeat: no-repeat !important
+}
+div.main div.content {
+    background-image: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-64766d27d6072.png);
+    background-repeat: no-repeat;
+    background-position: -10px -10px
+}
 }
 
 @-moz-document url-prefix("https://www1.flightrising.com/exchange/g-and-g-genuine-genes") {
 /* G&G's Genuine Genes */
 div.main {
-        background: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-64d6ec1fe93f6.png) !important;
-        background-repeat: no-repeat !important
-    }
-    div.main div.content {
-        background-image: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-64d6ec1fe93f6.png);
-        background-repeat: no-repeat;
-        background-position: -10px -10px
-    }
+    background: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-64d6ec1fe93f6.png) !important;
+    background-repeat: no-repeat !important
+}
+div.main div.content {
+    background-image: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-64d6ec1fe93f6.png);
+    background-repeat: no-repeat;
+    background-position: -10px -10px
+}
 }
 
 
 
 @-moz-document url-prefix("https://www1.flightrising.com/exchange") {
-    /* TEST - Sage's Seasonal Sundries - Exchange page */
-    img[src="/static/cms/custom-shop/buttons/custom-shop-button-64018844292c4.png"] /* Spring */ /* Placeholder */ {
-        content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Exchange/placeholder_exchange.png) !important;
-        border-radius: 11px;
-    }
-    img[src="/static/cms/custom-shop/buttons/custom-shop-button-64018837ee868.png"] /* Summer */ {
-        content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Exchange/sages_seasonal_sundries_summer_dm.png) !important;
-        border-radius: 11px;
-    }
-    img[src="/static/cms/custom-shop/buttons/custom-shop-button-6401881b231d6.png"] /* Fall */ /* Placeholder */ {
-        content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Exchange/placeholder_exchange.png) !important;
-        border-radius: 11px;
-    }
-    img[src="/static/cms/custom-shop/buttons/custom-shop-button-?????.png"] /* Winter */ /* Placeholder */ {
-        content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Exchange/placeholder_exchange.png) !important;
-        border-radius: 11px;
-    }
+/* Sage's Seasonal Sundries - Exchange page */
+img[src="/static/cms/custom-shop/buttons/custom-shop-button-64018844292c4.png"] /* Spring */ {
+    content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Exchange/sages_seasonal_sundries_spring_dm.png) !important;
+    border-radius: 11px;
+}
+img[src="/static/cms/custom-shop/buttons/custom-shop-button-64018837ee868.png"] /* Summer */ {
+    content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Exchange/sages_seasonal_sundries_summer_dm.png) !important;
+    border-radius: 11px;
+}
+img[src="/static/cms/custom-shop/buttons/custom-shop-button-6401881b231d6.png"] /* Fall */ {
+    content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Exchange/sages_seasonal_sundries_fall_dm.png) !important;
+    border-radius: 11px;
+}
+img[src="/static/cms/custom-shop/buttons/custom-shop-button-?????.png"] /* Winter */ /* Placeholder */ {
+    content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Exchange/placeholder_exchange.png) !important;
+    border-radius: 11px;
+}
 }
 
 @-moz-document url-prefix("https://www1.flightrising.com/exchange/sages-seasonal-sundries-spring") {
 /* Sage's Seasonal Sundries - Spring */
 div.main {
-        background: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-6401805618172.png) !important;
-        background-repeat: no-repeat !important
-    }
-    div.main div.content {
-        background-image: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-6401805618172.png);
-        background-repeat: no-repeat;
-        background-position: -10px -10px
-    }
+    background: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-6401805618172.png) !important;
+    background-repeat: no-repeat !important
+}
+div.main div.content {
+    background-image: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-6401805618172.png);
+    background-repeat: no-repeat;
+    background-position: -10px -10px
+}
 }
 
 @-moz-document url-prefix("https://www1.flightrising.com/exchange/sages-seasonal-sundries-summer") {
 /* Sage's Seasonal Sundries - Summer */
 div.main {
-        background: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-64017fd46eb51.png) !important;
-        background-repeat: no-repeat !important
-    }
-    div.main div.content {
-        background-image: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-64017fd46eb51.png);
-        background-repeat: no-repeat;
-        background-position: -10px -10px
-    }
+    background: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-64017fd46eb51.png) !important;
+    background-repeat: no-repeat !important
+}
+div.main div.content {
+    background-image: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-64017fd46eb51.png);
+    background-repeat: no-repeat;
+    background-position: -10px -10px
+}
 }
 
 @-moz-document url-prefix("https://www1.flightrising.com/exchange/sages-seasonal-sundries-fall") {
@@ -3843,79 +3845,79 @@ div.main div.content {
 @-moz-document url-prefix("https://www1.flightrising.com/exchange/arvelles-adamant-armaments") {
 /* Arvelle's Adamant Armaments */
 div.main {
-        background: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-62f1ff9567e81.png) !important;
-        background-repeat: no-repeat !important
-    }
-    div.main div.content {
-        background-image: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-62f1ff9567e81.png);
-        background-repeat: no-repeat;
-        background-position: -10px -10px
-    }
+    background: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-62f1ff9567e81.png) !important;
+    background-repeat: no-repeat !important
+}
+div.main div.content {
+    background-image: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-62f1ff9567e81.png);
+    background-repeat: no-repeat;
+    background-position: -10px -10px
+}
 }
 
 @-moz-document url-prefix("https://www1.flightrising.com/exchange/higgins-haunted-hollow") {
 /* Higgins' Haunted Hollow */
 div.main {
-        background: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-639d4d075d8d8.png) !important;
-        background-repeat: no-repeat !important
-    }
-    div.main div.content {
-        background-image: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-639d4d075d8d8.png);
-        background-repeat: no-repeat;
-        background-position: -10px -10px
-    }
+    background: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-639d4d075d8d8.png) !important;
+    background-repeat: no-repeat !important
+}
+div.main div.content {
+    background-image: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-639d4d075d8d8.png);
+    background-repeat: no-repeat;
+    background-position: -10px -10px
+}
 }
 
 @-moz-document url-prefix("https://www1.flightrising.com/exchange/marvas-marvelous-marvels") {
 /* Marva's Marvelous Marvels */
 div.main {
-        background: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-6426414b66b23.png) !important;
-        background-repeat: no-repeat !important
-    }
-    div.main div.content {
-        background-image: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-6426414b66b23.png);
-        background-repeat: no-repeat;
-        background-position: -10px -10px
-    }
+    background: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-6426414b66b23.png) !important;
+    background-repeat: no-repeat !important
+}
+div.main div.content {
+    background-image: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-6426414b66b23.png);
+    background-repeat: no-repeat;
+    background-position: -10px -10px
+}
 }
 
 @-moz-document url-prefix("https://www1.flightrising.com/exchange/patches-pirate-plunder") {
 /* Patches' Pirate Plunder */
 div.main {
-        background: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-632637c1f25f8.png) !important;
-        background-repeat: no-repeat !important
-    }
-    div.main div.content {
-        background-image: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-632637c1f25f8.png);
-        background-repeat: no-repeat;
-        background-position: -10px -10px
-    }
+    background: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-632637c1f25f8.png) !important;
+    background-repeat: no-repeat !important
+}
+div.main div.content {
+    background-image: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-632637c1f25f8.png);
+    background-repeat: no-repeat;
+    background-position: -10px -10px
+}
 }
 
 @-moz-document url-prefix("https://www1.flightrising.com/exchange/susies-sweet-sentiments") {
 /* Susie's Sweet Sentiments */
 div.main {
-        background: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-63f21b07f1413.png) !important;
-        background-repeat: no-repeat !important
-    }
-    div.main div.content {
-        background-image: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-63f21b07f1413.png);
-        background-repeat: no-repeat;
-        background-position: -10px -10px
-    }
+    background: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-63f21b07f1413.png) !important;
+    background-repeat: no-repeat !important
+}
+div.main div.content {
+    background-image: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-63f21b07f1413.png);
+    background-repeat: no-repeat;
+    background-position: -10px -10px
+}
 }
 
 @-moz-document url-prefix("https://www1.flightrising.com/exchange/joxars-spare-inventory") {
 /* Joxar's Spare Inventory */
 div.main {
-        background: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-62dcd85a4b611.png) !important;
-        background-repeat: no-repeat !important
-    }
-    div.main div.content {
-        background-image: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-62dcd85a4b611.png);
-        background-repeat: no-repeat;
-        background-position: -10px -10px
-    }
+    background: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-62dcd85a4b611.png) !important;
+    background-repeat: no-repeat !important
+}
+div.main div.content {
+    background-image: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-62dcd85a4b611.png);
+    background-repeat: no-repeat;
+    background-position: -10px -10px
+}
 }
 
 @-moz-document url-prefix("https://www1.flightrising.com/achievements") {
