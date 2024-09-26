@@ -27,16 +27,6 @@ if highlightHeaderTwo == 1 {
 }
 
 @-moz-document domain("flightrising.com") {
-/* Defined variables */
-h2 {
-    font-size: 15px;
-    font-weight: bold;
-    margin: 0 0 10px 0;
-    color: #FCE300 !important;
-}
-}
-
-@-moz-document domain("flightrising.com") {
 /* Cookies Banner */
 div.cc-window.cc-banner.cc-type-info.cc-theme-block.cc-top {
     background-color: #1c364a !important;
