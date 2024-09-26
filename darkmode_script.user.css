@@ -1,16 +1,30 @@
 /* ==UserStyle==
 @name         Dark Theme for Flight Rising
 @namespace    USO Archive
-@author       FCE300 and crue-lty (original by Zoga)
+@author       FCE300 and crue-lty on GitHub (original by Zoga)
 @description  A dark theme for Flight Rising, with toggles for lower-saturation images. The bulk of this code was originally written by Zoga, and is being brought up to date and improved upon by FCE300 and crue-lty.
 @version      1
 @license      CC-BY-NC-4.0
 @preprocessor stylus
 
+@var checkbox highlightHeaderTwo "FOR TESTING - Highlight h2 variable" 0
 @var checkbox monochromeGathering "Monochrome gathering menu" 0
 @var checkbox darkerBogwin "Darker Baldwin buttons" 0
 
 ==/UserStyle== */
+
+@-moz-document domain("flightrising.com") {
+/* Defined Variables Toggle*/
+if highlightHeaderTwo == 1 {
+
+    h2 {
+        font-size: 15px;
+        font-weight: bold;
+        margin: 0 0 10px 0;
+        color: #FCE300 !important;
+        }
+}
+}
 
 @-moz-document domain("flightrising.com") {
 /* Defined variables */
