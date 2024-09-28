@@ -1105,11 +1105,6 @@ div.post-author {
 }
 a.post-author-username, .post-author-username, .editor-author-username {
     color: white !important;
-    font-weight: normal !important;
-    font-size: 20.0px !important;
-    font-family: "AR CENA", "Calibri" !important;
-    display: inline-block !important;
-    padding-top: 4px !important;
     text-shadow: -2px -2px 0px rgba(115, 29, 8, 0.41), -2px -1px 0px rgba(8, 24, 115, 0.9), -2px 0px 0px rgba(8, 8, 115, 0.99), -2px 1px 0px rgba(8, 12, 115, 0.89), -2px 2px 0px rgba(8, 22, 115, 0.42), -1px -2px 0px rgba(8, 14, 115, 0.89), -1px -1px 0px rgb(8, 10, 115), -1px 0px 0px rgb(13, 8, 115), -1px 1px 0px rgb(23, 8, 115), -1px 2px 0px rgba(13, 8, 115, 0.91), 0px -2px 0px rgb(8, 12, 115), 0px -1px 0px rgb(8, 8, 115), 0px 0px 0px rgb(25, 8, 115), 0px 1px 0px rgb(25, 8, 115), 0px 2px 0px rgba(10, 8, 115, 0.99), 1px -2px 0px rgba(8, 17, 115, 0.87), 1px -1px 0px rgb(8, 12, 115), 1px 0px 0px rgb(10, 8, 115), 1px 1px 0px rgb(8, 10, 115), 1px 2px 0px rgba(25, 8, 115, 0.83), 2px -2px 0px rgba(18, 8, 115, 0.35), 2px -1px 0px rgba(8, 17, 115, 0.87), 2px 0px 0px rgba(8, 25, 115, 0.98), 2px 1px 0px rgba(8, 15, 115, 0.89), 2px 2px 0px rgba(8, 15, 115, 0.41) !important;
 }
 div#postsheader {
@@ -1209,7 +1204,7 @@ div.search-result-bubble.search-result-bubble-alt {
 .search-result-avatar img {
     width: 66px;
     height: 66px;
-    border: 2px solid #283b48 !important;
+    /* border: 2px solid #283b48 !important; */ /* this one broke the user avatar, moving it by 2px */
     background-color: #283b48 !important;
     border-radius: 5px !important;
 }
@@ -1257,7 +1252,6 @@ div.search-result-bubble.search-result-bubble-alt {
     border: 2px solid #17191c !important;
 }
 #ltavtr img, span#currentav img {
-    border: 2px solid #283b48 !important;
     background-color: #283b48 !important;
     border-radius: 0px !important;
 }
@@ -3643,11 +3637,11 @@ div.main div.content {
 @-moz-document url-prefix("https://www1.flightrising.com/trading/archaeology") {
 /* Arlo's Ancient Archaeology */
 div.main {
-        background: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Arlo.png) !important;
+        background: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Trading%20Post/Arlo/Arlo.png) !important;
         background-repeat: no-repeat;
     }
     div.main div.content {
-        background-image: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Arlo.png) !important;
+        background-image: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Trading%20Post/Arlo/Arlo.png) !important;
         background-repeat: no-repeat;
         background-position: -10px -10px;
     }
@@ -4047,5 +4041,16 @@ img[src="/static/layout/dominance/internal_bg.jpg"] {
 a.post-author-username, .post-author-username, .editor-author-username {
 	color: white;
 	outline-color: black;
+}
+html body.onecol div.container div#content div.contentcontainer div.main div.content div.inner-content div#forum-content table#forum-fr tbody tr td {
+    height: 60px;
+    line-height: 1.25;
+}
+#forum-fr > tbody:nth-child(1) > tr:nth-child(10) {
+    display: none;
+}
+html body.onecol div.container div#content div.contentcontainer div.main div.content div.inner-content div#forum-content table#forum-general tbody tr td {
+    height: 60px
+    line-height: 1.25;
 }
 }
