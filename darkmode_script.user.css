@@ -3286,14 +3286,6 @@ strong {
 }
 }
 
-@-moz-document url-prefix("https://www1.flightrising.com/hoard") {
-/* Hoard Pagination - READ ME */
-/* URL for hoard & vault were redirects, updating them changed nothing. Yeet?*/
-div.contentcontainer div.main div#super-container div span {
-    text-shadow: .5px 0 0 #000, 0 -.5px 0 #000, 0 .5px 0 #000, -.5px 0 0 #000, 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-}
-}
-
 @-moz-document url-prefix("https://www1.flightrising.com/vault") {
 /* Vault Pagination */
 div #super-container #inv_main div #invent div div a span#bling, div #super-container #inv_main div #invent div div a span#nodiving {
