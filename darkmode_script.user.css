@@ -1757,8 +1757,8 @@ table#userlist tbody tr {
 }
 .common-tab {
     border: 2px solid #546d86;
-    border-radius: 5px;
     background: #17222d;
+    padding: 0 0 0 0;
 }
 .common-tab:hover {
     border: 2px solid #6a859f;
@@ -2896,66 +2896,67 @@ div.contentcontainer div.main div#super-container div div div form div {
 }
 
 @-moz-document url-prefix("https://www1.flightrising.com/gathering"), url-prefix("https://flightrising.com/main.php?p=gather") {
-/*Monochrome Gathering Toggle*/
-    if monochromeGathering == 1 {
-          img[src="/static/layout/gathering_hunting.png"] {
-             content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_hunt_dm.png) !important;
-          }
-          img[src="/static/layout/gathering_fishing.png"] {
-             content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_fish_dm.png) !important;
-          }
-          img[src="/static/layout/gathering_insects.png"] {
-             content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_catch_dm.png) !important;
-          }
-          img[src="/static/layout/gathering_foraging.png"] {
-             content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_forage_dm.png) !important;
-          }
-          img[src="/static/layout/gathering_digging.png"] {
-             content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_dig_dm.png) !important;
-          }
-          img[src="/static/layout/gathering_scavenging.png"] {
-             content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_scavenge_dm.png) !important;
-          }
+    /*Monochrome Gathering Toggle*/
+        if monochromeGathering == 1 {
+              img[src="/static/layout/gathering_hunting.png"] {
+                 content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_hunt_dm.png) !important;
+              }
+              img[src="/static/layout/gathering_fishing.png"] {
+                 content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_fish_dm.png) !important;
+              }
+              img[src="/static/layout/gathering_insects.png"] {
+                 content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_catch_dm.png) !important;
+              }
+              img[src="/static/layout/gathering_foraging.png"] {
+                 content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_forage_dm.png) !important;
+              }
+              img[src="/static/layout/gathering_digging.png"] {
+                 content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_dig_dm.png) !important;
+              }
+              img[src="/static/layout/gathering_scavenging.png"] {
+                 content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_scavenge_dm.png) !important;
+              }
+        }
+    
+             img[src="/static/layout/success_hunt.png"] {
+                 content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_hunt_nt_dm.png) !important;
+             }
+             img[src="/static/layout/success_fish.png"] {
+                 content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_fish_nt_dm.png) !important;
+             }
+             img[src="/static/layout/success_catch.png"] {
+                 content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_catch_nt_dm.png) !important;
+             }
+             img[src="/static/layout/success_forage.png"] {
+                 content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_forage_nt_dm.png) !important;
+             }
+             img[src="/static/layout/success_dig.png"] {
+                 content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_dig_nt_dm.png) !important;
+             }
+             img[src="/static/layout/success_scavenge.png"] {
+                 content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_scavenge_nt_dm.png) !important;
+             }
+             
+        .gather_container {
+            color: #293f4b
+        }
+        #gather_turn_count {
+            color: #dae0e7
+        }
+        #gather_turns {
+            color: #5f6c77
+        }
     }
-
-         img[src="/static/layout/success_hunt.png"] {
-             content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_hunt_dm.png) !important;
-         }
-         img[src="/static/layout/success_fish.png"] {
-             content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_fish_dm.png) !important;
-         }
-         img[src="/static/layout/success_catch.png"] {
-             content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_catch_dm.png) !important;
-         }
-         img[src="/static/layout/success_forage.png"] {
-             content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_forage_dm.png) !important;
-         }
-         img[src="/static/layout/success_dig.png"] {
-             content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_dig_dm.png) !important;
-         }
-         img[src="/static/layout/success_scavenge.png"] {
-             content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Gathering/success_scavenge_dm.png) !important;
-         }
-         
-    .gather_container {
-        color: #293f4b
+    
+    
+    
+    .gather_itemcount {
+        color: #fffffe !important;
     }
-    #gather_turn_count {
-        color: #dae0e7
+    #gather_success {
+        color: #fffffe !important;
     }
-    #gather_turns {
-        color: #5f6c77
-    }
-}
-
-
-
-.gather_itemcount {
-	color: #fffffe !important;
-}
-#gather_success {
-	color: #fffffe !important;
-}
+    
 
 @-moz-document url-prefix("https://www1.flightrising.com/den/trade-in"), url-prefix("https://www1.flightrising.com/den/completed-tasks"), url-prefix("https://www1.flightrising.com/trading/fantastic-familiars/feats") {
 /* Hibernal Den Slot Unlocks */
@@ -3217,6 +3218,9 @@ div#bonus-ticker .number-text {
 /* Marketplace */
 .common-ui-button, .common-ui-button-disabled, .lair-pagination .lair-pagination-page, .common-pagination .common-pagination-page {
     color: #000 !important;
+}
+.market-ghost-box {
+    background-color: transparent;
 }
 div#market {
     background-color: #191e24 !important;
