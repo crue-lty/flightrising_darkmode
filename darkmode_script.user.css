@@ -3,7 +3,7 @@
 @namespace    USO Archive
 @author       FCE300 and crue-lty on GitHub (original by Zoga)
 @description  A dark theme for Flight Rising, with toggles for lower-saturation images. The bulk of this code was originally written by Zoga, and is being brought up to date and improved upon by FCE300 and crue-lty.
-@version      1
+@version      1.0.1
 @license      CC-BY-NC-4.0
 @preprocessor stylus
 
@@ -82,6 +82,7 @@ body {
     /*#364650 #191d21*/
 }
 .beigebutton.thingbutton {
+    display: none !important;
     background-color: #507086 !important;
     color: #dae0e7 !important;
     text-shadow: 0 1px 1px #000 !important;
