@@ -3241,6 +3241,9 @@ div.main #super-container div#market div span, div.main #super-container div#mar
 div.main #super-container div#market div {
     border-bottom: 1px solid #fff
 }
+.market-ghost-box {
+    background-color: transparent !important;
+}
 .mb_button {
     border-radius: 7px !important;
     background-color: #4b6a7f !important;
