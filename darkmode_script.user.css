@@ -3,7 +3,7 @@
 @namespace    USO Archive
 @author       FCE300 and crue-lty on GitHub (original by Zoga)
 @description  A dark theme for Flight Rising, with toggles for lower-saturation images. The bulk of this code was originally written by Zoga, and is being brought up to date and improved upon by FCE300 and crue-lty.
-@version      1.0.1
+@version      1.0.2
 @license      CC-BY-NC-4.0
 @preprocessor stylus
 
@@ -40,9 +40,15 @@ a.clock-tooltip {
     color: #dae0e7 !important;
 }
 /* Front Page */
-html body.onecol div.container div.banner button#skip-link.thingbutton.beigebutton {
+
+/* What is this below here? It doesn't highlight any buttons or elements on site at all... Idk what I meant when I pasted this here lol */
+/* html body.onecol div.container div.banner button#skip-link.thingbutton.beigebutton {
 	display: none;
 	pointer-events: none;
+} */
+
+#skip-link:not(:focus) {
+	display: none;
 }
 body.onecol, body {
 	backdrop-filter: grayscale(0.75); 
@@ -82,7 +88,6 @@ body {
     /*#364650 #191d21*/
 }
 .beigebutton.thingbutton {
-    display: none !important;
     background-color: #507086 !important;
     color: #dae0e7 !important;
     text-shadow: 0 1px 1px #000 !important;
