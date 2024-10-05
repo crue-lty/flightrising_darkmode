@@ -978,9 +978,11 @@ div.cluetip-inner.ui-cluetip-content {
 }
 .ah-listing-buy-button {
     background-image: url(https://i.imgur.com/bgOjxZr.png);
+    border-radius: 12px;
 }
 .ah-listing-cancel-button {
     background-image: url(https://i.imgur.com/8IrToNV.png);
+    border-radius: 12px;
 }
 #ah-topright-buy-button {
     background-image: url(https://i.imgur.com/YYghuzU.png);
