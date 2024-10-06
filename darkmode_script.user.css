@@ -3,7 +3,7 @@
 @namespace    USO Archive
 @author       FCE300 and crue-lty on GitHub (original by Zoga)
 @description  A dark theme for Flight Rising, with toggles for lower-saturation images. The bulk of this code was originally written by Zoga, and is being brought up to date and improved upon by FCE300 and crue-lty.
-@version      1.2.3
+@version      1.2.4
 @license      CC-BY-NC-4.0
 @preprocessor stylus
 
@@ -2843,17 +2843,25 @@ div.leftcolumn .content {
 
 @-moz-document url-prefix("https://www1.flightrising.com/nesting") {
 /* Nesting Grounds */
-html body.onecol div.container div#content div.contentcontainer div.main div.content div.inner-content div#nesting-page.nest-current-user ol.nest-list li#nest-35313403.nestbox div div span {
-	color: white !important;
-}
 #pagetut {
 	border-radius: 4px;
+}
+.boon_button {
+    border-radius: 11px;
+}
+.dragon-card .dragon-card-box {
+    background: linear-gradient(#22282b80, #33445080);
+    border: 1px solid #0b151c;
+}
+.nest-image-button {
+	background-color: transparent;
 }
 .nest-image-button:disabled {
 	border-radius: 10px;
 }
-.boon_button {
-    border-radius: 11px;
+.nest_blank {
+	background: linear-gradient(#22282b80, #33445080);
+	border: 1px solid #0b151c;
 }
 }
 
