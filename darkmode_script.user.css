@@ -30,6 +30,21 @@ if highlightHeaderTwo == 1 {
 }
 }
 
+@-moz-document url-prefix("https://www1.flightrising.com") {
+/* GLOBAL VARIABLES */
+
+/* This NEEDS to be sorted. We need to pluck out
+the variables from Cookies Banner and put them here.
+All that happen to work globally. I saw some like
+`a` listed under "Fairgrounds" when it actually works
+sitewide and that's gonna become pretty important if
+we need to look for a specific value... */
+
+a {
+    color: #7eceed !important;
+}
+}
+
 @-moz-document domain("flightrising.com") {
 /* Cookies Banner */
 div.cc-window.cc-banner.cc-type-info.cc-theme-block.cc-top {
@@ -3236,13 +3251,25 @@ div#bonus-ticker .number-text {
 
 @-moz-document url-prefix("https://flightrising.com/main.php?p=market") {
 /* Marketplace */
+.common-pagination-page {
+	border: 2px solid #546d86 !important;
+	background: #17222d !important;
+}
+.common-pagination-page-active, .common-pagination-page-active:hover {
+	border-color: #00f1ff !important;
+	background: #11304d !important;
+}
+.common-pagination-pages {
+	color: #7eceed !important;
+}
+
 .common-ui-button, .common-ui-button-disabled, .lair-pagination .lair-pagination-page, .common-pagination .common-pagination-page {
-    color: #000 !important;
+    color: #7eceed !important;
 }
 .market-ghost-box {
     background-color: transparent;
 }
-div#market {
+.market {
     background-color: #191e24 !important;
     border: none !important;
 }
@@ -3262,7 +3289,21 @@ div.main #super-container div#market div {
     border-bottom: 1px solid #fff
 }
 .market-ghost-box {
-    background-color: transparent !important;
+    background: transparent !important;
+	border: 1px solid transparent !important;
+}
+.market-item-result {
+	background: linear-gradient(#22282b80, #33445080);
+	border: 1px solid #0b151c;
+	color: white;
+}
+.market-item-result-name {
+	color: #dae0e7;
+}
+.treasure-pricing-container, .treasure-price {
+	background-color: 334450;
+	border: 1px solid transparent;
+	color: #dae0e7;
 }
 .mb_button {
     border-radius: 7px !important;
@@ -3270,6 +3311,12 @@ div.main #super-container div#market div {
     color: #dae0e7 !important;
     border: solid 2px #7ec4c9 !important;
     padding: 0px !important;
+}
+img[src="/static/layout/bestiary/icons/not-hoard.png"] {
+    filter: invert(100%);
+}
+img[src="/static/layout/market/icons/not-apparelhelmet.png"] {
+    filter: invert(100%);
 }
 }
 
