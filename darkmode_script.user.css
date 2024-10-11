@@ -3,7 +3,7 @@
 @namespace    USO Archive
 @author       FCE300 and crue-lty on GitHub (original by Zoga)
 @description  A dark theme for Flight Rising, with toggles for lower-saturation images. The bulk of this code was originally written by Zoga, and is being brought up to date and improved upon by FCE300 and crue-lty.
-@version      1.3.5
+@version      1.4.0
 @license      CC-BY-NC-4.0
 @preprocessor stylus
 
@@ -2877,6 +2877,13 @@ div.leftcolumn .content {
 .nest_blank {
 	background: linear-gradient(#22282b80, #33445080);
 	border: 1px solid #0b151c;
+}
+#nest_potentials {
+	background: linear-gradient(#22282b80, #33445080);
+	border: 1px solid #0b151c;
+}
+img[src="/static/layout/offspring_preview.jpg"] {
+    content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/offspring_preview_waifu2x_noise3_scale4x%20TEST.png);
 }
 }
 
