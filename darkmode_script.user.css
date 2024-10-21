@@ -3,7 +3,7 @@
 @namespace    USO Archive
 @author       FCE300 and crue-lty on GitHub (original by Zoga)
 @description  A dark theme for Flight Rising, with toggles for lower-saturation images. The bulk of this code was originally written by Zoga, and is being brought up to date and improved upon by FCE300 and crue-lty.
-@version      1.4.0
+@version      1.4.1
 @license      CC-BY-NC-4.0
 @preprocessor stylus
 
@@ -3257,75 +3257,102 @@ div#bonus-ticker .number-text {
 }
 
 @-moz-document url-prefix("https://www1.flightrising.com/market") {
-/* Marketplace */
-.common-pagination-page {
-	border: 2px solid #546d86 !important;
-	background: #17222d !important;
-}
-.common-pagination-page-active, .common-pagination-page-active:hover {
-	border-color: #00f1ff !important;
-	background: #11304d !important;
-}
-.common-pagination-pages {
-	color: #7eceed !important;
-}
-
-.common-ui-button, .common-ui-button-disabled, .lair-pagination .lair-pagination-page, .common-pagination .common-pagination-page {
-    color: #7eceed !important;
-}
-.market-ghost-box {
-    background-color: transparent;
-}
-.market {
-    background-color: #191e24 !important;
-    border: none !important;
-}
-div#market div {
-    background-color: #191e24 !important;
-    border: none !important;
-}
-div#market div div {
-    background: #384558 !important;
-    border-radius: 7px !important;
-}
-div.main #super-container div#market div span, div.main #super-container div#market div div div {
-    color: #cbd7dd !important;
-    text-shadow: .5px 0 0 #000, 0 -.5px 0 #000, 0 .5px 0 #000, -.5px 0 0 #000, 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-}
-div.main #super-container div#market div {
-    border-bottom: 1px solid #fff
-}
-.market-ghost-box {
-    background: transparent !important;
-	border: 1px solid transparent !important;
-}
-.market-item-result {
-	background: linear-gradient(#22282b80, #33445080);
-	border: 1px solid #0b151c;
-	color: white;
-}
-.market-item-result-name {
-	color: #dae0e7;
-}
-.treasure-pricing-container, .treasure-price {
-	background-color: 334450;
-	border: 1px solid transparent;
-	color: #dae0e7;
-}
-.mb_button {
-    border-radius: 7px !important;
-    background-color: #4b6a7f !important;
-    color: #dae0e7 !important;
-    border: solid 2px #7ec4c9 !important;
-    padding: 0px !important;
-}
-img[src="/static/layout/bestiary/icons/not-hoard.png"] {
-    filter: invert(100%);
-}
-img[src="/static/layout/market/icons/not-apparelhelmet.png"] {
-    filter: invert(100%);
-}
-}
+    /* Marketplace */
+    
+    .common-pagination-page {
+        border: 2px solid #546d86 !important;
+        background: #17222d !important;
+    }
+    
+    .common-pagination-page-active, .common-pagination-page-active:hover {
+        border-color: #00f1ff !important;
+        background: #11304d !important;
+    }
+    
+    .common-pagination-pages {
+        color: #7eceed !important;
+    }
+    
+    .common-ui-button, .common-ui-button-disabled, .lair-pagination .lair-pagination-page, .common-pagination .common-pagination-page {
+        color: #7eceed !important;
+    }
+    
+/*     div#market div {
+        background-color: #191e24 !important;
+        border: none !important;
+    }
+    
+    div#market div div {
+        background: #384558 !important;
+        border-radius: 7px !important;
+    }
+    
+    div.main #super-container div#market div span, div.main #super-container div#market div div div {
+        color: #cbd7dd !important;
+        text-shadow: .5px 0 0 #000, 0 -.5px 0 #000, 0 .5px 0 #000, -.5px 0 0 #000, 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    }
+    
+    div.main #super-container div#market div {
+        border-bottom: 1px solid #fff
+    } */
+    
+    img[src="/static/layout/bestiary/icons/not-hoard.png"] {
+        filter: invert(100%);
+    }
+    
+    img[src="/static/layout/market/icons/not-apparelhelmet.png"] {
+        filter: invert(100%);
+    }
+    
+    .market {
+        background-color: #191e24 !important;
+        border: none !important;
+    }
+    
+    .market-flash-result {
+        background-image: url("https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/flash_sale_background_dm.png") !important;
+        background-color: #152e3eb8 !important;
+    }
+    
+    .market-ghost-box {
+        background: transparent !important;
+        background-color: transparent;
+        border: 1px solid transparent !important;
+    }
+    
+    .market-item-result {
+        background: linear-gradient(#22282b80, #33445080);
+        border: 1px solid #0b151c;
+        color: white;
+    }
+    
+    .market-item-result-name {
+        color: #dae0e7;
+    }
+    
+    .market-item-price-container, .treasure-pricing-container {
+        background-color: #50708688;
+        border: none;
+        outline-style: solid;
+        outline-color: #0b151c;
+        outline-width: 1px;
+        color: #dae0e7;
+    }
+    
+    .mb_button {
+        border-radius: 7px !important;
+        background-color: #4b6a7f !important;
+        color: #dae0e7 !important;
+        border: solid 2px #7ec4c9 !important;
+        padding: 0px !important;
+    }
+    
+    .treasure-price {
+        background-color: #334450;
+    }
+    }
+    
+    
 
 @-moz-document url-prefix("https://www1.flightrising.com/scrying/predict") {
 /* Morphology */
