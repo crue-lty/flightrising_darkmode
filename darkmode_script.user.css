@@ -3,7 +3,7 @@
 @namespace    USO Archive
 @author       FCE300 and crue-lty on GitHub (original by Zoga)
 @description  A dark theme for Flight Rising, with toggles for lower-saturation images. The bulk of this code was originally written by Zoga, and is being brought up to date and improved upon by FCE300 and crue-lty.
-@version      1.4.1
+@version      1.4.2
 @license      CC-BY-NC-4.0
 @preprocessor stylus
 
@@ -47,9 +47,6 @@ a {
 
 @-moz-document domain("flightrising.com") {
 /* Cookies Banner */
-div.cc-window.cc-banner.cc-type-info.cc-theme-block.cc-top {
-    background-color: #1c364a !important;
-}
 a.cc-btn.cc-dismiss {
     background-color: #041726 !important;
     color: #fff !important;
@@ -58,9 +55,13 @@ a.cc-btn.cc-dismiss {
 a.clock-tooltip {
     color: #dae0e7 !important;
 }
-/* Front Page */
+div.cc-window.cc-banner.cc-type-info.cc-theme-block.cc-top {
+    background-color: #1c364a !important;
+}
 
+/* Front Page */
 /* What is this below here? It doesn't highlight any buttons or elements on site at all... Idk what I meant when I pasted this here lol */
+
 /* html body.onecol div.container div.banner button#skip-link.thingbutton.beigebutton {
 	display: none;
 	pointer-events: none;
@@ -69,21 +70,27 @@ a.clock-tooltip {
 #skip-link:not(:focus) {
 	display: none;
 }
+body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 body.onecol, body {
 	backdrop-filter: grayscale(0.75); 
-}
-div.announce-title a {
-    color: #dae0e7 !important;
 }
 div.announce-text {
     color: #c6d7e1 !important;
 }
+div.announce-title a {
+    color: #dae0e7 !important;
+}
+
 a.bbcode_url, span.announce-count a, div.status-author a, div#status-more a {
     color: #568fb8 !important;
 }
-div.status-announcement .status-announce-boundry {
+
+/* div.status-announcement .status-announce-boundry {
     background-color: #0C171D !important;
-}
+} */
 #bottom-banner {
     background-color: #1c364a;
 }
@@ -97,10 +104,8 @@ div.copybar a {
 div#ticker {
     background-image: url(https://i.imgur.com/Cbfy6xd.png) !important;
 }
-body {
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
+
+
 /*Top Bar*/
 .banner {
     background-color: #485159;
@@ -2463,11 +2468,11 @@ img[src="/content/battle/images/organize/spr_organize_unit_frame_02.png"] {
     content: url(https://i.imgur.com/3aSGoGx.png) !important;
 }
 img[src="/static/layout/lair/backgrounds/male.png"] {
-    opacity: 0.4;
+    opacity: .4;
     content: url(https://i.imgur.com/lZJ6PTI.png) !important;
 }
 img[src="/static/layout/lair/backgrounds/female.png"] {
-    opacity: 0.4;
+    opacity: .4;
     content: url(https://i.imgur.com/CgYsdY0.png) !important;
 }
 img[src="/static/layout/lair/buttons/move-to-lair.png"] {
@@ -3354,32 +3359,36 @@ div#bonus-ticker .number-text {
     
     
 
-@-moz-document url-prefix("https://www1.flightrising.com/scrying/predict") {
+@-moz-document url-prefix("https://www1.flightrising.com/scrying") {
 /* Morphology */
 div.common-column {
     color: #002551 !important;
 }
-#predict-morphology .scry-options .scry-shuffle {
-    opacity: .45;
-}
 .beigebutton.thingbutton {
     background-color: #0d3e60 !important;
-}
-#predict-morphology .scry-manage-options {
-    background: #22282b !important;
-    border: none !important;
-}
-#predict-morphology .scry-load {
-    background: #22282b !important;
-    border: none !important;
-}
-.scry-images {
-    border: none !important;
 }
 .common-message-info {
     color: #986714;
     border-color: #986714;
     background-color: #3c536f !important;
+}
+.scry-images {
+    border: none !important;
+}
+#foresee-progeny-container > div:nth-child(1) > img:nth-child(1) {
+	mask-image: linear-gradient(black, transparent);
+	opacity: .3;
+}
+#predict-morphology .scry-load {
+    background: #22282b !important;
+    border: none !important;
+}
+#predict-morphology .scry-manage-options {
+    background: #22282b !important;
+    border: none !important;
+}
+#predict-morphology .scry-options .scry-shuffle {
+    opacity: .45;
 }
 }
 
@@ -3795,7 +3804,7 @@ div.main {
     }
 }
 
-@-moz-document url-prefix("https://www1.flightrising.com/trading/archaeology/dig-sites/1"), url-prefix("https://www1.flightrising.com/trading/archaeology/dig-site/2"), url-prefix("https://www1.flightrising.com/trading/archaeology/dig-site/3"), url-prefix("https://www1.flightrising.com/trading/archaeology/dig-site/4") {
+@-moz-document url-prefix("https://www1.flightrising.com/trading/archaeology/dig-site/1"), url-prefix("https://www1.flightrising.com/trading/archaeology/dig-site/2"), url-prefix("https://www1.flightrising.com/trading/archaeology/dig-site/3"), url-prefix("https://www1.flightrising.com/trading/archaeology/dig-site/4") {
 /* Arlo's Ancient Archaeology digsites 1, 2, 3, 4*/
 div.main {
         background: none !important
