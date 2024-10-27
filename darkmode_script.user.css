@@ -3,7 +3,7 @@
 @namespace    USO Archive
 @author       FCE300 and crue-lty on GitHub (original by Zoga)
 @description  A dark theme for Flight Rising, with toggles for lower-saturation images. The bulk of this code was originally written by Zoga, and is being brought up to date and improved upon by FCE300 and crue-lty.
-@version      1.4.3
+@version      1.4.4
 @license      CC-BY-NC-4.0
 @preprocessor stylus
 
@@ -3459,6 +3459,14 @@ a.intclue:hover:after, a.clue:hover:after {
 }
 
 @-moz-document url-prefix("https://www1.flightrising.com/dragon") {
+/* TEST - Dragon Scenes */
+
+#dragon-profile-scene {
+	background-image: none !important;
+}
+}
+
+@-moz-document url-prefix("https://www1.flightrising.com/dragon") {
 /* Dragon Profiles */
 h2, h3, .dragon-profile-header-name {
     color: #70d2ff !important;
@@ -4118,7 +4126,16 @@ div.main {
 }
 
 @-moz-document url-prefix("https://www1.flightrising.com/exchange/riot-of-rot-shop") {
-
+/* Shop Plague */
+div.main {
+        background: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-6354aae0639fe.png) !important;
+        background-repeat: no-repeat !important
+    }
+    div.main div.content {
+        background-image: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-6354aae0639fe.png);
+        background-repeat: no-repeat;
+        background-position: -10px -10px
+    }
 }
 
 @-moz-document url-prefix("https://www1.flightrising.com/exchange/rockbreakers-ceremony-shop") {
