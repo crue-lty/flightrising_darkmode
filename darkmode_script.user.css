@@ -3,7 +3,7 @@
 @namespace    USO Archive
 @author       FCE300 and crue-lty on GitHub (original by Zoga)
 @description  A dark theme for Flight Rising, with toggles for lower-saturation images. The bulk of this code was originally written by Zoga, and is being brought up to date and improved upon by FCE300 and crue-lty.
-@version      1.4.2
+@version      1.4.3
 @license      CC-BY-NC-4.0
 @preprocessor stylus
 
@@ -3790,14 +3790,14 @@ div.main {
 @-moz-document url-prefix("https://www1.flightrising.com/trading/archaeology/dig-sites") {
 /* Arlo's Ancient Archaeology digsites */
 div.main {
-        background: none !important
+    background: none !important
     }
     div.main div.content {
         background-image: none !important
     }
     .archaeology-dig-site-index-row-details {
-    background: #ececec;
-    color: #293f4b
+        background: #ececec;
+        color: #293f4b
     }
     .archaeology-dig-site-index-row-notes-badge {
         color: #293f4b !important
@@ -3807,7 +3807,7 @@ div.main {
 @-moz-document url-prefix("https://www1.flightrising.com/trading/archaeology/dig-site/1"), url-prefix("https://www1.flightrising.com/trading/archaeology/dig-site/2"), url-prefix("https://www1.flightrising.com/trading/archaeology/dig-site/3"), url-prefix("https://www1.flightrising.com/trading/archaeology/dig-site/4") {
 /* Arlo's Ancient Archaeology digsites 1, 2, 3, 4*/
 div.main {
-        background: none !important
+    background: none !important
     }
     div.main div.content {
         background-image: none !important
@@ -3839,6 +3839,10 @@ img[src="/static/cms/custom-shop/buttons/custom-shop-button-639d4e206bd20.png"] 
     content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Exchange/higgins_haunted_hollow_dm.png) !important;
 	border-radius: 11px;
 }
+img[src="/static/cms/custom-shop/buttons/custom-shop-button-62d9eb5650d64.png"] /* Joxar's Festive Favors */ {
+    content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Exchange/joxars_festive_favors_dm.png) !important;
+	border-radius: 11px;
+}
 img[src="/static/cms/custom-shop/buttons/custom-shop-button-62f9c108b5059.png"] /* Joxar's Spare Inventory */ {
     content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Exchange/joxars_spare_inventory_dm.png) !important;
 	border-radius: 11px;
@@ -3853,10 +3857,6 @@ img[src="/static/cms/custom-shop/buttons/custom-shop-button-6326385d8c3e5.png"] 
 }
 img[src="/static/cms/custom-shop/buttons/custom-shop-button-63eb1dddedbba.png"] /* Susie */ {
     content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Exchange/susies_sweet_sentiments_dm.png) !important;
-	border-radius: 11px;
-}
-img[src="/static/cms/custom-shop/buttons/custom-shop-button-62d9ebe74e45a.png"] /* Joxar's Festive Favors */ {
-    content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Exchange/joxars_festive_favors_dm.png) !important;
 	border-radius: 11px;
 }
 }
