@@ -51,12 +51,12 @@ strong {
 @-moz-document domain("flightrising.com") {
 /* Cookies Banner */
 a.cc-btn.cc-dismiss {
-    background-color: #041726 !important;
+    background-color: #241104 !important;
     color: #fff !important;
     border-radius: 7px !important;
 }
 a.clock-tooltip {
-    color: #e7dfda !important;
+    color: #fff !important;
 }
 div.cc-window.cc-banner.cc-type-info.cc-theme-block.cc-top {
     background-color: #4a2e1c !important;
@@ -81,14 +81,14 @@ body.onecol, body {
 	backdrop-filter: grayscale(0.75); 
 }
 div.announce-text {
-    color: #c6d7e1 !important;
+    color: #fff !important;
 }
 div.announce-title a {
-    color: #e7dfda !important;
+    color: #fff !important;
 }
 
 a.bbcode_url, span.announce-count a, div.status-author a, div#status-more a {
-    color: #568fb8 !important;
+    color: #b87d56 !important;
 }
 
 /* div.status-announcement .status-announce-boundry {
@@ -98,11 +98,11 @@ a.bbcode_url, span.announce-count a, div.status-author a, div#status-more a {
     background-color: #4a2e1c;
 }
 div.copybar {
-    background-color: #0c171c !important;
+    background-color: #1d130c !important;
     color: #a2b4c8 !important;
 }
 div.copybar a {
-    color: #416fa4 !important;
+    color: #a46941 !important;
 }
 div#ticker {
     background-image: url(https://i.imgur.com/Cbfy6xd.png) !important;
@@ -111,32 +111,32 @@ div#ticker {
 
 /*Top Bar*/
 .banner {
-    background-color: #485159;
+    background-color: #5b5049;
     /*#364650 #191d21*/
 }
 .beigebutton.thingbutton {
-    background-color: #507086 !important;
-    color: #e7dfda !important;
+    background-color: #866650 !important;
+    color: #fff !important;
     text-shadow: 0 1px 1px #000 !important;
     padding: 10px !important;
-    -webkit-box-shadow: 0 2px 3px #000f22;
+    -webkit-box-shadow: 0 2px 3px #240e00;
 }
 .loginarea {
     background-image: url(https://i.imgur.com/loxI0gk.png) !important;
-    color: #e7dfda !important;
+    color: #fff !important;
 }
 .loginlinks {
-    color: #e7dfda !important;
+    color: #fff !important;
     font-weight: bold !important;
 }
 span#bstcount a.loginlinks.loginbar img {
     padding-right: 2px !important;
 }
 div.users-online {
-    color: #e7dfda !important;
+    color: #fff !important;
 }
 div.cluetip-inner.ui-cluetip-content {
-    color: #e7dfda !important;
+    color: #fff !important;
     background-color: #3a4753 !important;
     border-radius: 2px !important;
 }
@@ -144,17 +144,17 @@ div.cluetip {
     border: 2px solid #010e15 !important;
 }
 #messalert {
-    color: #e7dfda !important;
+    color: #fff !important;
 }
 .statdiv span div {
-    color: #e7dfda !important;
+    color: #fff !important;
 }
 .statdiv span #alerticon, #trade-chat span, #messicon, #frenicon, span.pending-avatar-msg-count {
     background-image: url(https://i.imgur.com/fkzzcPi.png) !important;
 }
 a.alertuser, div.alert-v2-text a {
     font-weight: bold !important;
-    color: #e7dfda !important;
+    color: #fff !important;
 }
 div.alert-v2.alert-v2-unread {
     background-color: #4c5e70 !important;
@@ -177,7 +177,7 @@ td.msgtopic {
 }
 #table-header, #msg-header, #form-header, #msg-preview #header {
     background-color: #032d54 !important;
-    color: #e7dfda !important;
+    color: #fff !important;
 }
 #msg-header {
     padding-top: 2px !important;
@@ -187,7 +187,7 @@ td.msgtopic {
 }
 textarea#message.input_reg, form#new input[name='subject'], #attachments input, .input_reg, div#xroad-metadata textarea, #trademsgform textarea, form#userpage textarea#bio {
     background-color: #5f6c77 !important;
-    color: #e7dfda !important;
+    color: #fff !important;
     border: none !important;
     border-radius: 10px !important;
     padding: 5px 2px 5px 10px !important;
@@ -195,7 +195,7 @@ textarea#message.input_reg, form#new input[name='subject'], #attachments input, 
     font-weight: normal !important;
 }
 #msg-text, #divapprovetrade p {
-    color: #e7dfda !important;
+    color: #fff !important;
 }
 #xroad-metadata span:first-child, .trade-picker h1, #trademsgs .msgauthor {
     color: #66bfff !important;
@@ -209,7 +209,7 @@ textarea#message.input_reg, form#new input[name='subject'], #attachments input, 
     background-color: #3b4854 !important;
 }
 /*.no_insert span, #attachments .insert_item span {
-    color: #e7dfda !important;
+    color: #fff !important;
     background-color: #21262c !important;
     font-size: 11px !important;
     border-radius: 5px 0px 0px 0px !important;
@@ -221,8 +221,8 @@ textarea#message.input_reg, form#new input[name='subject'], #attachments input, 
 .redbutton.anybutton {
     background-color: #063a6a !important;
     padding: 10px !important;
-    color: #e7dfda !important;
-    -webkit-box-shadow: 0 2px 3px #000f22;
+    color: #fff !important;
+    -webkit-box-shadow: 0 2px 3px #240e00;
 }
 #fromhoard #inner #attch, #fromhoard #inner #generic-hoard-confirm {
     padding: 10px !important;
@@ -254,20 +254,20 @@ div#msg-show div#msg-items div#items, div#msg-items div#attachments {
     border-radius: 5px !important;
 }
 table#tradereceipts td {
-    color: #e7dfda !important;
+    color: #fff !important;
 }
 .ui-widget-header {
     border: none !important;
     background-color: #032d54 !important;
     background-image: url(https://i.imgur.com/loxI0gk.png) !important;
-    color: #e7dfda !important;
+    color: #fff !important;
 }
 #msg-editor #bbcode-tag-bar {
     padding: 5px !important;
 }
 fieldset, body div div.contentcontainer div.main div#super-container div div fieldset div {
     background-color: #3b4854 !important;
-    color: #e7dfda !important;
+    color: #fff !important;
     border: none !important;
     margin: 0.3em 0;
 }
@@ -276,18 +276,18 @@ fieldset div#window ul#itemnomove.itemnomove li.itemnomove {
 }
 fieldset div span {
     background-color: #3b4854 !important;
-    color: #e7dfda !important;
+    color: #fff !important;
     border: none !important;
 }
 fieldset div span, fieldset div div {
     text-shadow: 0 0 0.2em #000, 0 0 0.2em #000, 0 0 0.2em #000 !important;
 }
 div.cluetip-inner.ui-cluetip-content div div span {
-    color: #e7dfda !important;
+    color: #fff !important;
 }
 #dragonattach, .trade-picker #fundage #qty-input {
     background-color: #3b4854 !important;
-    color: #e7dfda !important;
+    color: #fff !important;
     border: none !important;
     border-radius: 10px !important;
 }
@@ -379,7 +379,7 @@ div.itemcategory, div.tooltip-itemid {
     background-image: url(https://i.imgur.com/FjDYllk.png) !important;
 }
 .loginlinks.loginbar, #namespan a span, #menucontainer a {
-    color: #e7dfda !important;
+    color: #fff !important;
 }
 .ui-widget-content {
     background-color: #14252f !important;
@@ -402,18 +402,18 @@ a.clue_nrg, div#usertab span a.clue_nrg div span, span#target {
 }
 div#userdata {
     background-color: #22282b !important;
-    color: #e7dfda !important;
+    color: #fff !important;
     border: none !important;
     border-radius: 10px !important;
 }
 div#userdata div {
     background-color: #363d44 !important;
-    color: #e7dfda !important;
+    color: #fff !important;
     border: none !important;
     border-radius: 10px !important;
 }
 div#userdata div span a, div#userdata div span span a, div#usertab span a span {
-    color: #e7dfda !important;
+    color: #fff !important;
 }
 div.container div.banner div#usertab span a.clue_nrg div div, #avg-energy {
     background-image: url(https://i.imgur.com/EukLTKI.png) !important;
@@ -444,7 +444,7 @@ div#social-links {
 }
 /* Online */
 #userlist thead div, div.time, div.status {
-    color: #e7dfda !important;
+    color: #fff !important;
 }
 tbody, tbody tr {
     border-radius: 10px !important;
@@ -520,7 +520,7 @@ div.leftcolumn, .rightcolumn {
     background-color: #22282b !important;
 }
 .navbar-glow-hover {
-    color: #e7dfda !important;
+    color: #fff !important;
 }
 .navbar-glow-hover:hover {
     text-shadow: 0 0 5px #000, 0 0 10px #00ffe1, 0 0 15px #7ce4f7 !important;
@@ -688,7 +688,7 @@ div#ajax-bonding.ui-dialog-content.ui-widget-content, #bonding-dialog {
 }
 /* Baldwin Page */
 .baldwin-mini-item span, .baldwin-fullsize-item span {
-    color: #e7dfda !important;
+    color: #fff !important;
     background-color: #21353f !important;
     font-size: 11px !important;
     border-radius: 2px !important;
@@ -714,11 +714,11 @@ img[src="/static/layout/baldwin/cauldron_loading.gif"] {
     content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Trading%20Post/Baldwin/cauldron_loading_dm.gif) !important;
 }
 .content-header, .baldwin-redtext, .recipe-cost, #itemprev #prevcaption span {
-    color: #e7dfda !important;
+    color: #fff !important;
     text-shadow: 0 0 0.2em #000, 0 0 0.2em #000, 0 0 0.2em #000 !important;
 }
 .breadcrumbs, #blurb #explanation span, div#skinprev.ui-dialog-content.ui-widget-content div#blurb span span, div#bonding.ui-dialog-content.ui-widget-content div span div span, div#itemprev.ui-dialog-content.ui-widget-content div span, div#confirm-delivery.ui-dialog-content.ui-widget-content p span, div#tradable-dragons-page div.pagination-links span, #confirm-trade span:first-child, span.dr-apparel-tab.dr-apparel-tab-selected.dr-apparel-tab-default, #add-apparel div div div span.dr-apparel-tab.dr-apparel-tab-selected, body div div#exiled.ui-dialog-content.ui-widget-content div div span, #baldwin-preview-container #baldwin-preview-icon-cooldown {
-    color: #e7dfda !important;
+    color: #fff !important;
 }
 #content div div div div.inner-content div div.pendingtrade.theycontrib {
     background-color: #6f859b !important;
@@ -771,7 +771,7 @@ body div #preview-dialog #skinprev div#spec_drags div#paginator {
     padding-top: 5px !important;
 }
 #baldwin-xpbar-leftlabel, #baldwin-xpbar-rightlabel, #baldwin-timer-value, .baldwin-timer-completed, #swipp-timer-value, .swipp-timer-completed, span#pl_remainingNumber, div#counter {
-    color: #e7dfda !important;
+    color: #fff !important;
 }
 div.recipe {
     background-color: #21353f !important;
@@ -830,7 +830,7 @@ div.baldwin-cauldron-status.baldwin-cauldron-done */
 }
 .swipp-mini-item span {
     background-color: #15242C !important;
-    color: #e7dfda !important;
+    color: #fff !important;
     font-size: 11px !important;
     border-radius: 5px 0px 0px 0px !important;
     padding: 3px 3px 0px 3px !important;
@@ -888,7 +888,7 @@ div.baldwin-cauldron-status.baldwin-cauldron-done */
     background-image: url(https://i.imgur.com/uinPe27.png);
 }
 .ah-listing-itemname, #ah-search-collapsed-blurb, .ah-search-submit-container-right, .ah-reset-to-defaults, .ah-dlg-itemname, .ah-dlg-cost, .dragon-search-filters-reset, .dragon-search-filters-keep-expanded, #dragon-search-filters-blurb {
-    color: #e7dfda !important;
+    color: #fff !important;
 }
 .ah-search-option select, span.dragon-search-multiselect select, span.dragon-search-color-range select, span.dragon-search-filter select {
     border-radius: 10px !important;
@@ -898,7 +898,7 @@ div.baldwin-cauldron-status.baldwin-cauldron-done */
     color: #8ea9c7 !important;
 }
 div#friendchange.ui-dialog-content.ui-widget-content div span {
-    color: #e7dfda !important;
+    color: #fff !important;
 }
 #ah-sell-details, .ah-ledger-header, .ah-history-note, .ah-search-options, #dragon-search-filters {
     background-color: #34404b !important;
@@ -909,7 +909,7 @@ div#friendchange.ui-dialog-content.ui-widget-content div span {
 }
 input {
     background-color: #15191e !important;
-    color: #e7dfda !important;
+    color: #fff !important;
     border: none !important;
     padding: 5px !important;
     border-radius: 5px !important;
@@ -933,7 +933,7 @@ div.main div.content div.inner-content div#region-info fieldset {
     color: #66d3ff !important;
 }
 .itemtip .itemdesc, .itemtip .foodval, #ah-sell-price-table th {
-    color: #e7dfda !important;
+    color: #fff !important;
 }
 .ah-house-dropdown {
     background-color: #102131 !important;
@@ -946,7 +946,7 @@ div.main div.content div.inner-content div#region-info fieldset {
     border-bottom: 0px solid #181c1e !important;
 }
 #msg-items #items .itemicon span, #ah-sell-column-container #ah-sell-left div div span, span.item-attachment span, .no_insert span, #attachments .insert_item span {
-    color: #e7dfda !important;
+    color: #fff !important;
     background-color: #22282b !important;
     font-size: 10px !important;
     border-radius: 3px !important;
@@ -958,7 +958,7 @@ div.main div.content div.inner-content div#region-info fieldset {
     margin-right: -2px !important;
 }
 .itemicon span {
-    color: #e7dfda !important;
+    color: #fff !important;
     background-color: #22282b !important;
     font-size: 10px !important;
     border-radius: 3px !important;
@@ -1098,7 +1098,7 @@ post-author-action.post-author-action-friend.common-tooltip {
     background: #15191e !important;
 }
 div.common-tooltip-box {
-    color: #e7dfda !important;
+    color: #fff !important;
     background: #0C171D !important;
     border: 0px solid #0C171D !important;
     border-color: #0C171D !important;
@@ -1115,13 +1115,13 @@ div.common-tooltip-box {
     color: #819fb1 !important;
 }
 .post-stat-count {
-    color: #e7dfda !important;
+    color: #fff !important;
 }
 #topic-header {
     color: #abb7c4 !important;
 }
 #topic-header strong {
-    color: #e7dfda !important;
+    color: #fff !important;
 }
 .post-edited {
     color: #728d9d !important;
@@ -1159,11 +1159,11 @@ div#postsheader {
 }
 div.bbcode_quote_body, div.bbcode_code_body {
     background-color: #5e6d78 !important;
-    color: #e7dfda !important;
+    color: #fff !important;
 }
 div.bbcode_quote_head, div.bbcode_code_head {
     background-color: #22262a !important;
-    color: #e7dfda !important;
+    color: #fff !important;
 }
 div.bbcode_quote, div.bbcode_code {
     border-width: 1px !important;
@@ -1191,8 +1191,8 @@ span#controls {
     background-color: #032d54 !important;
 }
 .mb_button {
-    background-color: #507086 !important;
-    color: #e7dfda !important;
+    background-color: #866650 !important;
+    color: #fff !important;
     border: solid 1px #000 !important;
     padding: 5px !important;
 }
@@ -1206,7 +1206,7 @@ span#controls {
     background-color: #3b4854 !important;
 }
 #sender-name, .news, table#forum-fr td, table#forum-general td, h1.forum-header, table#postlist td.lastpost, table#postlist td.activity div.activity-replies, table#postlist td.topic {
-    color: #e7dfda !important;
+    color: #fff !important;
 }
 table#postlist tr.darker {
     background-color: #13171b !important;
@@ -1279,7 +1279,7 @@ div.search-result-bubble.search-result-bubble-alt {
     color: #7d92aa !important;
 }
 #dev-tracker-content .dev-tracker-search-option-label {
-    color: #e7dfda !important;
+    color: #fff !important;
 }
 .common-bubble-meta {
     border-bottom: 1px solid #4b5763 !important;
@@ -1327,7 +1327,7 @@ hr {
     border-radius: 10px !important;
 }
 .search-controls-label, #attach-confirm-currency span, div div#dset.ui-dialog-content.ui-widget-content span, p#tradeawait {
-    color: #e7dfda !important;
+    color: #fff !important;
 }
 .search-results-description {
     color: #8ad3fe !important;
@@ -1361,25 +1361,25 @@ div#inv_main {
 }
 body div div.contentcontainer div.main div#super-container div fieldset legend {
     background-color: #192229 !important;
-    color: #e7dfda !important;
+    color: #fff !important;
     padding: 5px !important;
     border: solid 1px #192229 !important;
 }
 body div div.contentcontainer div.main div#super-container div, div#withdep.ui-dialog-content.ui-widget-content div div span, div#specialty.ui-dialog-content.ui-widget-content div span a.clue div, div#specialty.ui-dialog-content.ui-widget-content div span div, div#specialty.ui-dialog-content.ui-widget-content div span {
-    color: #e7dfda !important;
+    color: #fff !important;
 }
 body div div.contentcontainer div.main div#super-container div span div {
     color: #657c95 !important;
 }
 /*body div.container div.contentcontainer div.main div#super-container div span div {
-    color: #e7dfda !important;
+    color: #fff !important;
 }*/
 #super-container div #newname fieldset div span div div {
-    color: #e7dfda !important;
+    color: #fff !important;
 }
 body div div div div#super-container div#inv_main div form#invent span span {
     background-color: #29343d !important;
-    color: #e7dfda !important;
+    color: #fff !important;
     padding: 3px !important;
     border: solid 1px #192229 !important;
     border-radius: 5px !important;
@@ -1407,7 +1407,7 @@ div.ff-joxar-blurb {
     left: -26px !important;
 }
 div.ff-joxar-item-name, div.ff-joxar-chest-name, span.ff-current-tab, span.ff-joxar-itemname {
-    color: #e7dfda !important;
+    color: #fff !important;
 }
 .ff-joxar-item-category, .content-header-sub {
     color: #859197 !important;
@@ -1418,7 +1418,7 @@ div#ff-currency-tip {
 }
 /*Fairgrounds*/
 .faire-tooltip .header h1 {
-    color: #e7dfda !important;
+    color: #fff !important;
 }
 div#inv_main {
     background-image: none !important;
@@ -1428,7 +1428,7 @@ div#wikicontent h1 {
     color: #3896ff !important;
 }
 #wikitext center table tbody tr td span b, div.wiki div table tbody tr td b, li {
-    color: #e7dfda !important;
+    color: #fff !important;
 }
 div#luckystreak span#luckyStreakAmt, div#super-container div#luckystreak span {
     color: #074660 !important;
@@ -1447,7 +1447,7 @@ div#luckystreak span#luckyStreakAmt {
     color: #b4d0df !important;
 }
 div#buybp-container h1, div#skinuploadcontainer form div.submitcontrol h1 {
-    color: #e7dfda !important;
+    color: #fff !important;
 }
 .skininfo span {
     color: #4dc0ff !important;
@@ -1479,14 +1479,14 @@ div#skinuploadcontainer form div.submitcontrol #infocontainer select#breed, div#
 }
 /* Dragon Restoration */
 #dgnres-content table tbody tr td p {
-    color: #e7dfda !important;
+    color: #fff !important;
 }
 #dgnres-content table tbody tr td p strong.dragon-name, #dgnres-content div div div h2, div#contactshim h1, .dgnres-index .cooldown .label {
     color: #3896ff !important;
 }
 /*Support */
 div.common-hub-item-description {
-    color: #e7dfda !important;
+    color: #fff !important;
     background: #0C171D !important;
     border: 0px solid #0C171D !important;
     border-color: #0C171D !important;
@@ -1526,20 +1526,20 @@ div#infoFrame img {
     border-radius: 10px !important;
 }
 .coli-stats-health-breath-table th, .coli-stats-health-breath-table td, .coli-stats-points-table th, .coli-stats-points-table td, #coli-equip-stats-table th, #coli-equip-stats-table td {
-    color: #e7dfda !important;
+    color: #fff !important;
 }
 .coli-dragonlist-row.coli-dragon-in-party {
     background-color: #0f4d95 !important;
 }
 #coli-tipcontainer, .coli-equip-battlestone-disabled-msg, .coli-equip-stat-tooltip, .coli-equip-tooltip-style, #coli-organize-load-party-tip, .coli-tooltip-style, #coli_condition_tooltip, #coli-equip-errordlg, div#coli-equip-tincdlg-pad {
-    color: #e7dfda !important;
+    color: #fff !important;
     background: #0C171D !important;
     border: 0px solid #0C171D !important;
     border-color: #0C171D !important;
     border-radius: 10px !important;
 }
 #coli-equip-statdlg {
-    color: #e7dfda !important;
+    color: #fff !important;
     background: #1b2d37 !important;
     border: 0px solid #1b2d37 !important;
     border-color: #1b2d37 !important;
@@ -1607,7 +1607,7 @@ table#userlist tbody tr {
 /*Exalted*/
 .common-fieldset-inset {
     background-color: #3b4854 !important;
-    color: #e7dfda !important;
+    color: #fff !important;
     border: none !important;
 }
 .exalted-lineage-header {
@@ -1622,7 +1622,7 @@ table#userlist tbody tr {
 .common-fieldset legend {
     background-color: #003d75 !important;
     border: solid 1px #003d75 !important;
-    color: #e7dfda !important;
+    color: #fff !important;
 }
 /* Pagination */
 .common-pagination-page[data-enabled="false"], .common-pagination-page[data-enabled="false"]:hover {
@@ -1644,7 +1644,7 @@ table#userlist tbody tr {
 }
 .recipe-pagination .common-pagination-page[data-enabled="false"], .recipe-pagination .common-pagination-page[data-enabled="false"]:hover {
     font-weight: bold;
-    color: #e7dfda !important;
+    color: #fff !important;
     border: 2px solid #0aa5be;
     background: #193340;
 }
@@ -1813,7 +1813,7 @@ table#userlist tbody tr {
 }
 /* Game Database */
 .common-hub-item-description {
-    color: #e7dfda !important;
+    color: #fff !important;
     background: #0C171D !important;
     border: 0px solid #0C171D !important;
     border-color: #0C171D !important;
@@ -1828,7 +1828,7 @@ div#game-database-filters.common-filters {
     background: linear-gradient(to bottom, #02192d 0%, #25435e 100%);
 }
 .game-database-item-result-name, .game-database-monster-result-name {
-    color: #e7dfda !important;
+    color: #fff !important;
 }
 #game-database-open-tooltip {
     border: 3px solid #060d12 !important;
@@ -1863,7 +1863,7 @@ div#game-database-filters.common-filters {
 }
 textarea#message, textarea#suggestion {
     background-color: #5f6c77 !important;
-    color: #e7dfda !important;
+    color: #fff !important;
     border-radius: 0px !important;
     font-size: 13px !important;
 }
@@ -2988,7 +2988,7 @@ div.contentcontainer div.main div#super-container div div div form div {
             color: #293f4b
         }
         #gather_turn_count {
-            color: #e7dfda
+            color: #fff
         }
         #gather_turns {
             color: #5f6c77
@@ -3068,7 +3068,7 @@ html body.onecol div#footer div#bottom-banner {
 }
 #lair-edit-page #lair-tab-description textarea, #lair-edit-page #lair-tab-description .lair-tab-description-toggle {
     background-color: #0e131a !important;
-    color: #e7dfda !important;
+    color: #fff !important;
     border: none !important;
 }
 #action-pick-tab-icon:after {
@@ -3332,22 +3332,22 @@ img[src="/static/layout/market/icons/not-apparelhelmet.png"] {
 }
 
 .market-item-result-name {
-	color: #e7dfda;
+	color: #fff;
 }
 
 .market-item-price-container, .treasure-pricing-container {
-	background-color: #50708688;
+	background-color: #86665088;
 	border: none;
 	outline-style: solid;
 	outline-color: #0b151c;
 	outline-width: 1px;
-	color: #e7dfda;
+	color: #fff;
 }
 
 .mb_button {
 	border-radius: 7px !important;
 	background-color: #4b6a7f !important;
-	color: #e7dfda !important;
+	color: #fff !important;
 	border: solid 2px #7ec4c9 !important;
 	padding: 0px !important;
 }
@@ -3490,7 +3490,7 @@ h2, h3, .dragon-profile-header-name {
 .choose-dragon-apparel-slot-buy {
     border: 2px solid #527488;
     background: #18314a;
-    color: #e7dfda !important;
+    color: #fff !important;
 }
 .choose-dragon-apparel-slot-locked {
     color: #505d6a;
@@ -3688,7 +3688,7 @@ div.choose-vista-preview {
 }
 .ui-widget textarea {
     background-color: #5f6c77 !important;
-    color: #e7dfda !important;
+    color: #fff !important;
     border-radius: 0px !important;
     font-size: 13px !important;
 }
@@ -3757,13 +3757,13 @@ div.main div.content {
         background-color: #293f4b
     }
     #tomo-remaining-count {
-        color: #e7dfda
+        color: #fff
     }
     #tomo-remaining {
         color: #5f6c77
     }
     #tomo-reward {
-        color: #e7dfda
+        color: #fff
     }
 }
 
@@ -3782,7 +3782,7 @@ div.main {
         color: #5f6c77
     }
     #archaeology-dig-timer-text {
-        color: #e7dfda
+        color: #fff
     }
     #archaeology-xp-meter-label {
         color: #5f6c77
@@ -3791,7 +3791,7 @@ div.main {
         color: #5f6c77
     }
     #archaeology-dig-timer-time {
-        color: #e7dfda !important
+        color: #fff !important
     }
 }
 
@@ -4068,7 +4068,7 @@ div.main div.content {
 }
 
 .custom-shop-trade-reward-name {
-	color: #e7dfda;
+	color: #fff;
 }
 
 /*
@@ -4121,22 +4121,22 @@ img[src="/static/layout/market/icons/not-apparelhelmet.png"] {
 }
 
 .market-item-result-name {
-	color: #e7dfda;
+	color: #fff;
 }
 
 .market-item-price-container, .treasure-pricing-container {
-	background-color: #50708688;
+	background-color: #86665088;
 	border: none;
 	outline-style: solid;
 	outline-color: #0b151c;
 	outline-width: 1px;
-	color: #e7dfda;
+	color: #fff;
 }
 
 .mb_button {
 	border-radius: 7px !important;
 	background-color: #4b6a7f !important;
-	color: #e7dfda !important;
+	color: #fff !important;
 	border: solid 2px #7ec4c9 !important;
 	padding: 0px !important;
 }
