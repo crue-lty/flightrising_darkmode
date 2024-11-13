@@ -3,7 +3,7 @@
 @namespace    USO Archive
 @author       FCE300 and crue-lty on GitHub (original by Zoga)
 @description  A dark theme for Flight Rising, with toggles for lower-saturation images. The bulk of this code was originally written by Zoga, and is being brought up to date and improved upon by FCE300 and crue-lty.
-@version      1.4.4
+@version      1.4.5
 @license      CC-BY-NC-4.0
 @preprocessor stylus
 
@@ -3943,8 +3943,8 @@ div.main div.content {
 }
 }
 
-@-moz-document url-prefix("https://www1.flightrising.com/exchange/sages-seasonal-sundries-fall") {
-/* Sage's Seasonal Sundries - Fall */
+@-moz-document url-prefix("https://www1.flightrising.com/exchange/sages-seasonal-sundries-autumn") {
+/* Sage's Seasonal Sundries - Autumn */
 div.main {
     background: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-640185b305d97.png) !important;
     background-repeat: no-repeat !important
