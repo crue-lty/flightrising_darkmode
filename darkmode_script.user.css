@@ -3,14 +3,14 @@
 @namespace    USO Archive
 @author       FCE300 and crue-lty on GitHub (original by Zoga)
 @description  A dark theme for Flight Rising, with toggles for lower-saturation images. The bulk of this code was originally written by Zoga, and is being brought up to date and improved upon by FCE300 and crue-lty.
-@version      1.4.6
+@version      1.4.7
 @license      CC-BY-NC-4.0
 @preprocessor stylus
 
 @var checkbox highlightHeaderTwo "FOR TESTING - Highlight h2 variable" 0
 @var checkbox monochromeGathering "Monochrome gathering menu" 0
 @var checkbox darkerBogwin "Darker Baldwin buttons" 0
-@var select dragonBio "Which background to use when dragons have no scenes equipped" {
+@var select dragonBio "BROKEN: Which background to use when dragons have no scenes equipped" {
     "Element/default": "elementalBio",
     "Solid black": "blackBio"
 }
@@ -3458,13 +3458,13 @@ a.intclue:hover:after, a.clue:hover:after {
     }
 }
 
-@-moz-document url-prefix("https://www1.flightrising.com/dragon") {
-/* TEST - Dragon Scenes */
+/* @-moz-document url-prefix("https://www1.flightrising.com/dragon") {
+ TEST - Dragon Scenes 
 
 #dragon-profile-scene {
 	background-image: none !important;
 }
-}
+} */
 
 @-moz-document url-prefix("https://www1.flightrising.com/dragon") {
 /* Dragon Profiles */
