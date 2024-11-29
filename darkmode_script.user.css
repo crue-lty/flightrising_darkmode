@@ -3,7 +3,7 @@
 @namespace    USO Archive
 @author       FCE300 and crue-lty on GitHub (original by Zoga)
 @description  A dark theme for Flight Rising, with toggles for lower-saturation images. The bulk of this code was originally written by Zoga, and is being brought up to date and improved upon by FCE300 and crue-lty.
-@version      1.4.6
+@version      1.4.7
 @license      CC-BY-NC-4.0
 @preprocessor stylus
 
@@ -1956,7 +1956,7 @@ div.cluetip-inner.ui-cluetip-content div span {
     background: linear-gradient(to bottom, #65ea9f 0%, #0067f7 100%);
 }
 #hoard-result-footer-container.hoard-result-footer-container-sticky #hoard-result-footer-background {
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(34, 40, 43, 1) 20%, rgb(34, 40, 43, 1) 100%);
+    background: transparent;
 }
 .hoard-stored-currency-current {
     border: 2px solid #060c10;
