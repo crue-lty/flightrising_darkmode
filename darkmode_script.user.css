@@ -3,7 +3,7 @@
 @namespace    USO Archive
 @author       FCE300 and crue-lty on GitHub (original by Zoga)
 @description  A dark theme for Flight Rising, with toggles for lower-saturation images. The bulk of this code was originally written by Zoga, and is being brought up to date and improved upon by FCE300 and crue-lty.
-@version      1.4.7
+@version      1.4.8
 @license      CC-BY-NC-4.0
 @preprocessor stylus
 
@@ -47,6 +47,7 @@ a {
 
 @-moz-document domain("flightrising.com") {
 /* Cookies Banner */
+
 a.cc-btn.cc-dismiss {
     background-color: #041726 !important;
     color: #fff !important;
@@ -87,7 +88,6 @@ div.announce-title a {
 a.bbcode_url, span.announce-count a, div.status-author a, div#status-more a {
     color: #568fb8 !important;
 }
-
 /* div.status-announcement .status-announce-boundry {
     background-color: #0C171D !important;
 } */
@@ -104,7 +104,6 @@ div.copybar a {
 div#ticker {
     background-image: url(https://i.imgur.com/Cbfy6xd.png) !important;
 }
-
 
 /*Top Bar*/
 .banner {
@@ -291,6 +290,7 @@ div.cluetip-inner.ui-cluetip-content div div span {
 #alertlist .alert-v2-date {
     color: #8db1bf;
 }
+
 /* Items */
 .itemtip .itemname div:first-child {
     color: #fff !important;
@@ -371,6 +371,7 @@ div.itemcategory, div.tooltip-itemid {
 .itemtip.rarity-0 .itemname .itemtitle, .itemtip.rarity-1 .itemname .itemtitle {
     color: #e6e6e6;
 }
+
 /* Userbox */
 #usertab, #logintab {
     background-image: url(https://i.imgur.com/FjDYllk.png) !important;
@@ -415,6 +416,7 @@ div#userdata div span a, div#userdata div span span a, div#usertab span a span {
 div.container div.banner div#usertab span a.clue_nrg div div, #avg-energy {
     background-image: url(https://i.imgur.com/EukLTKI.png) !important;
 }
+
 /* Login/Reg */
 #signup-button .big-login-button-overlay {
     background: url(https://i.imgur.com/rJsaPsH.png) -180px 0 no-repeat !important;
@@ -439,6 +441,7 @@ div#social-links {
     color: rgba(0, 0, 0, 0) !important;
     background: url(https://i.imgur.com/rJsaPsH.png) -460px 0 no-repeat !important;
 }
+
 /* Online */
 #userlist thead div, div.time, div.status {
     color: #dae0e7 !important;
@@ -449,6 +452,7 @@ tbody, tbody tr {
 span.whos-online-subtitle em {
     color: #5090b9 !important;
 }
+
 /* Main Box */
 div.contentcontainer, div#content {
     background-color: #22282b !important;
@@ -512,6 +516,7 @@ div.contentcontainer div.main div#super-container div div#newname fieldset div d
 td.bbcode_column {
     color: #d6ebff !important;
 }
+
 /*Left Column Area with Adbar*/
 div.leftcolumn, .rightcolumn {
     background-color: #22282b !important;
@@ -528,6 +533,7 @@ div.leftcolumn, .rightcolumn {
 span.ui-icon.ui-icon-closethick {
     background-image: url(https://i.imgur.com/LZfVoDe.png) !important;
 }
+
 /*Dressing Room*/
 .dr-apparel-widget-information {
     background-image: url(https://i.imgur.com/7tb8Nqb.png) !important;
@@ -626,6 +632,7 @@ div.fayt-search-item.fayt-search-result-item.selected {
     background-color: #14355e !important;
     background-image: url(https://i.imgur.com/Qy0yMm0.png);
 }
+
 /* Familiar Bonding */
 #bonding-dialog-familiar, .bonding-dialog-familiar {
     background: #14252f;
@@ -683,6 +690,7 @@ div#ajax-bonding.ui-dialog-content.ui-widget-content, #bonding-dialog {
     border: 2px solid #060c10;
     background: #0f1a27;
 }
+
 /* Baldwin Page */
 .baldwin-mini-item span, .baldwin-fullsize-item span {
     color: #dae0e7 !important;
@@ -846,8 +854,7 @@ div.baldwin-cauldron-status.baldwin-cauldron-done */
 #super-container #pl_content #tomo_speechBubble div div#tomo_speechIntro div {
     color: #00fd73 !important;
 }
-/*.swipp-redtext,*/
-#crimswap p span/*div#speechbubble div span*/
+/*.swipp-redtext,*/ #crimswap p span /*div#speechbubble div span*/
 {
     color: #006ddb !important;
 }
@@ -862,6 +869,7 @@ div.baldwin-cauldron-status.baldwin-cauldron-done */
 #fromhoard #inner #itempage {
     width: 385px
 }
+
 /* Auction House */
 .ah-alert-badge, div#ah-activity-badge.ah-alert-badge.ah-alert-badge-bottom-right, span#ah-profits-badge.ah-alert-badge {
     display: inline-block;
@@ -1013,6 +1021,7 @@ div.cluetip-inner.ui-cluetip-content {
 #ah-topright-activity-button {
     background-image: url(https://i.imgur.com/veS7ax2.png);
 }
+
 /* Auction House Gene Selector */
 .ah-gene-select-results {
     border: 1px solid #0b1d24;
@@ -1054,6 +1063,7 @@ div.ah-gene-select-filters {
 #ah-sell-middle {
     background: url(https://i.imgur.com/BhCwtzB.png) no-repeat;
 }
+
 /* Forums */
 .post-admin .post-text-content, .post-admin .post-text-content li, .post-admin .post-text-content li span {
     color: #ffa58f !important;
@@ -1351,48 +1361,13 @@ body div div div #super-container form div #nomove li div.dragoncard, div #super
 div#super-container div div#newname, body div div div.main div#super-container div div#dragbuttons, div.main div#super-container div div.clear {
     background: none !important;
 }
-/* Hoard */
-div#inv_main {
-    background-color: #5f6c77 !important;
-    border: none !important;
-}
-body div div.contentcontainer div.main div#super-container div fieldset legend {
-    background-color: #192229 !important;
-    color: #dae0e7 !important;
-    padding: 5px !important;
-    border: solid 1px #192229 !important;
-}
-body div div.contentcontainer div.main div#super-container div, div#withdep.ui-dialog-content.ui-widget-content div div span, div#specialty.ui-dialog-content.ui-widget-content div span a.clue div, div#specialty.ui-dialog-content.ui-widget-content div span div, div#specialty.ui-dialog-content.ui-widget-content div span {
-    color: #dae0e7 !important;
-}
-body div div.contentcontainer div.main div#super-container div span div {
-    color: #657c95 !important;
-}
-/*body div.container div.contentcontainer div.main div#super-container div span div {
-    color: #dae0e7 !important;
-}*/
-#super-container div #newname fieldset div span div div {
-    color: #dae0e7 !important;
-}
-body div div div div#super-container div#inv_main div form#invent span span {
-    background-color: #29343d !important;
-    color: #dae0e7 !important;
-    padding: 3px !important;
-    border: solid 1px #192229 !important;
-    border-radius: 5px !important;
-}
-div #super-container #inv_main div #invent div div a span#bling, div #super-container #inv_main div #invent div div a span#nodiving {
-    color: #29343d !important;
-}
-#hoard-result-items {
-    min-height: 0px;
-}
 
 /* Genes Add */
 div#spec_drags div, body div #skinprev div#spec_drags div {
     border: 1px solid #14252f !important;
     background-color: #14252f !important;
 }
+
 /*Festive Favors Joxar's Spare Inventory*/
 div.ff-joxar-blurb {
     border: 2px solid #060d11;
@@ -1413,6 +1388,7 @@ div#ff-currency-tip {
     border: 2px solid #00080d !important;
     background: #0c0f11 !important;
 }
+
 /*Fairgrounds*/
 .faire-tooltip .header h1 {
     color: #dae0e7 !important;
@@ -1420,9 +1396,7 @@ div#ff-currency-tip {
 div#inv_main {
     background-image: none !important;
 }
-a {
-    color: #7eceed !important;
-}
+
 /* Encyclopedia */
 div#wikicontent h1 {
     color: #3896ff !important;
@@ -1442,6 +1416,7 @@ div#super-container div#luckystreak span {
 div#luckystreak span#luckyStreakAmt {
     padding-left: 6px;
 }
+
 /* Sidebar Nav Pages and Custom Skins*/
 .menu_header span {
     color: #b4d0df !important;
@@ -1477,6 +1452,7 @@ div#skinuploadcontainer form div.submitcontrol #infocontainer select#breed, div#
 .submitcontrol:last-child {
     height: 277px !important;
 }
+
 /* Dragon Restoration */
 #dgnres-content table tbody tr td p {
     color: #dae0e7 !important;
@@ -1484,6 +1460,7 @@ div#skinuploadcontainer form div.submitcontrol #infocontainer select#breed, div#
 #dgnres-content table tbody tr td p strong.dragon-name, #dgnres-content div div div h2, div#contactshim h1, .dgnres-index .cooldown .label {
     color: #3896ff !important;
 }
+
 /*Support */
 div.common-hub-item-description {
     color: #dae0e7 !important;
@@ -1492,6 +1469,7 @@ div.common-hub-item-description {
     border-color: #0C171D !important;
     border-radius: 10px !important;
 }
+
 /* Close Box */
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
     border: 2px solid #000c11 !important;
@@ -1499,6 +1477,7 @@ div.common-hub-item-description {
     font-weight: normal !important;
     color: #222e3d !important;
 }
+
 /* Coliseum */
 #coli-organize-abilities-stats-btn {
     background: url(https://i.imgur.com/n5ZedIn.png) -163px 0px no-repeat;
@@ -1600,10 +1579,12 @@ div#infoFrame img {
 #pl_content.fullscreen, #pl_fullscreenContainer.fullscreen {
     background: #22282b !important;
 }
+
 /*Who's Online*/
 table#userlist tbody tr {
     background: #22282b !important;
 }
+
 /*Exalted*/
 .common-fieldset-inset {
     background-color: #3b4854 !important;
@@ -1624,6 +1605,7 @@ table#userlist tbody tr {
     border: solid 1px #003d75 !important;
     color: #dae0e7 !important;
 }
+
 /* Pagination */
 .common-pagination-page[data-enabled="false"], .common-pagination-page[data-enabled="false"]:hover {
     font-weight: bold;
@@ -1648,6 +1630,7 @@ table#userlist tbody tr {
     border: 2px solid #0aa5be;
     background: #193340;
 }
+
 /* Raffle */
 #raffle-background {
     background-image: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Trading%20Post/roundsey_dm.png) !important;
@@ -1679,6 +1662,7 @@ table#userlist tbody tr {
     background-color: #0082d2;
     color: #fff;
 }
+
 /*Account Settings Vista*/
 .vista-option {
     background: #14252f !important;
@@ -1696,6 +1680,7 @@ table#userlist tbody tr {
 .vista-option-name {
     color: #c5d0d9 !important;
 }
+
 /* Emotes Emojis */
 #bbcode-tag-bar img {
     border: 1px solid #ccc !important;
@@ -1711,6 +1696,7 @@ table#userlist tbody tr {
     border-radius: 4px !important;
     background-color: #101a20 !important;
 }
+
 /* Dragon Picker Filter */
 .dragon-picker-filters, .morphology-picker-filters {
     border: 1px solid #364650 !important;
@@ -1726,6 +1712,7 @@ table#userlist tbody tr {
     border: 2px solid #343b40;
     background: linear-gradient(to bottom, #eef3f9 0%, #bacbdf 100%);
 }
+
 /* Trading Post */
 #trading-post-content {
     background-image: url(https://i.imgur.com/cxRHpqY.png);
@@ -1739,6 +1726,7 @@ table#userlist tbody tr {
 .common-hub-item-alert:before {
     border: 1px solid #0aaff4;
 }
+
 /* Galore */
 #gift-timer .gift-timer-value {
     color: #00f2ff !important;
@@ -1760,6 +1748,7 @@ table#userlist tbody tr {
 .common-npc-dialog-stroke {
     border: 1px solid #060d11 !important;
 }
+
 /* Bestiary */
 .bestiary-familiar-box, .flattery-slot-box {
     border: 2px solid #121c2d;
@@ -1811,6 +1800,7 @@ table#userlist tbody tr {
     background-position: top center;
     background-repeat: no-repeat;
 }
+
 /* Game Database */
 .common-hub-item-description {
     color: #dae0e7 !important;
@@ -1914,6 +1904,7 @@ a.gamedb-bbcode {
 .tooltip-icon:hover .tooltip-box {
     background-color: #0f1e26;
 }
+
 /* Swap Catalog */
 .swipp-trade {
     background: #22344b !important;
@@ -1933,6 +1924,7 @@ div.cluetip-inner.ui-cluetip-content div span {
 .dragontip.ui-dialog-content.ui-widget-content div div span {
     color: #6bf4dd !important;
 }
+
 /* New Hoard and Vault */
 .common-bulletin-text {
     background: #071224;
@@ -2032,6 +2024,7 @@ div.cluetip-inner.ui-cluetip-content div span {
     color: #00c2ff;
     font-weight: bold;
 }
+
 /* User Bio */
 div.clan-information-bio {
     margin-bottom: 0px !important;
@@ -2046,6 +2039,7 @@ textarea#bio {
 #pagetut {
     border-radius:4px;
 }
+
 /* Image Replacer */
 #cluetip-waitimage {
     background-image: url(https://i.imgur.com/N24sLgg.gif) !important;
@@ -2805,6 +2799,7 @@ img[src="/static/layout/profile/button-buy.png"] {
 img[src="/static/layout/pagination/pagination-check.png"] {
     content: url(https://i.imgur.com/59VH3GZ.png) !important;
 }
+
 /* Image Remover */
 img[src*="/images/layout/bestiary/internal_bg.jpg"], [src*="/images/layout/ge/internal_bg.jpg"], [src*="/images/layout/exalted.jpg"], [src*="/images/layout/coliseum/internal_bg.jpg"], [src*="/images/layout/tradepost/internal_bg.jpg"], [src*="/images/layout/market/internal_bg.jpg"], [src*="/images/layout/404/internal_bg.jpg"], [src*="/images/layout/hoard/internal_bg.jpg"], [src*="/images/layout/scrying/internal_bg.jpg"], [src*="/images/layout/wiki/internal_bg.jpg"], [src*="/images/layout/faire/internal_bg.jpg"], [src*="/images/layout/search/internal_bg.jpg"], [src*="/images/layout/ice/internal_bg.jpg"], [src*="/images/layout/arcane/internal_bg.jpg"], [src*="/images/layout/earth/internal_bg.jpg"], [src*="/images/layout/nature/internal_bg.jpg"], [src*="/images/layout/shadow/internal_bg.jpg"], [src*="/images/layout/light/internal_bg.jpg"], [src*="/images/layout/plague/internal_bg.jpg"], [src*="/images/layout/wind/internal_bg.jpg"], [src*="/images/layout/water/internal_bg.jpg"], [src*="/images/layout/fire/internal_bg.jpg"], [src*="/images/layout/lightning/internal_bg.jpg"], [src*="/images/layout/offspring_preview.jpg"], [src*="/images/layout/offspring_preview.jpg"], [src*="/images/layout/settings/internal_bg.jpg"], [src*="/images/layout/success_fish.png"], [src*="/images/layout/success_hunt.png"], [src*="/images/layout/success_catch.png"], [src*="/images/layout/success_forage.png"], [src*="/images/layout/success_dig.png"], [src*="/images/layout/success_scavenge.png"], [src*="/images/layout/battle/internal_bg.jpg"], [src*="/images/layout/dominance/internal_bg.jpg"] {
     background-image: none !important;
@@ -2827,6 +2822,7 @@ img[src*="/images/layout/bestiary/internal_bg.jpg"], [src*="/images/layout/ge/in
 
 @-moz-document url-prefix("https://www1.flightrising.com/clan-profile") {
 /* User Profile */
+
 i {
 	color: #6084a1 !important ;
 }
@@ -2863,6 +2859,7 @@ div.leftcolumn .content {
 
 @-moz-document url-prefix("https://www1.flightrising.com/nesting") {
 /* Nesting Grounds */
+
 #pagetut {
 	border-radius: 4px;
 }
@@ -2894,6 +2891,7 @@ img[src="/static/layout/offspring_preview.jpg"] {
 
 @-moz-document url-prefix("https://www1.flightrising.com/alerts") {
 /* Alerts */
+
 hr {
     border-color: #545f64 !important;
     margin-top: 5px !important;
@@ -2905,6 +2903,7 @@ hr {
 
 @-moz-document url-prefix("https://flightrising.com/dgen"), url-prefix("https://flightrising.com/rendern"), url-prefix("https://flightrising.com/images"), url-prefix("https://flightrising.com/image_generators/"), url-prefix("https://www1.flightrising.com/rendern"), url-prefix("https://www1.flightrising.com/dgen"), url-prefix("https://www1.flightrising.com/images"), url-prefix("https://www1.flightrising.com/image_generators/"), url-prefix("https://flightrising.com/dropbox/"), url-prefix("https://www1.flightrising.com/dropbox/"), url-prefix("https://www1.flightrising.com/static"), url-prefix("https://flightrising.com/static"), url-prefix("https://flightrising.com/content"), url-prefix("https://flightrising.com/rendern/"), url-prefix("https://flightrising.com/images/"), url-prefix("https://www1.flightrising.com/hoard/skin-image"), url-prefix("https://www1.flightrising.com/hoard/preview-image"), url-prefix("https://flightrising.com/html5/coliseum/images"), url-prefix("https://flightrising.com/dgen/preview/dragon") {
 /* Rendered Images */
+
 body {
     background: #0e0e0e !important;
 }
@@ -2912,6 +2911,7 @@ body {
 
 @-moz-document url-prefix("https://www1.flightrising.com/trading/crim") {
 /* Crim's Collection Cart */
+
 div.inner-content div div {
     color: #2571b8 !important;
 }
@@ -2919,6 +2919,7 @@ div.inner-content div div {
 
 @-moz-document url-prefix("https://flightrising.com/main.php?p=lair&tab=userpage&id=") {
 /* Friend Pending */
+
 img[src="/images/layout/friend_pending.png"] {
     content: url(https://i.imgur.com/ZBi5k6Z.png) !important;
 }
@@ -2926,6 +2927,7 @@ img[src="/images/layout/friend_pending.png"] {
 
 @-moz-document url-prefix("https://flightrising.com/main.php?p=gather") {
 /* Gathering UI */
+
 div#super-container div div div {
     background-color: #08101a !important;
     border: none !important;
@@ -3007,6 +3009,7 @@ div.contentcontainer div.main div#super-container div div div form div {
 
 @-moz-document url-prefix("https://www1.flightrising.com/den/trade-in"), url-prefix("https://www1.flightrising.com/den/completed-tasks"), url-prefix("https://www1.flightrising.com/trading/fantastic-familiars/feats") {
 /* Hibernal Den Slot Unlocks */
+
 div.den-slot-unlock-remaining-count {
     color: #40e9ff !important;
 }
@@ -3048,6 +3051,7 @@ div.den-slot-unlock-remaining-footer, div.content-header-sub, div.den-slot-unloc
 
 @-moz-document url-prefix("https://www1.flightrising.com/lair"), url-prefix("https://www1.flightrising.com/den") {
 /* Lair and Hibernal Den */
+
 .common-dialog .common-dialog-diagram {
     background: #163a59 !important;
 }
@@ -3228,6 +3232,7 @@ img.lair-page-dragon-element {
 
 @-moz-document url-prefix("https://www1.flightrising.com/den/edit"), url-prefix("https://www1.flightrising.com/lair/edit") {
 /* Lair and Hibernal Den editing */
+
 #unlock-slots-dialog .dialog-button-tray .common-column:first-child .common-ui-button, #unlock-slots-dialog .dialog-button-tray .common-column:last-child .common-ui-button {
     color: #143751 !important;
 }
@@ -3238,6 +3243,7 @@ img.lair-page-dragon-element {
 
 @-moz-document url("https://www1.flightrising.com/"), url("https://www1.flightrising.com/handler") {
 /* Front Page */
+
 div#status-box-mid {
     background-color: #142732 !important;
     background-image: none !important;
@@ -3361,6 +3367,7 @@ div#bonus-ticker .number-text {
 
 @-moz-document url-prefix("https://www1.flightrising.com/scrying") {
 /* Morphology */
+
 div.common-column {
     color: #002551 !important;
 }
@@ -3394,6 +3401,7 @@ div.common-column {
 
 @-moz-document url-prefix("https://www1.flightrising.com/scrying/assay") {
 /* Bloodlines */
+
 div#dragon-preview-1, div#dragon-preview-2 {
     border: 2px solid #0b151c !important;
     background: linear-gradient(to bottom, #b9c9d9 0%, #3a4450 100%) !important;
@@ -3403,8 +3411,52 @@ strong {
 }
 }
 
+@-moz-document url-prefix("https://www1.flightrising.com/hoard") {
+/* Hoard */
+
+body div div.contentcontainer div.main div#super-container div fieldset legend {
+    background-color: #192229 !important;
+    color: #fff !important;
+    padding: 5px !important;
+    border: solid 1px #192229 !important;
+}
+body div div.contentcontainer div.main div#super-container div, div#withdep.ui-dialog-content.ui-widget-content div div span, div#specialty.ui-dialog-content.ui-widget-content div span a.clue div, div#specialty.ui-dialog-content.ui-widget-content div span div, div#specialty.ui-dialog-content.ui-widget-content div span {
+    color: #fff !important;
+}
+body div div.contentcontainer div.main div#super-container div span div {
+    color: #657c95 !important;
+}
+body div div div div#super-container div#inv_main div form#invent span span {
+    background-color: #29343d !important;
+    color: #fff !important;
+    padding: 3px !important;
+    border: solid 1px #192229 !important;
+    border-radius: 5px !important;
+}
+/*body div.container div.contentcontainer div.main div#super-container div span div {
+    color: #fff !important;
+}*/
+#controls {
+    padding-bottom: 18px;
+}
+div#inv_main {
+    background-color: #77695f !important;
+    border: none !important;
+}
+div #super-container #inv_main div #invent div div a span#bling, div #super-container #inv_main div #invent div div a span#nodiving {
+    color: #29343d !important;
+}
+#hoard-result-items {
+    min-height: 0px;
+}
+#super-container div #newname fieldset div span div div {
+    color: #fff !important;
+}
+}
+
 @-moz-document url-prefix("https://www1.flightrising.com/vault") {
 /* Vault Pagination */
+
 div #super-container #inv_main div #invent div div a span#bling, div #super-container #inv_main div #invent div div a span#nodiving {
     color: #fff !important;
 }
@@ -3419,6 +3471,7 @@ div.contentcontainer div.main div#super-container div span {
 
 @-moz-document url-prefix("https://www1.flightrising.com/hoard"), url-prefix("https://www1.flightrising.com/vault"), url-prefix("https://www1.flightrising.com/forums/") {
 /* Compatibility for Item Counter style */
+
 a.intclue:before, a.clue:before {
     background: #06232fe6;
     color: #c7d6d9;
@@ -3468,6 +3521,7 @@ a.intclue:hover:after, a.clue:hover:after {
 
 @-moz-document url-prefix("https://www1.flightrising.com/dragon") {
 /* Dragon Profiles */
+
 h2, h3, .dragon-profile-header-name {
     color: #70d2ff !important;
     text-shadow: 0 1px 1px #000 !important;
@@ -3727,6 +3781,7 @@ h2.dragon-profile-details-header {
 
 @-moz-document url-prefix("https://www1.flightrising.com/trading/pinkpile"), url-prefix("https://www1.flightrising.com/trading/gift/receive") {
 /* Pinkerton's Plundered Pile */
+
 #pinkerton-text.common-npc-dialog:before {
     border-color: #060d11 transparent transparent transparent !important;
 }
@@ -3740,6 +3795,7 @@ h2.dragon-profile-details-header {
 
 @-moz-document url-prefix("https://www1.flightrising.com/trading/fantastic-familiars/feats"), url-prefix("https://www1.flightrising.com/trading/fantastic-familiars/flattery") {
 /* Fiona's Fantastic Familiars */
+
 div.main {
     background-image: url(https://www1.flightrising.com/static/layout/fantastic-familiar/background.png) !important;
     background-repeat: no-repeat;
@@ -3753,6 +3809,7 @@ div.main div.content {
 
 @-moz-document url-prefix("https://www1.flightrising.com/trading/trivia") {
 /* Tomo's Trivia Tablet */
+
 .tomo-question-frame {
         background-color: #293f4b
     }
@@ -3769,6 +3826,7 @@ div.main div.content {
 
 @-moz-document url-prefix("https://www1.flightrising.com/trading/archaeology") {
 /* Arlo's Ancient Archaeology */
+
 div.main {
         background: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Trading%20Post/Arlo/Arlo.png) !important;
         background-repeat: no-repeat;
@@ -3797,6 +3855,7 @@ div.main {
 
 @-moz-document url-prefix("https://www1.flightrising.com/trading/archaeology/dig-sites") {
 /* Arlo's Ancient Archaeology digsites */
+
 div.main {
     background: none !important
     }
@@ -3814,6 +3873,7 @@ div.main {
 
 @-moz-document url-prefix("https://www1.flightrising.com/trading/archaeology/dig-site/1"), url-prefix("https://www1.flightrising.com/trading/archaeology/dig-site/2"), url-prefix("https://www1.flightrising.com/trading/archaeology/dig-site/3"), url-prefix("https://www1.flightrising.com/trading/archaeology/dig-site/4") {
 /* Arlo's Ancient Archaeology digsites 1, 2, 3, 4*/
+
 div.main {
     background: none !important
     }
@@ -3871,6 +3931,7 @@ img[src="/static/cms/custom-shop/buttons/custom-shop-button-63eb1dddedbba.png"] 
 
 @-moz-document url-prefix("https://www1.flightrising.com/exchange/acclaimed-achievements-association") {
 /* Acclaimed Achievements Association */
+
 div.main {
     background: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-64766d27d6072.png) !important;
     background-repeat: no-repeat !important
@@ -3884,6 +3945,7 @@ div.main div.content {
 
 @-moz-document url-prefix("https://www1.flightrising.com/exchange/g-and-g-genuine-genes") {
 /* G&G's Genuine Genes */
+
 div.main {
     background: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-64d6ec1fe93f6.png) !important;
     background-repeat: no-repeat !important
@@ -3899,6 +3961,7 @@ div.main div.content {
 
 @-moz-document url-prefix("https://www1.flightrising.com/exchange") {
 /* Sage's Seasonal Sundries - Exchange page */
+
 img[src="/static/cms/custom-shop/buttons/custom-shop-button-64018844292c4.png"] /* Spring */ {
     content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Exchange/sages_seasonal_sundries_spring_dm.png) !important;
     border-radius: 11px;
@@ -3919,6 +3982,7 @@ img[src="/static/cms/custom-shop/buttons/custom-shop-button-?????.png"] /* Winte
 
 @-moz-document url-prefix("https://www1.flightrising.com/exchange/sages-seasonal-sundries-spring") {
 /* Sage's Seasonal Sundries - Spring */
+
 div.main {
     background: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-6401805618172.png) !important;
     background-repeat: no-repeat !important
@@ -3932,6 +3996,7 @@ div.main div.content {
 
 @-moz-document url-prefix("https://www1.flightrising.com/exchange/sages-seasonal-sundries-summer") {
 /* Sage's Seasonal Sundries - Summer */
+
 div.main {
     background: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-64017fd46eb51.png) !important;
     background-repeat: no-repeat !important
@@ -3943,8 +4008,9 @@ div.main div.content {
 }
 }
 
-@-moz-document url-prefix("https://www1.flightrising.com/exchange/sages-seasonal-sundries-autumn") {
-/* Sage's Seasonal Sundries - Autumn */
+@-moz-document url-prefix("https://www1.flightrising.com/exchange/sages-seasonal-sundries-fall") {
+/* Sage's Seasonal Sundries - Fall */
+
 div.main {
     background: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-640185b305d97.png) !important;
     background-repeat: no-repeat !important
@@ -3958,6 +4024,7 @@ div.main div.content {
 
 @-moz-document url-prefix("https://www1.flightrising.com/exchange/sages-seasonal-sundries-winter") {
 /* Sage's Seasonal Sundries - Winter */
+
 div.main {
     background: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-640181415ab84.png) !important;
     background-repeat: no-repeat !important
@@ -3971,6 +4038,7 @@ div.main div.content {
 
 @-moz-document url-prefix("https://www1.flightrising.com/exchange/arvelles-adamant-armaments") {
 /* Arvelle's Adamant Armaments */
+
 div.main {
     background: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-62f1ff9567e81.png) !important;
     background-repeat: no-repeat !important
@@ -3984,6 +4052,7 @@ div.main div.content {
 
 @-moz-document url-prefix("https://www1.flightrising.com/exchange/higgins-haunted-hollow") {
 /* Higgins' Haunted Hollow */
+
 div.main {
     background: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-639d4d075d8d8.png) !important;
     background-repeat: no-repeat !important
@@ -3997,6 +4066,7 @@ div.main div.content {
 
 @-moz-document url-prefix("https://www1.flightrising.com/exchange/marvas-marvelous-marvels") {
 /* Marva's Marvelous Marvels */
+
 div.main {
     background: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-6426414b66b23.png) !important;
     background-repeat: no-repeat !important
@@ -4010,6 +4080,7 @@ div.main div.content {
 
 @-moz-document url-prefix("https://www1.flightrising.com/exchange/patches-pirate-plunder") {
 /* Patches' Pirate Plunder */
+
 div.main {
     background: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-632637c1f25f8.png) !important;
     background-repeat: no-repeat !important
@@ -4023,6 +4094,7 @@ div.main div.content {
 
 @-moz-document url-prefix("https://www1.flightrising.com/exchange/susies-sweet-sentiments") {
 /* Susie's Sweet Sentiments */
+
 div.main {
     background: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-63f21b07f1413.png) !important;
     background-repeat: no-repeat !important
@@ -4036,6 +4108,7 @@ div.main div.content {
 
 @-moz-document url-prefix("https://www1.flightrising.com/exchange/joxars-spare-inventory") {
 /* Joxar's Spare Inventory */
+
 div.main {
     background: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-62dcd85a4b611.png) !important;
     background-repeat: no-repeat !important
@@ -4049,6 +4122,7 @@ div.main div.content {
 
 @-moz-document url-prefix("https://www1.flightrising.com/achievements") {
 /* Achievements */
+
 .pursuit-item-description {
         color: #293f4b
     }
@@ -4068,6 +4142,7 @@ div.main div.content {
 
 @-moz-document url-prefix("https://www1.flightrising.com/play") {
 /* Fairgrounds + children */
+
 #lucky-streak {
         color: #293f4b
     }
@@ -4075,6 +4150,7 @@ div.main div.content {
 
 @-moz-document url-prefix("https://www1.flightrising.com/exchange/brightshine-jubilee-shop") {
 /* Shop Light */
+
 div.main {
     background: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-6498206087b15.png) !important;
     background-repeat: no-repeat !important
@@ -4088,6 +4164,7 @@ div.main div.content {
 
 @-moz-document url-prefix("https://www1.flightrising.com/exchange/thundercrack-carnivale-shop") {
 /* Shop Lightning */
+
 div.main {
     background: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-62dcd8903031a.png) !important;
     background-repeat: no-repeat !important
@@ -4101,6 +4178,7 @@ div.main div.content {
 
 @-moz-document url-prefix("https://www1.flightrising.com/exchange/flameforgers-festival-shop") {
 /* Shop Fire */
+
 div.main {
     background: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-62dcd87fd3d89.png) !important;
     background-repeat: no-repeat !important
@@ -4114,6 +4192,7 @@ div.main div.content {
 
 @-moz-document url-prefix("https://www1.flightrising.com/exchange/starfall-celebration-shop") {
 /* Shop Arcane */
+
 div.main {
     background: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-62dcd8709d037.png) !important;
     background-repeat: no-repeat !important
@@ -4127,6 +4206,7 @@ div.main div.content {
 
 @-moz-document url-prefix("https://www1.flightrising.com/exchange/riot-of-rot-shop") {
 /* Shop Plague */
+
 div.main {
     background: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-6354aae0639fe.png) !important;
     background-repeat: no-repeat !important
@@ -4189,6 +4269,7 @@ img[src="/static/layout/dominance/internal_bg.jpg"] {
 
 @-moz-document url-prefix("https://www1.flightrising.com/forums") {
 /* Forums */
+
 a.post-author-username, .post-author-username, .editor-author-username {
 	color: white;
 	outline-color: black;
