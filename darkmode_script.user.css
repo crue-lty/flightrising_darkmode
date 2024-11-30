@@ -121,7 +121,8 @@ div#ticker {
     -webkit-box-shadow: 0 2px 3px #240e00;
 }
 .loginarea {
-    background-image: url(https://i.imgur.com/loxI0gk.png) !important;
+	background-color: #4f4036 !important;
+	background-image: none !important;
     color: #fff !important;
 }
 .loginlinks {
@@ -1691,7 +1692,7 @@ table#userlist tbody tr {
     background-color: #fff !important;
 }
 #editor-emoji-dialog .editor-emoji-dialog-filter, .lair-page-icon-filter {
-    background-color: #364650 !important;
+    background-color: #4f4036 !important;
     border: 0px solid #2c5063;
 }
 #editor-emoji-dialog .editor-emoji-dialog-emoji-item, #lair-icons-dialog .lair-icons-dialog-icon {
@@ -1702,8 +1703,8 @@ table#userlist tbody tr {
 
 /* Dragon Picker Filter */
 .dragon-picker-filters, .morphology-picker-filters {
-    border: 1px solid #364650 !important;
-    background: #364650 !important;
+    border: 1px solid ##5b5049 !important;
+    background: ##5b5049 !important;
 }
 .common-ui-button-disabled {
     background: linear-gradient(to bottom, #7f8d9f 0%, #444f5b 100%) !important;
