@@ -3,7 +3,7 @@
 @namespace    USO Archive
 @author       FCE300 and crue-lty on GitHub (original by Zoga)
 @description  A dark theme for Flight Rising, with toggles for lower-saturation images. The bulk of this code was originally written by Zoga, and is being brought up to date and improved upon by FCE300 and crue-lty.
-@version      2.0.6
+@version      2.0.7
 @license      CC-BY-NC-4.0
 @preprocessor stylus
 
@@ -39,6 +39,12 @@ All that happen to work globally. I saw some like
 `a` listed under "Fairgrounds" when it actually works
 sitewide and that's gonna become pretty important if
 we need to look for a specific value... */
+
+:root {
+    --accent: #c27a4a;
+    --background-1: #4f4036;
+    --background-2: #2b2522;
+}
 
 a {
     color: #edaa7d !important;
@@ -148,9 +154,6 @@ div.cluetip {
 }
 .statdiv span div {
     color: #fff !important;
-}
-.statdiv span #alerticon, #trade-chat span, #messicon, #frenicon, span.pending-avatar-msg-count {
-	background-image: url(https://i.imgur.com/fkzzcPi.png) !important;
 }
 a.alertuser, div.alert-v2-text a {
     font-weight: bold !important;
@@ -875,11 +878,6 @@ div.baldwin-cauldron-status.baldwin-cauldron-done */
 }
 
 /* Auction House */
-.ah-alert-badge, div#ah-activity-badge.ah-alert-badge.ah-alert-badge-bottom-right, span#ah-profits-badge.ah-alert-badge {
-    display: inline-block;
-    border: 3px double blue;
-    border-image: url(https://i.imgur.com/fkzzcPi.png) 3 fill stretch;
-}
 .ah-clear-all-btn {
     background: url(https://i.imgur.com/WShQ4bJ.png) no-repeat;
 }
