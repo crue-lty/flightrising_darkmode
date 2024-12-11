@@ -3871,8 +3871,8 @@ div.main {
     }
 }
 
-@-moz-document url-prefix("https://www1.flightrising.com/trading/archaeology/dig-site/1"), url-prefix("https://www1.flightrising.com/trading/archaeology/dig-site/2"), url-prefix("https://www1.flightrising.com/trading/archaeology/dig-site/3"), url-prefix("https://www1.flightrising.com/trading/archaeology/dig-site/4") {
-/* Arlo's Ancient Archaeology digsites 1, 2, 3, 4*/
+@-moz-document url-prefix("https://www1.flightrising.com/trading/archaeology/dig-site/1"), url-prefix("https://www1.flightrising.com/trading/archaeology/dig-site/2"), url-prefix("https://www1.flightrising.com/trading/archaeology/dig-site/3"), url-prefix("https://www1.flightrising.com/trading/archaeology/dig-site/4"), url-prefix("https://www1.flightrising.com/trading/archaeology/dig-site/5") {
+/* Arlo's Ancient Archaeology digsites 1, 2, 3, 4, 5*/
 
 div.main {
     background: none !important
