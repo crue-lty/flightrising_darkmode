@@ -42,8 +42,11 @@ we need to look for a specific value... */
 
 :root {
     --accent: #c27a4a;
-    --background-1: #4f4036;
-    --background-2: #2b2522;
+    --accentfr1: #d9661e;
+    --accentfr2: #eb971e;
+    --background1: #4f4036;
+    --background2: #2b2522;
+    --leftcol: #342c28;
 }
 
 a {
@@ -2109,21 +2112,9 @@ img[src="/static/layout/hoard/buttons/stack-function-vista.png"] {
 img[src="/static/layout/auctionhouse/button_ah_buy.png"] {
     content: url(https://i.imgur.com/op5v3DC.png) !important;
 }
-img[src="/static/layout/hoard/buttons/stack-function-chest-open.png"] {
-    content: url(https://i.imgur.com/YyCH8GM.png) !important;
-}
-img[src="/static/layout/hoard/tooltip-lock.png"] {
-    content: url(https://i.imgur.com/dhGQ3Yt.png) !important;
-}
-img[src="/static/layout/hoard/tooltip-like.png"] {
-    content: url(https://i.imgur.com/Aco0VJi.png) !important;
-}
-img[src="/static/layout/hoard/buttons/stack-function-chest-open-multiple.png"] {
-    content: url(https://i.imgur.com/25sGoPk.png) !important;
-}
-img[src="/static/layout/hoard/buttons/stack-function-apply-to-dragon.png"] {
-    content: url(https://i.imgur.com/YWRSpK0.png) !important;
-}
+
+
+
 img[src="/static/layout/game-database/button-auction-house.png"] {
     content: url(https://i.imgur.com/Xz7TXVF.png) !important;
 }
@@ -2133,102 +2124,9 @@ img[src="/static/layout/game-database/button-suggest.png"] {
 img[src="/static/layout/game-database/button-share.png"] {
     content: url(https://i.imgur.com/pbF8x7D.png) !important;
 }
-img[src="/static/layout/hoard/unlocked-enabled.png"] {
-    content: url(https://i.imgur.com/0tm0Xqg.png) !important;
-}
-img[src="/static/layout/icon_star_disabled.png"] {
-    content: url(https://i.imgur.com/9XO56l9.png) !important;
-}
-img[src="/static/layout/hoard/locked-enabled.png"] {
-    content: url(https://i.imgur.com/ciw9Nsp.png) !important;
-}
-img[src="/static/layout/icon_star.png"] {
-    content: url(https://i.imgur.com/WZChw75.png) !important;
-}
-img[src="/static/layout/hoard/buttons/mode-vault.png"] {
-    content: url(https://i.imgur.com/WQgZSel.png) !important;
-}
-img[src="/static/layout/hoard/buttons/mode-hoard.png"] {
-    content: url(https://i.imgur.com/4WzLE70.png) !important;
-}
-img[src="/static/layout/hoard/buttons/multi-function-hoard.png"] {
-    content: url(https://i.imgur.com/KKT3xzg.png) !important;
-}
-img[src="/static/layout/hoard/buttons/button-select-all.png"] {
-    content: url(https://i.imgur.com/iZNZpjr.png) !important;
-}
-img[src="/static/layout/hoard/buttons/button-deselect-all.png"] {
-    content: url(https://i.imgur.com/0ReSLJz.png) !important;
-}
-img[src="/static/layout/hoard/stored-gems.png"] {
-    content: url(https://i.imgur.com/7waAMLn.png) !important;
-}
-img[src="/static/layout/hoard/stored-treasure.png"] {
-    content: url(https://i.imgur.com/D3CpjJh.png) !important;
-}
-img[src="/static/layout/hoard/buttons/multi-function-vault.png"] {
-    content: url(https://i.imgur.com/maRkLMN.png) !important;
-}
-img[src="/static/layout/hoard/buttons/multi-function-sell.png"] {
-    content: url(https://i.imgur.com/zERFrU4.png) !important;
-}
-img[src="/static/layout/hoard/buttons/multi-function-convert-food.png"] {
-    content: url(https://i.imgur.com/g6B56dm.png) !important;
-}
-img[src="/static/layout/hoard/buttons/stack-function-convert-food.png"] {
-    content: url(https://i.imgur.com/CKM44ry.png) !important;
-}
-img[src="/static/layout/hoard/buttons/stack-function-transmute.png"] {
-    content: url(https://i.imgur.com/4Zmiv2o.png) !important;
-}
-img[src="/static/layout/hoard/buttons/stack-function-sell.png"] {
-    content: url(https://i.imgur.com/f05mXmA.png) !important;
-}
-img[src="/static/layout/hoard/buttons/stack-function-sell-duplicates.png"] {
-    content: url(https://i.imgur.com/S4dxxAt.png) !important;
-}
-img[src="/static/layout/hoard/buttons/stack-function-ah.png"] {
-    content: url(https://i.imgur.com/WPtKLJr.png) !important;
-}
-img[src="/static/layout/hoard/buttons/stack-function-vault.png"] {
-    content: url(https://i.imgur.com/IZYNTnf.png) !important;
-}
-img[src="/static/layout/hoard/buttons/stack-function-convert-food-disabled.png"] {
-    content: url(https://i.imgur.com/e5zwr87.png) !important;
-}
-img[src="/static/layout/hoard/buttons/stack-function-sell-disabled.png"] {
-    content: url(https://i.imgur.com/NhKTOEX.png) !important;
-}
-img[src="/static/layout/hoard/buttons/stack-function-sell-duplicates-disabled.png"] {
-    content: url(https://i.imgur.com/fN5KcJN.png) !important;
-}
-img[src="/static/layout/hoard/buttons/stack-function-hoard.png"] {
-    content: url(https://i.imgur.com/yKdh0Fy.png) !important;
-}
-img[src="/static/layout/common/common-toggle-on.png"] {
-    content: url(https://i.imgur.com/x2L3soa.png) !important;
-}
-img[src="/static/layout/common/common-toggle-off.png"] {
-    content: url(https://i.imgur.com/sNc4Iof.png) !important;
-}
-img[src="/static/layout/hoard/buttons/stack-function-unlocked.png"] {
-    content: url(https://i.imgur.com/bFcjC4E.png) !important;
-}
-img[src="/static/layout/hoard/buttons/stack-function-locked.png"] {
-    content: url(https://i.imgur.com/MG1JLfc.png) !important;
-}
-img[src="/static/layout/hoard/buttons/stack-function-preview-item.png"] {
-    content: url(https://i.imgur.com/AQCkMjE.png) !important;
-}
-img[src="/static/layout/hoard/buttons/button-add-funds.png"] {
-    content: url(https://i.imgur.com/6U3FYFb.png) !important;
-}
-img[src="/static/layout/hoard/buttons/button-remove-funds.png"] {
-    content: url(https://i.imgur.com/sV1538D.png) !important;
-}
-img[src="/static/icons/tidy-up.png"] {
-    content: url(https://i.imgur.com/qxiVWsf.png) !important;
-}
+
+
+
 img[src="/static/layout/game-database/button-favorite-off.png"] {
     content: url(https://i.imgur.com/MAzhvId.png) !important;
 }
