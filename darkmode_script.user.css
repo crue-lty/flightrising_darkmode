@@ -3,7 +3,7 @@
 @namespace    USO Archive
 @author       FCE300 and crue-lty on GitHub (original by Zoga)
 @description  A dark theme for Flight Rising, with toggles for lower-saturation images. The bulk of this code was originally written by Zoga, and is being brought up to date and improved upon by FCE300 and crue-lty.
-@version      2.0.9
+@version      2.0.10
 @license      CC-BY-NC-4.0
 @preprocessor stylus
 
@@ -384,7 +384,7 @@ div.itemcategory, div.tooltip-itemid {
 
 /* Userbox */
 #usertab, #logintab {
-    background-image: url(https://i.imgur.com/FjDYllk.png) !important;
+    background-image: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Various%20assets/usertab_dm.png) !important;
 }
 .loginlinks.loginbar, #namespan a span, #menucontainer a {
     color: #fff !important;
@@ -402,10 +402,6 @@ div#tunak.ui-dialog-content.ui-widget-content div#content {
     background-color: #14252f !important;
 }
 a.clue_nrg, div#usertab span a.clue_nrg div span, span#target {
-    color: #006080 !important;
-    text-shadow: 0 0 0.2em #FFF, 0 0 0.2em #FFF, 0 0 0.2em #FFF !important;
-    font-weight: bold !important;
-    font-size: 10px !important;
     padding: 1px 0px 0px 0px !important;
 }
 div#userdata {
@@ -423,12 +419,9 @@ div#userdata div {
 div#userdata div span a, div#userdata div span span a, div#usertab span a span {
     color: #fff !important;
 }
-div.container div.banner div#usertab span a.clue_nrg div div, #avg-energy {
-    background-image: url(https://i.imgur.com/EukLTKI.png) !important;
-}
 
 /* Login/Reg */
-#signup-button .big-login-button-overlay {
+/* #signup-button .big-login-button-overlay {
     background: url(https://i.imgur.com/rJsaPsH.png) -180px 0 no-repeat !important;
 }
 #signup-button {
@@ -439,7 +432,7 @@ div.container div.banner div#usertab span a.clue_nrg div div, #avg-energy {
 }
 #login-button {
     background: url(https://i.imgur.com/rJsaPsH.png) -360px 0 no-repeat !important;
-}
+} */
 div#social-links {
     width: 547px !important;
 }
@@ -1707,16 +1700,9 @@ table#userlist tbody tr {
     border: 1px solid #5b5049 !important;
     background: #5b5049 !important;
 }
-.common-ui-button-disabled {
-    background: linear-gradient(to bottom, #7f8d9f 0%, #444f5b 100%) !important;
-}
-.common-ui-button-disabled:after {
-    border: none;
-}
-.common-ui-button, .common-ui-button-disabled, .lair-pagination .lair-pagination-page, .common-pagination .common-pagination-page {
-    border: 2px solid #343b40;
-    background: linear-gradient(to bottom, #eef3f9 0%, #bacbdf 100%);
-}
+/* .common-ui-button, .common-ui-button-disabled, .lair-pagination .lair-pagination-page, .common-pagination .common-pagination-page {
+    border: 2px solid #858179;
+} */
 
 /* Trading Post */
 #trading-post-content {
@@ -2399,9 +2385,10 @@ img[src="/static/layout/lair/buttons/add-tabs-disabled.png"] {
 img[src="/static/layout/lair/buttons/mode-lair.png"] {
     content: url(https://i.imgur.com/oX50Qte.png) !important;
 }
-img[src="/static/layout/lair/buttons/mode-den.png"] {
-    content: url(https://i.imgur.com/Z9C7FUq.png) !important;
-}
+
+
+
+
 img[src="/static/layout/lair/buttons/edit.png"] {
     content: url(https://i.imgur.com/D3h9ZJT.png) !important;
 }
@@ -2414,17 +2401,11 @@ img[src="/static/layout/lair/buttons/page-expand.png"] {
 img[src="/static/layout/lair/buttons/page-collapse.png"] {
     content: url(https://i.imgur.com/m9wNl4k.png) !important;
 }
-img[src="/static/layout/lair/buttons/pagination-next.png"] {
-    content: url(https://i.imgur.com/F0U6FFW.png) !important;
-}
 img[src="/static/layout/lair/buttons/pagination-next-disabled.png"] {
     content: url(https://i.imgur.com/Y0erCuv.png) !important;
 }
 img[src="/static/layout/lair/buttons/pagination-previous.png"] {
     content: url(https://i.imgur.com/ZRpxZzu.png) !important;
-}
-img[src="/static/layout/lair/buttons/pagination-previous-disabled.png"] {
-    content: url(https://i.imgur.com/zgsQoeS.png) !important;
 }
 img[src="/static/layout/lair/buttons/den-slot-unlock.png"] {
     content: url(https://i.imgur.com/uhLCzTr.png) !important;
@@ -2450,14 +2431,8 @@ img[src="/static/layout/auctionhouse/searchtab_up.png"] {
 img[src="/static/layout/copy.png"] {
     content: url(https://i.imgur.com/6Pauwzn.png) !important;
 }
-img[src="/static/layout/pagination/pagination-previous-disabled.png"], img[src="/images/layout/pagination/pagination-previous-disabled.png"] {
-    content: url(https://i.imgur.com/zgsQoeS.png) !important;
-}
 img[src="/static/layout/pagination/pagination-next-disabled.png"], img[src="/images/layout/pagination/pagination-next-disabled.png"] {
     content: url(https://i.imgur.com/Y0erCuv.png) !important;
-}
-img[src="/static/layout/lair/buttons/pagination-next.png"], img[src="/images/layout/pagination/pagination-next.png"], img[src="/static/layout/pagination/pagination-next.png"] {
-    content: url(https://i.imgur.com/F0U6FFW.png) !important;
 }
 img[src="/static/layout/lair/buttons/pagination-previous.png"], img[src="/images/layout/pagination/pagination-previous.png"], img[src="/static/layout/pagination/pagination-previous.png"] {
     content: url(https://i.imgur.com/ZRpxZzu.png) !important;
@@ -2540,17 +2515,11 @@ img[src="/static/layout/buttton_subscribed.png"] {
 img[src="/static/layout/buttton_unsubscribed.png"] {
     content: url(https://i.imgur.com/iWEF8IJ.png) !important;
 }
-img[src="/static/layout/button_back.png"] {
-    content: url(https://i.imgur.com/5J2I25g.png) !important;
-}
 img[src="/static/layout/button_approvetrade.png"] {
     content: url(https://i.imgur.com/kv5FP0m.png) !important;
 }
 img[src="/static/layout/button_canceltrade.png"] {
     content: url(https://i.imgur.com/qXD11zz.png) !important;
-}
-img[src="/static/layout/bestiary/buttons/filter.png"], img[src="/static/layout/lair/buttons/filter.png"] {
-    content: url(https://i.imgur.com/tT6SM2n.png) !important;
 }
 img[src="/static/layout/admin_post_first.png"] {
     content: url(https://i.imgur.com/MoKoHiq.png) !important;
