@@ -3,7 +3,7 @@
 @namespace    USO Archive
 @author       FCE300 and crue-lty on GitHub (original by Zoga)
 @description  A dark theme for Flight Rising, with toggles for lower-saturation images. The bulk of this code was originally written by Zoga, and is being brought up to date and improved upon by FCE300 and crue-lty.
-@version      2.0.10
+@version      2.0.11
 @license      CC-BY-NC-4.0
 @preprocessor stylus
 
@@ -45,8 +45,9 @@ we need to look for a specific value... */
     --accentfr1: #d9661e;
     --accentfr2: #eb971e;
     --background1: #4f4036;
-    --background2: #2b2522;
-    --leftcol: #342c28;
+    --background2: #342b27;
+    --background3: #2b2522;
+    --leftcol: #342b27;
 }
 
 a {
@@ -477,16 +478,13 @@ div#super-container div div#summon_stats form#makindragons span {
     color: #00527a !important;
     font-size: 11px !important;
 }
-div.content {
-    background-color: #2b2522 !important;
-}
 div.main {
-    background-color: #2b2522 !important;
+    background-color: var(--background3) !important;
     color: #cbd7dd !important;
     background-image: none !important;
 }
 div#super-container {
-    background-color: #2b2522 !important;
+    background-color: var(--background3) !important;
     color: #636e74;
     background-image: none !important;
 }
@@ -522,7 +520,7 @@ td.bbcode_column {
 
 /*Left Column Area with Adbar*/
 div.leftcolumn, .rightcolumn {
-    background-color: #2b2522 !important;
+    background-color: var(--background2) !important;
 }
 .navbar-glow-hover {
     color: #fff !important;
