@@ -3,7 +3,7 @@
 @namespace    USO Archive
 @author       FCE300 and crue-lty on GitHub (original by Zoga)
 @description  A dark theme for Flight Rising, with toggles for lower-saturation images. The bulk of this code was originally written by Zoga, and is being brought up to date and improved upon by FCE300 and crue-lty.
-@version      2.0.12
+@version      2.0.13
 @license      CC-BY-NC-4.0
 @preprocessor stylus
 
@@ -48,6 +48,8 @@ we need to look for a specific value... */
     --background2: #342b27;
     --background3: #2b2522;
     --leftcol: #342b27;
+    --leftcol-accent: #1d0e04;
+    --tooltiptext: ???;
 }
 
 a {
@@ -312,36 +314,12 @@ div.cluetip-inner.ui-cluetip-content div div span {
 #alertwin .alert-v2-date {
     color: #aba29b !important;
 }
-/*.rarity-1, .rarity-0 {
-    background-image: url(https://i.imgur.com/TfUV6M2.png) !important;
-    background-repeat: no-repeat !important;
-}
-.rarity-2 {
-    background-image: url(https://i.imgur.com/Sa4NPQf.png) !important;
-    background-repeat: no-repeat !important;
-}
-.rarity-3 {
-    background-image: url(https://i.imgur.com/DSIl5Uv.png) !important;
-    background-repeat: no-repeat !important;
-}
-.rarity-4 {
-    background-image: url(https://i.imgur.com/H4Y6bFU.png) !important;
-    background-repeat: no-repeat !important;
-}
-.rarity-5 {
-    background-image: url(https://i.imgur.com/pSBgfFF.png) !important;
-    background-repeat: no-repeat !important;
-}
-.rarity-6 {
-    background-image: url(https://i.imgur.com/pOcJWbZ.png) !important;
-    background-repeat: no-repeat !important;
-}*/
 .itemtip .sellval {
-    background-image: url(https://i.imgur.com/SXN6lL4.png);
-    color: #ff9d5c !important;
+    background-image: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Various%20assets/coin.png);
+    color: var(--tooltiptext) !important;
 }
 .itemtip .tooltip-level {
-    color: #ff9d5c !important;
+    color: var(--tooltiptext) !important;
 }
 div.itemcategory, div.tooltip-itemid {
     color: #bab4b0 !important;
@@ -433,7 +411,7 @@ div#userdata div span a, div#userdata div span span a, div#usertab span a span {
 }
 #login-button {
     background: url(https://i.imgur.com/rJsaPsH.png) -360px 0 no-repeat !important;
-} */
+}
 div#social-links {
     width: 547px !important;
 }
@@ -445,6 +423,7 @@ div#social-links {
     color: rgba(0, 0, 0, 0) !important;
     background: url(https://i.imgur.com/rJsaPsH.png) -460px 0 no-repeat !important;
 }
+*/
 
 /* Online */
 #userlist thead div, div.time, div.status {
@@ -508,12 +487,6 @@ div div#bottom-banner-center {
 div#newname fieldset div span {
     background: none !important;
 }
-div.contentcontainer div.main div#super-container div div#newname fieldset div span div div, div.contentcontainer div.main div#super-container div div#newname fieldset div span div {
-    background: none !important;
-}
-div.contentcontainer div.main div#super-container div div#newname fieldset div div, div.main div#super-container div div div form div div {
-    background-image: url(https://i.imgur.com/QwwpEi5.png) !important;
-}
 td.bbcode_column {
     color: #d6ebff !important;
 }
@@ -529,10 +502,11 @@ div.leftcolumn, .rightcolumn {
     text-shadow: 0 0 5px #000, 0 0 10px #00ffe1, 0 0 15px #7ce4f7 !important;
 }
 .skybanner {
-    background-image: url(https://i.imgur.com/ZAyZ6r3.png) !important;
+    background-image: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Various%20assets/adbox_dm.png) !important;
+    background-size: 100%;
 }
 span.ui-icon.ui-icon-closethick {
-    background-image: url(https://i.imgur.com/LZfVoDe.png) !important;
+    background-image: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Various%20assets/iconset_dm.png) !important;
 }
 
 /*Dressing Room*/
@@ -716,6 +690,10 @@ div#ajax-bonding.ui-dialog-content.ui-widget-content, #bonding-dialog {
         }
     }
 
+img[src="/static/layout/baldwin/arrow.png"] {
+    content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Various%20assets/arrow_dm.png) !important;
+}
+
 img[src="/static/layout/baldwin/cauldron_loading.gif"] {
     content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Trading%20Post/Baldwin/cauldron_loading_dm.gif) !important;
 }
@@ -787,7 +765,7 @@ div.recipe {
     color: #e599ff !important;
 }
 .baldwin-divider {
-    background: url(https://i.imgur.com/Yefi7yU.png) repeat-x left center !important;
+    background: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Various%20assets/rule_dm.png) repeat-x left center !important;
 }
 .baldwin-divider-text, .ah-sep-text, .ah-sep-button-container, div.ff-separator-inner {
     background-color: #2b2522 !important;
@@ -872,21 +850,8 @@ div.baldwin-cauldron-status.baldwin-cauldron-done */
 }
 
 /* Auction House */
-.ah-clear-all-btn {
-    background: url(https://i.imgur.com/WShQ4bJ.png) no-repeat;
-}
-.ah-collect-all-btn {
-    background: url(https://i.imgur.com/yxuRVz0.png) no-repeat;
-}
 .ah-current-tab, .ah-pagenumbers a, .ah-item-name {
     color: #70deff;
-}
-.ah-listing-relist-button {
-    background-image: url(https://i.imgur.com/oDz3j6S.png);
-	border-radius: 10px;
-}
-.ah-listing-clear-button {
-    background-image: url(https://i.imgur.com/uinPe27.png);
 }
 .ah-listing-itemname, #ah-search-collapsed-blurb, .ah-search-submit-container-right, .ah-reset-to-defaults, .ah-dlg-itemname, .ah-dlg-cost, .dragon-search-filters-reset, .dragon-search-filters-keep-expanded, #dragon-search-filters-blurb {
     color: #fff !important;
@@ -999,23 +964,6 @@ div.cluetip-inner.ui-cluetip-content {
 }
 #ah-buy-ok-dlg p span.ah-dlg-dragonid {
     color: #0099f5 !important;
-}
-.ah-listing-buy-button {
-    background-image: url(https://i.imgur.com/bgOjxZr.png);
-    border-radius: 12px;
-}
-.ah-listing-cancel-button {
-    background-image: url(https://i.imgur.com/8IrToNV.png);
-    border-radius: 12px;
-}
-#ah-topright-buy-button {
-    background-image: url(https://i.imgur.com/YYghuzU.png);
-}
-#ah-topright-sell-button {
-    background-image: url(https://i.imgur.com/MANdTbS.png);
-}
-#ah-topright-activity-button {
-    background-image: url(https://i.imgur.com/veS7ax2.png);
 }
 
 /* Auction House Gene Selector */
@@ -2034,19 +1982,19 @@ textarea#bio {
     background-image: url(https://i.imgur.com/N24sLgg.gif) !important;
 }
 img[src="/static/layout/revamp/left_clan_small.png"], img[src="/images/layout/revamp/left_clan_small.png"] {
-    content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Various%20assets/left_clan_small.png) !important;
+    content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Various%20assets/left_clan_small_dm.png) !important;
 }
 img[src="/static/layout/revamp/left_shop_small.png"], img[src="/images/layout/revamp/left_shop_small.png"] {
-    content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Various%20assets/left_shop_small.png) !important;
+    content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Various%20assets/left_shop_small_dm.png) !important;
 }
 img[src="/static/layout/revamp/left_play_small.png"], img[src="/images/layout/revamp/left_play_small.png"] {
-    content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Various%20assets/left_play_small.png) !important;
+    content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Various%20assets/left_play_small_dm.png) !important;
 }
 img[src="/static/layout/revamp/left_library_small.png"], img[src="/images/layout/revamp/left_library_small.png"] {
-    content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Various%20assets/left_library_small.png) !important;
+    content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Various%20assets/left_library_small_dm.png) !important;
 }
 img[src="http://www1.flightrising.com/static/layout/revamp/clock_large.png"], img[src="/images/layout/revamp/clock_large.png"], img[src="https://www1.flightrising.com/static/layout/revamp/clock_large.png"] {
-    content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Various%20assets/clock_large.png) !important;
+    content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Various%20assets/clock_large_dm.png) !important;
 }
 img[src="/static/layout/lair/backgrounds/male.png"] {
     opacity: .4;
@@ -3057,11 +3005,6 @@ h2.dragon-profile-details-header {
 div.main {
     background-image: url(https://www1.flightrising.com/static/layout/fantastic-familiar/background.png) !important;
     background-repeat: no-repeat;
-}
-div.main div.content {
-    background-image: url(https://www1.flightrising.com/static/layout/fantastic-familiar/background.png) !important;
-    background-repeat: no-repeat;
-    background-position: -10px -10px;
 }
 }
 
