@@ -3,7 +3,7 @@
 @namespace    USO Archive
 @author       FCE300 and crue-lty on GitHub (original by Zoga)
 @description  A dark theme for Flight Rising, with toggles for lower-saturation images. The bulk of this code was originally written by Zoga, and is being brought up to date and improved upon by FCE300 and crue-lty.
-@version      2.0.17
+@version      2.0.18
 @license      CC-BY-NC-4.0
 @preprocessor stylus
 
@@ -1900,6 +1900,7 @@ textarea#bio {
 }
 #pagetut {
     border-radius:4px;
+}
 }
 
 @-moz-document url("https://www1.flightrising.com") {
