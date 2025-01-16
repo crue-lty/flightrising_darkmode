@@ -3,7 +3,7 @@
 @namespace    USO Archive
 @author       FCE300 and crue-lty on GitHub (original by Zoga)
 @description  A dark theme for Flight Rising, with toggles for lower-saturation images. The bulk of this code was originally written by Zoga, and is being brought up to date and improved upon by FCE300 and crue-lty.
-@version      2.0.14
+@version      2.0.15
 @license      CC-BY-NC-4.0
 @preprocessor stylus
 
@@ -18,7 +18,7 @@
 ==/UserStyle== */
 
 @-moz-document domain("flightrising.com") {
-/* Defined Variables Toggle*/
+/* Defined Variables Toggle */
 if highlightHeaderTwo == 1 {
 
     h2 {
@@ -30,10 +30,10 @@ if highlightHeaderTwo == 1 {
 }
 }
 
-@-moz-document url-prefix("https://www1.flightrising.com") {
+@-moz-document domain("flightrising.com") {
 /* GLOBAL VARIABLES */
 
-/* This NEEDS to be sorted. We need to pluck out
+/* This needs to be sorted. We need to pluck out
 the variables from Cookies Banner and put them here.
 All that happen to work globally. I saw some like
 `a` listed under "Fairgrounds" when it actually works
@@ -41,15 +41,19 @@ sitewide and that's gonna become pretty important if
 we need to look for a specific value... */
 
 :root {
-    --accent: #c27a4a;
-    --accentfr1: #d9661e;
-    --accentfr2: #eb971e;
+    --accent1: #161514;
+    --accent2: #a6998b;
+    --accent3: #d2ccc5;
     --background1: #4f4036;
     --background2: #342b27;
     --background3: #2b2522;
-    --leftcol: #342b27;
-    --leftcol-accent: #1d0e04;
-    --tooltiptext: #fff; /* temporary color */
+    --color-even: #2b221c;
+    --color-odd: #352b25;
+    --infobox: #5d3114;
+    --leftcol: #332a26;
+    --leftcol-accent: #160f0b;
+    --text1: #a6998b;
+    --tooltiptext: white; /* temporary color */
 }
 
 a {
@@ -61,15 +65,15 @@ strong {
 }
 
 @-moz-document domain("flightrising.com") {
-/* Cookies Banner */
+/* Global */
 
 a.cc-btn.cc-dismiss {
     background-color: #241104 !important;
-    color: #fff !important;
+    color: white !important;
     border-radius: 7px !important;
 }
 a.clock-tooltip {
-    color: #fff !important;
+    color: white !important;
 }
 div.cc-window.cc-banner.cc-type-info.cc-theme-block.cc-top {
     background-color: #4a2e1c !important;
@@ -94,10 +98,10 @@ body.onecol, body {
 	backdrop-filter: grayscale(0.75); 
 }
 div.announce-text {
-    color: #fff !important;
+    color: white !important;
 }
 div.announce-title a {
-    color: #fff !important;
+    color: white !important;
 }
 
 a.bbcode_url, span.announce-count a, div.status-author a, div#status-more a {
@@ -127,28 +131,28 @@ div#ticker {
 }
 .beigebutton.thingbutton {
     background-color: #866650 !important;
-    color: #fff !important;
-    text-shadow: 0 1px 1px #000 !important;
+    color: white !important;
+    text-shadow: 0 1px 1px black !important;
     padding: 10px !important;
     -webkit-box-shadow: 0 2px 3px #240e00;
 }
 .loginarea {
 	background-color: #4f4036 !important;
 	background-image: none !important;
-    color: #fff !important;
+    color: white !important;
 }
 .loginlinks {
-    color: #fff !important;
+    color: white !important;
     font-weight: bold !important;
 }
 span#bstcount a.loginlinks.loginbar img {
     padding-right: 2px !important;
 }
 div.users-online {
-    color: #fff !important;
+    color: white !important;
 }
 div.cluetip-inner.ui-cluetip-content {
-    color: #fff !important;
+    color: white !important;
     background-color: #54453b !important;
     border-radius: 2px !important;
 }
@@ -156,14 +160,14 @@ div.cluetip {
     border: 2px solid #130801 !important;
 }
 #messalert {
-    color: #fff !important;
+    color: white !important;
 }
 .statdiv span div {
-    color: #fff !important;
+    color: white !important;
 }
 a.alertuser, div.alert-v2-text a {
     font-weight: bold !important;
-    color: #fff !important;
+    color: white !important;
 }
 div.alert-v2.alert-v2-unread {
     background-color: #705b4c !important;
@@ -182,11 +186,11 @@ div#status-more {
 }
 td.msgtopic {
     color: #b8e0f5 !important;
-    border-bottom: solid 1px #000 !important;
+    border-bottom: solid 1px black !important;
 }
 #table-header, #msg-header, #form-header, #msg-preview #header {
     background-color: #542303 !important;
-    color: #fff !important;
+    color: white !important;
 }
 #msg-header {
     padding-top: 2px !important;
@@ -196,7 +200,7 @@ td.msgtopic {
 }
 textarea#message.input_reg, form#new input[name='subject'], #attachments input, .input_reg, div#xroad-metadata textarea, #trademsgform textarea, form#userpage textarea#bio {
     background-color: #77695f !important;
-    color: #fff !important;
+    color: white !important;
     border: none !important;
     border-radius: 10px !important;
     padding: 5px 2px 5px 10px !important;
@@ -204,7 +208,7 @@ textarea#message.input_reg, form#new input[name='subject'], #attachments input, 
     font-weight: normal !important;
 }
 #msg-text, #divapprovetrade p {
-    color: #fff !important;
+    color: white !important;
 }
 #xroad-metadata span:first-child, .trade-picker h1, #trademsgs .msgauthor {
     color: #ffa366 !important;
@@ -218,7 +222,7 @@ textarea#message.input_reg, form#new input[name='subject'], #attachments input, 
     background-color: #54453b !important;
 }
 /*.no_insert span, #attachments .insert_item span {
-    color: #fff !important;
+    color: white !important;
     background-color: #2c2521 !important;
     font-size: 11px !important;
     border-radius: 5px 0px 0px 0px !important;
@@ -230,7 +234,7 @@ textarea#message.input_reg, form#new input[name='subject'], #attachments input, 
 .redbutton.anybutton {
     background-color: #6a2e06 !important;
     padding: 10px !important;
-    color: #fff !important;
+    color: white !important;
     -webkit-box-shadow: 0 2px 3px #240e00;
 }
 #fromhoard #inner #attch, #fromhoard #inner #generic-hoard-confirm {
@@ -263,20 +267,20 @@ div#msg-show div#msg-items div#items, div#msg-items div#attachments {
     border-radius: 5px !important;
 }
 table#tradereceipts td {
-    color: #fff !important;
+    color: white !important;
 }
 .ui-widget-header {
     border: none !important;
     background-color: #542303 !important;
     background-image: url(https://i.imgur.com/loxI0gk.png) !important;
-    color: #fff !important;
+    color: white !important;
 }
 #msg-editor #bbcode-tag-bar {
     padding: 5px !important;
 }
 fieldset, body div div.contentcontainer div.main div#super-container div div fieldset div {
     background-color: #54453b !important;
-    color: #fff !important;
+    color: white !important;
     border: none !important;
     margin: 0.3em 0;
 }
@@ -285,18 +289,18 @@ fieldset div#window ul#itemnomove.itemnomove li.itemnomove {
 }
 fieldset div span {
     background-color: #54453b !important;
-    color: #fff !important;
+    color: white !important;
     border: none !important;
 }
 fieldset div span, fieldset div div {
-    text-shadow: 0 0 0.2em #000, 0 0 0.2em #000, 0 0 0.2em #000 !important;
+    text-shadow: 0 0 0.2em black, 0 0 0.2em black, 0 0 0.2em black !important;
 }
 div.cluetip-inner.ui-cluetip-content div div span {
-    color: #fff !important;
+    color: white !important;
 }
 #dragonattach, .trade-picker #fundage #qty-input {
     background-color: #54453b !important;
-    color: #fff !important;
+    color: white !important;
     border: none !important;
     border-radius: 10px !important;
 }
@@ -306,7 +310,7 @@ div.cluetip-inner.ui-cluetip-content div div span {
 
 /* Items */
 .itemtip .itemname div:first-child {
-    color: #fff !important;
+    color: white !important;
 }
 .itemtip .skindesc {
     color: #f0e3db !important;
@@ -366,7 +370,7 @@ div.itemcategory, div.tooltip-itemid {
     background-image: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Various%20assets/usertab_dm.png) !important;
 }
 .loginlinks.loginbar, #namespan a span, #menucontainer a {
-    color: #fff !important;
+    color: white !important;
 }
 .ui-widget-content {
     background-color: #14252f !important;
@@ -385,18 +389,18 @@ a.clue_nrg, div#usertab span a.clue_nrg div span, span#target {
 }
 div#userdata {
     background-color: #2b2522 !important;
-    color: #fff !important;
+    color: white !important;
     border: none !important;
     border-radius: 10px !important;
 }
 div#userdata div {
     background-color: #363d44 !important;
-    color: #fff !important;
+    color: white !important;
     border: none !important;
     border-radius: 10px !important;
 }
 div#userdata div span a, div#userdata div span span a, div#usertab span a span {
-    color: #fff !important;
+    color: white !important;
 }
 
 /* Login/Reg */
@@ -427,7 +431,7 @@ div#social-links {
 
 /* Online */
 #userlist thead div, div.time, div.status {
-    color: #fff !important;
+    color: white !important;
 }
 tbody, tbody tr {
     border-radius: 10px !important;
@@ -495,11 +499,14 @@ td.bbcode_column {
 div.leftcolumn, .rightcolumn {
     background-color: var(--background2) !important;
 }
+.leftcolumn {
+    border-radius: 0px !important;
+}
 .navbar-glow-hover {
-    color: #fff !important;
+    color: white !important;
 }
 .navbar-glow-hover:hover {
-    text-shadow: 0 0 5px #000, 0 0 10px #00ffe1, 0 0 15px #7ce4f7 !important;
+    text-shadow: 0 0 5px black, 0 0 10px #00ffe1, 0 0 15px #7ce4f7 !important;
 }
 .skybanner {
     background-image: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Various%20assets/adbox_dm.png) !important;
@@ -546,66 +553,6 @@ div#invwindow, fieldset#familiar div, div#familiar {
 }
 form#changedragon fieldset div#window {
     border: none !important;
-}
-
-/* Start From Here */
-.dr-clothinglist-item, .choose-dragon-apparel-slot[data-parity="odd"] {
-    background-color: #202f3c !important;
-    border-bottom: none !important;
-}
-.choose-dragon-apparel-slot[data-parity="odd"], .choose-dragon-apparel-slot[data-parity="even"] {
-    line-height: 22px !important;
-}
-.dr-clothinglist-alternate, .choose-dragon-apparel-slot[data-parity="even"] {
-    background-color: #101e29 !important;
-    border-bottom: none !important;
-}
-div#skin-box div {
-    background-color: #141d25 !important;
-    border-radius: 8px !important;
-}
-.item-list-container-box {
-    /*border: 2px #07101b solid !important;*/
-    border: none !important;
-}
-div#skin-box {
-    border: 2px #07101b solid !important;
-    background-color: #07101b !important;
-}
-.item-list-container, .choose-dragon-apparel-slots {
-    border-left: 2px #07101b solid !important;
-    border-top: 2px #07101b solid !important;
-    border-bottom: 2px #07101b solid !important;
-    border-radius: 10px !important;
-    background-color: #07101b !important;
-}
-#clothingnomove li div span {
-    color: #8c9cab !important;
-}
-.emptyapparelslot {
-    background-color: #76919e;
-    border: 1px #76919e solid;
-}
-div.fayt-search-item {
-    background-color: #0a131f !important;
-}
-div.fayt-search-item.fayt-search-result-item {
-    color: #92afc3 !important;
-}
-div.fayt-search-item.fayt-search-result-item.selected {
-    color: #007cd1 !important;
-}
-.fayt-search-item-icon img {
-    border-radius: 15px !important;
-}
-#itemnomove li.itemnomove, form#changedragon fieldset #window #itemlist #a1, form#changedragon fieldset #window #itemlist #a2, form#changedragon fieldset #window #itemlist #a3, form#changedragon fieldset #window #itemlist #a4, form#changedragon fieldset #window #itemlist #a5, form#changedragon fieldset #window #itemlist #a6, form#changedragon fieldset #window #itemlist #a7, form#changedragon fieldset #window #itemlist #a8, form#changedragon fieldset #window #itemlist #a9, form#changedragon fieldset #window #itemlist #a10, form#changedragon fieldset #window #itemlist #a11, form#changedragon fieldset #window #itemlist #a12, form#changedragon fieldset #window #itemlist #a13, form#changedragon fieldset #window #itemlist #a14, form#changedragon fieldset #window #itemlist #a15, form#changedragon fieldset #window #itemlist #a16, form#changedragon fieldset #window #itemlist #a17, form#changedragon fieldset #window #itemlist #a18, form#changedragon fieldset #window #itemlist #a19, form#changedragon fieldset #window #itemlist #a20 {
-    border-bottom: 1px solid #6c7f93 !important;
-}
-.common-message-info {
-    color: #afddda;
-    border-color: #afddda;
-    background-color: #14355e !important;
-    background-image: url(https://i.imgur.com/Qy0yMm0.png);
 }
 
 /* Familiar Bonding */
@@ -668,7 +615,7 @@ div#ajax-bonding.ui-dialog-content.ui-widget-content, #bonding-dialog {
 
 /* Baldwin Page */
 .baldwin-mini-item span, .baldwin-fullsize-item span {
-    color: #fff !important;
+    color: white !important;
     background-color: #21353f !important;
     font-size: 11px !important;
     border-radius: 2px !important;
@@ -698,11 +645,10 @@ img[src="/static/layout/baldwin/cauldron_loading.gif"] {
     content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Trading%20Post/Baldwin/cauldron_loading_dm.gif) !important;
 }
 .content-header, .baldwin-redtext, .recipe-cost, #itemprev #prevcaption span {
-    color: #fff !important;
-    text-shadow: 0 0 0.2em #000, 0 0 0.2em #000, 0 0 0.2em #000 !important;
+    color: white !important;
 }
 .breadcrumbs, #blurb #explanation span, div#skinprev.ui-dialog-content.ui-widget-content div#blurb span span, div#bonding.ui-dialog-content.ui-widget-content div span div span, div#itemprev.ui-dialog-content.ui-widget-content div span, div#confirm-delivery.ui-dialog-content.ui-widget-content p span, div#tradable-dragons-page div.pagination-links span, #confirm-trade span:first-child, span.dr-apparel-tab.dr-apparel-tab-selected.dr-apparel-tab-default, #add-apparel div div div span.dr-apparel-tab.dr-apparel-tab-selected, body div div#exiled.ui-dialog-content.ui-widget-content div div span, #baldwin-preview-container #baldwin-preview-icon-cooldown {
-    color: #fff !important;
+    color: white !important;
 }
 #content div div div div.inner-content div div.pendingtrade.theycontrib {
     background-color: #6f859b !important;
@@ -710,8 +656,8 @@ img[src="/static/layout/baldwin/cauldron_loading.gif"] {
 }
 #content div div div div.inner-content div div.pendingtrade.theyfinalize {
     background-color: #81878d !important;
-    border: 1px solid #000 !important;
-    color: #fff;
+    border: 1px solid black !important;
+    color: white;
 }
 #content div div div div.inner-content div div.pendingtrade.youcontrib {
     background-color: #3c4f62 !important;
@@ -755,7 +701,7 @@ body div #preview-dialog #skinprev div#spec_drags div#paginator {
     padding-top: 5px !important;
 }
 #baldwin-xpbar-leftlabel, #baldwin-xpbar-rightlabel, #baldwin-timer-value, .baldwin-timer-completed, #swipp-timer-value, .swipp-timer-completed, span#pl_remainingNumber, div#counter {
-    color: #fff !important;
+    color: white !important;
 }
 div.recipe {
     background-color: #21353f !important;
@@ -771,7 +717,7 @@ div.recipe {
     background-color: #2b2522 !important;
 }
 .recipe-pagination .recipe-pagination-page {
-    color: #fff !important;
+    color: white !important;
 }
 .recipe-pagination .recipe-pagination-page[data-enabled="true"] {
     color: #7de4ff !important;
@@ -814,7 +760,7 @@ div.baldwin-cauldron-status.baldwin-cauldron-done */
 }
 .swipp-mini-item span {
     background-color: #15242C !important;
-    color: #fff !important;
+    color: white !important;
     font-size: 11px !important;
     border-radius: 5px 0px 0px 0px !important;
     padding: 3px 3px 0px 3px !important;
@@ -854,7 +800,7 @@ div.baldwin-cauldron-status.baldwin-cauldron-done */
     color: #70deff;
 }
 .ah-listing-itemname, #ah-search-collapsed-blurb, .ah-search-submit-container-right, .ah-reset-to-defaults, .ah-dlg-itemname, .ah-dlg-cost, .dragon-search-filters-reset, .dragon-search-filters-keep-expanded, #dragon-search-filters-blurb {
-    color: #fff !important;
+    color: white !important;
 }
 .ah-search-option select, span.dragon-search-multiselect select, span.dragon-search-color-range select, span.dragon-search-filter select {
     border-radius: 10px !important;
@@ -864,7 +810,7 @@ div.baldwin-cauldron-status.baldwin-cauldron-done */
     color: #8ea9c7 !important;
 }
 div#friendchange.ui-dialog-content.ui-widget-content div span {
-    color: #fff !important;
+    color: white !important;
 }
 #ah-sell-details, .ah-ledger-header, .ah-history-note, .ah-search-options, #dragon-search-filters {
     background-color: #34404b !important;
@@ -875,7 +821,7 @@ div#friendchange.ui-dialog-content.ui-widget-content div span {
 }
 input {
     /* background-color: #15191e !important;
-    color: #fff !important;
+    color: white !important;
     border: none !important; */
     padding: 5px !important;
     border-radius: 5px !important;
@@ -899,7 +845,7 @@ div.main div.content div.inner-content div#region-info fieldset {
     color: #66d3ff !important;
 }
 .itemtip .itemdesc, .itemtip .foodval, #ah-sell-price-table th {
-    color: #fff !important;
+    color: white !important;
 }
 .ah-house-dropdown {
     background-color: #102131 !important;
@@ -912,7 +858,7 @@ div.main div.content div.inner-content div#region-info fieldset {
     border-bottom: 0px solid #181c1e !important;
 }
 #msg-items #items .itemicon span, #ah-sell-column-container #ah-sell-left div div span, span.item-attachment span, .no_insert span, #attachments .insert_item span {
-    color: #fff !important;
+    color: white !important;
     background-color: #2b2522 !important;
     font-size: 10px !important;
     border-radius: 3px !important;
@@ -924,7 +870,7 @@ div.main div.content div.inner-content div#region-info fieldset {
     margin-right: -2px !important;
 }
 .itemicon span {
-    color: #fff !important;
+    color: white !important;
     background-color: #2b2522 !important;
     font-size: 10px !important;
     border-radius: 3px !important;
@@ -1028,7 +974,7 @@ div.ah-gene-select-filters {
 }
 div.post-author-avatar, .vista-option-avatar {
     background: #41454a !important;
-    border: 2px solid #000 !important;
+    border: 2px solid black !important;
     border-color: #22262a !important;
     border-radius: 10px !important;
 }
@@ -1037,11 +983,11 @@ div.post-author-avatar img {
 }
 div.editor-author-avatar img {
     border-radius: 10px !important;
-    border: 0px solid #000 !important;
+    border: 0px solid black !important;
 }
 .editor-author-avatar, div#commentlist div span a img, div#avatars span#currentnav img {
     background: #323a43 !important;
-    border: 2px solid #000 !important;
+    border: 2px solid black !important;
     border-color: #323a43 !important;
     border-radius: 10px !important;
 }
@@ -1049,7 +995,7 @@ post-author-action.post-author-action-friend.common-tooltip {
     background: #15191e !important;
 }
 div.common-tooltip-box {
-    color: #fff !important;
+    color: white !important;
     background: #0C171D !important;
     border: 0px solid #0C171D !important;
     border-color: #0C171D !important;
@@ -1066,19 +1012,19 @@ div.common-tooltip-box {
     color: #819fb1 !important;
 }
 .post-stat-count {
-    color: #fff !important;
+    color: white !important;
 }
 #topic-header {
     color: #abb7c4 !important;
 }
 #topic-header strong {
-    color: #fff !important;
+    color: white !important;
 }
 .post-edited {
     color: #728d9d !important;
 }
 span.posttext .forummsg {
-    color: #fff;
+    color: white;
 }
 #topic-footer {
     border-top: 1px solid #545f64 !important;
@@ -1110,11 +1056,11 @@ div#postsheader {
 }
 div.bbcode_quote_body, div.bbcode_code_body {
     background-color: #5e6d78 !important;
-    color: #fff !important;
+    color: white !important;
 }
 div.bbcode_quote_head, div.bbcode_code_head {
     background-color: #22262a !important;
-    color: #fff !important;
+    color: white !important;
 }
 div.bbcode_quote, div.bbcode_code {
     border-width: 1px !important;
@@ -1143,13 +1089,13 @@ span#controls {
 }
 .mb_button {
     background-color: #866650 !important;
-    color: #fff !important;
-    border: solid 1px #000 !important;
+    color: white !important;
+    border: solid 1px black !important;
     padding: 5px !important;
 }
 .forum-search-bar input {
     background-color: #333b42 !important;
-    color: #fff!important;
+    color: white!important;
     border: none!important;
     padding: 5px !important;
 }
@@ -1157,7 +1103,7 @@ span#controls {
     background-color: #54453b !important;
 }
 #sender-name, .news, table#forum-fr td, table#forum-general td, h1.forum-header, table#postlist td.lastpost, table#postlist td.activity div.activity-replies, table#postlist td.topic {
-    color: #fff !important;
+    color: white !important;
 }
 table#postlist tr.darker {
     background-color: #13171b !important;
@@ -1230,7 +1176,7 @@ div.search-result-bubble.search-result-bubble-alt {
     color: #7d92aa !important;
 }
 #dev-tracker-content .dev-tracker-search-option-label {
-    color: #fff !important;
+    color: white !important;
 }
 .common-bubble-meta {
     border-bottom: 1px solid #63544b !important;
@@ -1278,7 +1224,7 @@ hr {
     border-radius: 10px !important;
 }
 .search-controls-label, #attach-confirm-currency span, div div#dset.ui-dialog-content.ui-widget-content span, p#tradeawait {
-    color: #fff !important;
+    color: white !important;
 }
 .search-results-description {
     color: #8ad3fe !important;
@@ -1312,30 +1258,9 @@ div#spec_drags div, body div #skinprev div#spec_drags div {
     background-color: #14252f !important;
 }
 
-/*Festive Favors Joxar's Spare Inventory*/
-div.ff-joxar-blurb {
-    border: 2px solid #060d11;
-    color: #cbd7dd !important;
-    background: url(https://i.imgur.com/mhbybET.png);
-}
-.ff-joxar-blurb-arrow {
-    background: url(https://i.imgur.com/oJJjBnk.png);
-    left: -26px !important;
-}
-div.ff-joxar-item-name, div.ff-joxar-chest-name, span.ff-current-tab, span.ff-joxar-itemname {
-    color: #fff !important;
-}
-.ff-joxar-item-category, .content-header-sub {
-    color: #859197 !important;
-}
-div#ff-currency-tip {
-    border: 2px solid #00080d !important;
-    background: #0c0f11 !important;
-}
-
 /*Fairgrounds*/
 .faire-tooltip .header h1 {
-    color: #fff !important;
+    color: white !important;
 }
 div#inv_main {
     background-image: none !important;
@@ -1346,7 +1271,7 @@ div#wikicontent h1 {
     color: #3896ff !important;
 }
 #wikitext center table tbody tr td span b, div.wiki div table tbody tr td b, li {
-    color: #fff !important;
+    color: white !important;
 }
 div#luckystreak span#luckyStreakAmt, div#super-container div#luckystreak span {
     color: #074660 !important;
@@ -1366,7 +1291,7 @@ div#luckystreak span#luckyStreakAmt {
     color: #b4d0df !important;
 }
 div#buybp-container h1, div#skinuploadcontainer form div.submitcontrol h1 {
-    color: #fff !important;
+    color: white !important;
 }
 .skininfo span {
     color: #4dc0ff !important;
@@ -1399,7 +1324,7 @@ div#skinuploadcontainer form div.submitcontrol #infocontainer select#breed, div#
 
 /* Dragon Restoration */
 #dgnres-content table tbody tr td p {
-    color: #fff !important;
+    color: white !important;
 }
 #dgnres-content table tbody tr td p strong.dragon-name, #dgnres-content div div div h2, div#contactshim h1, .dgnres-index .cooldown .label {
     color: #3896ff !important;
@@ -1407,7 +1332,7 @@ div#skinuploadcontainer form div.submitcontrol #infocontainer select#breed, div#
 
 /*Support */
 div.common-hub-item-description {
-    color: #fff !important;
+    color: white !important;
     background: #0C171D !important;
     border: 0px solid #0C171D !important;
     border-color: #0C171D !important;
@@ -1449,20 +1374,20 @@ div#infoFrame img {
     border-radius: 10px !important;
 }
 .coli-stats-health-breath-table th, .coli-stats-health-breath-table td, .coli-stats-points-table th, .coli-stats-points-table td, #coli-equip-stats-table th, #coli-equip-stats-table td {
-    color: #fff !important;
+    color: white !important;
 }
 .coli-dragonlist-row.coli-dragon-in-party {
     background-color: #0f4d95 !important;
 }
 #coli-tipcontainer, .coli-equip-battlestone-disabled-msg, .coli-equip-stat-tooltip, .coli-equip-tooltip-style, #coli-organize-load-party-tip, .coli-tooltip-style, #coli_condition_tooltip, #coli-equip-errordlg, div#coli-equip-tincdlg-pad {
-    color: #fff !important;
+    color: white !important;
     background: #0C171D !important;
     border: 0px solid #0C171D !important;
     border-color: #0C171D !important;
     border-radius: 10px !important;
 }
 #coli-equip-statdlg {
-    color: #fff !important;
+    color: white !important;
     background: #1b2d37 !important;
     border: 0px solid #1b2d37 !important;
     border-color: #1b2d37 !important;
@@ -1532,7 +1457,7 @@ table#userlist tbody tr {
 /*Exalted*/
 .common-fieldset-inset {
     background-color: #54453b !important;
-    color: #fff !important;
+    color: white !important;
     border: none !important;
 }
 .exalted-lineage-header {
@@ -1547,7 +1472,7 @@ table#userlist tbody tr {
 .common-fieldset legend {
     background-color: #003d75 !important;
     border: solid 1px #003d75 !important;
-    color: #fff !important;
+    color: white !important;
 }
 
 /* Pagination */
@@ -1570,7 +1495,7 @@ table#userlist tbody tr {
 }
 .recipe-pagination .common-pagination-page[data-enabled="false"], .recipe-pagination .common-pagination-page[data-enabled="false"]:hover {
     font-weight: bold;
-    color: #fff !important;
+    color: white !important;
     border: 2px solid #0aa5be;
     background: #193340;
 }
@@ -1604,7 +1529,7 @@ table#userlist tbody tr {
 .common-checkbox[data-selected="1"] {
     border-color: #0082d2;
     background-color: #0082d2;
-    color: #fff;
+    color: white;
 }
 
 /*Account Settings Vista*/
@@ -1629,7 +1554,7 @@ table#userlist tbody tr {
 #bbcode-tag-bar img {
     border: 1px solid #ccc !important;
     border-radius: 4px !important;
-    background-color: #fff !important;
+    background-color: white !important;
 }
 #editor-emoji-dialog .editor-emoji-dialog-filter, .lair-page-icon-filter {
     background-color: #4f4036 !important;
@@ -1695,7 +1620,7 @@ table#userlist tbody tr {
 .bestiary-familiar-name, .flattery-slot-name, .bestiary-familiar-nickname {
     color: #c6f7ff;
     font-size: 12px;
-    text-shadow: .5px 0 0 #000, 0 -.5px 0 #000, 0 .5px 0 #000, -.5px 0 0 #000, 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    text-shadow: .5px 0 0 black, 0 -.5px 0 black, 0 .5px 0 black, -.5px 0 0 black, 1px 0 0 black, 0 -1px 0 black, 0 1px 0 black, -1px 0 0 black;
 }
 .bestiary-familiar-description {
     background: #1d2833;
@@ -1710,8 +1635,8 @@ table#userlist tbody tr {
     background: #18314a;
 }
 .common-tab-selected, .common-tab-selected:hover {
-    border-color: #00f1ff !important;
-    background: #11304d !important;
+    border-color: var(--accent1) !important;
+    background: var(--leftcol) !important;
 }
 .common-tab {
     border: 2px solid #546d86;
@@ -1740,7 +1665,7 @@ table#userlist tbody tr {
 
 /* Game Database */
 .common-hub-item-description {
-    color: #fff !important;
+    color: white !important;
     background: #0C171D !important;
     border: 0px solid #0C171D !important;
     border-color: #0C171D !important;
@@ -1755,7 +1680,7 @@ div#game-database-filters.common-filters {
     background: linear-gradient(to bottom, #02192d 0%, #25435e 100%);
 }
 .game-database-item-result-name, .game-database-monster-result-name {
-    color: #fff !important;
+    color: white !important;
 }
 #game-database-open-tooltip {
     border: 3px solid #060d12 !important;
@@ -1790,7 +1715,7 @@ div#game-database-filters.common-filters {
 }
 textarea#message, textarea#suggestion {
     background-color: #77695f !important;
-    color: #fff !important;
+    color: white !important;
     border-radius: 0px !important;
     font-size: 13px !important;
 }
@@ -1812,7 +1737,7 @@ a.game-db-item-pill {
     color: #b0d6f0 !important;
 }
 a.game-db-item-pill:hover {
-    color: #fff !important;
+    color: white !important;
 }
 .game-db-item-pill:hover {
     border: 1px solid #a7d9ea;
@@ -1900,7 +1825,7 @@ div.cluetip-inner.ui-cluetip-content div span {
 }
 .settings-hub-category-header, .hoard-stack-functions-name {
     color: #70d2ff !important;
-    text-shadow: 0 1px 1px #000 !important;
+    text-shadow: 0 1px 1px black !important;
 }
 .hoard-stack-functions-quantity, .dragon-picker-preview-number {
     color: #8aa6bb;
@@ -1933,7 +1858,7 @@ div.cluetip-inner.ui-cluetip-content div span {
 }
 .hoard-result-item-box[data-favorite="1"] {
     background: linear-gradient(to bottom, #73fbeb 0%, #d15de3 100%);
-    border-color: #fff;
+    border-color: white;
 }
 .common-table tbody tr:nth-child(odd) {
     background-color: #171c21;
@@ -1977,9 +1902,27 @@ textarea#bio {
     border-radius:4px;
 }
 
+@-moz-document url("https://www1.flightrising.com") {
 /* Image Replacer */
 #cluetip-waitimage {
     background-image: url(https://i.imgur.com/N24sLgg.gif) !important;
+}
+img[src="/static/icon/close.png"] {
+    content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Various%20assets/close_dm.png) !important;
+}
+img[src="/static/layout/icon_lock.png"] {
+    content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Various%20assets/lock_dm.png) !important;
+}
+img[src="/static/layout/lair/backgrounds/male.png"] {
+    opacity: .4;
+    content: url(https://i.imgur.com/lZJ6PTI.png) !important;
+}
+img[src="/static/layout/lair/backgrounds/female.png"] {
+    opacity: .4;
+    content: url(https://i.imgur.com/CgYsdY0.png) !important;
+}
+img[src="/static/layout/revamp/clock_large.png"], img[src="/images/layout/revamp/clock_large.png"] {
+    content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Various%20assets/clock_large_dm.png) !important;
 }
 img[src="/static/layout/revamp/left_clan_small.png"], img[src="/images/layout/revamp/left_clan_small.png"] {
     content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Various%20assets/left_clan_small_dm.png) !important;
@@ -1993,19 +1936,9 @@ img[src="/static/layout/revamp/left_play_small.png"], img[src="/images/layout/re
 img[src="/static/layout/revamp/left_library_small.png"], img[src="/images/layout/revamp/left_library_small.png"] {
     content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Various%20assets/left_library_small_dm.png) !important;
 }
-img[src="http://www1.flightrising.com/static/layout/revamp/clock_large.png"], img[src="/images/layout/revamp/clock_large.png"], img[src="https://www1.flightrising.com/static/layout/revamp/clock_large.png"] {
-    content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Various%20assets/clock_large_dm.png) !important;
-}
-img[src="/static/layout/lair/backgrounds/male.png"] {
-    opacity: .4;
-    content: url(https://i.imgur.com/lZJ6PTI.png) !important;
-}
-img[src="/static/layout/lair/backgrounds/female.png"] {
-    opacity: .4;
-    content: url(https://i.imgur.com/CgYsdY0.png) !important;
 }
 
-
+@-moz-document url("https://www1.flightrising.com") {
 /* Image Remover */
 img[src*="/images/layout/bestiary/internal_bg.jpg"], [src*="/images/layout/ge/internal_bg.jpg"], [src*="/images/layout/exalted.jpg"], [src*="/images/layout/coliseum/internal_bg.jpg"], [src*="/images/layout/tradepost/internal_bg.jpg"], [src*="/images/layout/market/internal_bg.jpg"], [src*="/images/layout/404/internal_bg.jpg"], [src*="/images/layout/hoard/internal_bg.jpg"], [src*="/images/layout/scrying/internal_bg.jpg"], [src*="/images/layout/wiki/internal_bg.jpg"], [src*="/images/layout/faire/internal_bg.jpg"], [src*="/images/layout/search/internal_bg.jpg"], [src*="/images/layout/ice/internal_bg.jpg"], [src*="/images/layout/arcane/internal_bg.jpg"], [src*="/images/layout/earth/internal_bg.jpg"], [src*="/images/layout/nature/internal_bg.jpg"], [src*="/images/layout/shadow/internal_bg.jpg"], [src*="/images/layout/light/internal_bg.jpg"], [src*="/images/layout/plague/internal_bg.jpg"], [src*="/images/layout/wind/internal_bg.jpg"], [src*="/images/layout/water/internal_bg.jpg"], [src*="/images/layout/fire/internal_bg.jpg"], [src*="/images/layout/lightning/internal_bg.jpg"], [src*="/images/layout/offspring_preview.jpg"], [src*="/images/layout/offspring_preview.jpg"], [src*="/images/layout/settings/internal_bg.jpg"], [src*="/images/layout/success_fish.png"], [src*="/images/layout/success_hunt.png"], [src*="/images/layout/success_catch.png"], [src*="/images/layout/success_forage.png"], [src*="/images/layout/success_dig.png"], [src*="/images/layout/success_scavenge.png"], [src*="/images/layout/battle/internal_bg.jpg"], [src*="/images/layout/dominance/internal_bg.jpg"] {
     background-image: none !important;
@@ -2196,7 +2129,7 @@ div.contentcontainer div.main div#super-container div div div form div {
             color: #293f4b
         }
         #gather_turn_count {
-            color: #fff
+            color: white
         }
         #gather_turns {
             color: #77695f
@@ -2278,7 +2211,7 @@ html body.onecol div#footer div#bottom-banner {
 }
 #lair-edit-page #lair-tab-description textarea, #lair-edit-page #lair-tab-description .lair-tab-description-toggle {
     background-color: #0e131a !important;
-    color: #fff !important;
+    color: white !important;
     border: none !important;
 }
 #action-pick-tab-icon:after {
@@ -2506,11 +2439,11 @@ div#bonus-ticker .number-text {
     
     div.main #super-container div#market div span, div.main #super-container div#market div div div {
         color: #cbd7dd !important;
-        text-shadow: .5px 0 0 #000, 0 -.5px 0 #000, 0 .5px 0 #000, -.5px 0 0 #000, 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+        text-shadow: .5px 0 0 black, 0 -.5px 0 black, 0 .5px 0 black, -.5px 0 0 black, 1px 0 0 black, 0 -1px 0 black, 0 1px 0 black, -1px 0 0 black;
     }
     
     div.main #super-container div#market div {
-        border-bottom: 1px solid #fff
+        border-bottom: 1px solid white
     } */
 
 img[src="/static/layout/bestiary/icons/not-hoard.png"] {
@@ -2544,7 +2477,7 @@ img[src="/static/layout/market/icons/not-apparelhelmet.png"] {
 }
 
 .market-item-result-name {
-	color: #fff;
+	color: white;
 }
 
 .market-item-price-container, .treasure-pricing-container {
@@ -2553,13 +2486,13 @@ img[src="/static/layout/market/icons/not-apparelhelmet.png"] {
 	outline-style: solid;
 	outline-color: #0b151c;
 	outline-width: 1px;
-	color: #fff;
+	color: white;
 }
 
 .mb_button {
 	border-radius: 7px !important;
 	background-color: #4b6a7f !important;
-	color: #fff !important;
+	color: white !important;
 	border: solid 2px #7ec4c9 !important;
 	padding: 0px !important;
 }
@@ -2622,25 +2555,25 @@ strong {
 
 body div div.contentcontainer div.main div#super-container div fieldset legend {
     background-color: #192229 !important;
-    color: #fff !important;
+    color: white !important;
     padding: 5px !important;
     border: solid 1px #192229 !important;
 }
 body div div.contentcontainer div.main div#super-container div, div#withdep.ui-dialog-content.ui-widget-content div div span, div#specialty.ui-dialog-content.ui-widget-content div span a.clue div, div#specialty.ui-dialog-content.ui-widget-content div span div, div#specialty.ui-dialog-content.ui-widget-content div span {
-    color: #fff !important;
+    color: white !important;
 }
 body div div.contentcontainer div.main div#super-container div span div {
     color: #657c95 !important;
 }
 body div div div div#super-container div#inv_main div form#invent span span {
     background-color: #29343d !important;
-    color: #fff !important;
+    color: white !important;
     padding: 3px !important;
     border: solid 1px #192229 !important;
     border-radius: 5px !important;
 }
 /*body div.container div.contentcontainer div.main div#super-container div span div {
-    color: #fff !important;
+    color: white !important;
 }*/
 #controls {
     padding-bottom: 18px;
@@ -2656,7 +2589,7 @@ div #super-container #inv_main div #invent div div a span#bling, div #super-cont
     min-height: 0px;
 }
 #super-container div #newname fieldset div span div div {
-    color: #fff !important;
+    color: white !important;
 }
 }
 
@@ -2664,14 +2597,14 @@ div #super-container #inv_main div #invent div div a span#bling, div #super-cont
 /* Vault Pagination */
 
 div #super-container #inv_main div #invent div div a span#bling, div #super-container #inv_main div #invent div div a span#nodiving {
-    color: #fff !important;
+    color: white !important;
 }
 div#inv_main div form#invent div div {
     background-color: #20384d !important;
     border: 0px !important;
 }
 div.contentcontainer div.main div#super-container div span {
-    text-shadow: .5px 0 0 #000, 0 -.5px 0 #000, 0 .5px 0 #000, -.5px 0 0 #000, 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    text-shadow: .5px 0 0 black, 0 -.5px 0 black, 0 .5px 0 black, -.5px 0 0 black, 1px 0 0 black, 0 -1px 0 black, 0 1px 0 black, -1px 0 0 black;
 }
 }
 
@@ -2730,7 +2663,7 @@ a.intclue:hover:after, a.clue:hover:after {
 
 h2, h3, .dragon-profile-header-name {
     color: #70d2ff !important;
-    text-shadow: 0 1px 1px #000 !important;
+    text-shadow: 0 1px 1px black !important;
 }
 .dragon-profile-divider {
     border-bottom: 1px solid #4c5862 !important;
@@ -2740,7 +2673,7 @@ h2, h3, .dragon-profile-header-name {
 }
 #dragon-profile-familiar-type {
     color: #97d4d9 !important;
-    text-shadow: 0 1px 1px #000 !important;
+    text-shadow: 0 1px 1px black !important;
 }
 .choose-dragon-apparel-slot-open-icon {
     background: #40556c;
@@ -2750,7 +2683,7 @@ h2, h3, .dragon-profile-header-name {
 .choose-dragon-apparel-slot-buy {
     border: 2px solid #527488;
     background: #18314a;
-    color: #fff !important;
+    color: white !important;
 }
 .choose-dragon-apparel-slot-locked {
     color: #505d6a;
@@ -2819,7 +2752,7 @@ h2, h3, .dragon-profile-header-name {
 }
 .dragon-profile-familiar-meter-frame[data-level="7"] .dragon-profile-familiar-meter-full {
     background: linear-gradient(to right, #aa65ff 0%, #70fffb 100%);
-    border: 1px solid #fff;
+    border: 1px solid white;
 }
 .dragon-profile-familiar-meter-frame[data-level="7"] .dragon-profile-familiar-meter-full:before {
     background: url(https://i.imgur.com/X2yN3Ek.png);
@@ -2874,8 +2807,8 @@ a.bbcode_url {
     padding-left: 45px;
 }
 .choose-scene-options, #choose-familiar-options, #choose-dragon-apparel-apparel-results .choose-dragon-apparel-scrollable-results, #choose-dragon-apparel-skin-results .choose-dragon-apparel-scrollable-results {
-    border: 2px solid #0a1826;
-    background: #222f3c;
+    border: 2px solid var(--accent1);
+    background: var(--background2);
     border-radius: 10px;
 }
 #choose-dragon-apparel-apparel-results .choose-dragon-apparel-scrollable-results, #choose-dragon-apparel-skin-results .choose-dragon-apparel-scrollable-results {
@@ -2883,7 +2816,7 @@ a.bbcode_url {
     height: 262px;
 }
 #choose-dragon-apparel-apparel-results:after, #choose-dragon-apparel-skin-results:after {
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #2b2522 85%) !important;
+    background: none !important;
     margin-bottom: -10px;
 }
 #choose-familiar-preview-box {
@@ -2948,7 +2881,7 @@ div.choose-vista-preview {
 }
 .ui-widget textarea {
     background-color: #77695f !important;
-    color: #fff !important;
+    color: white !important;
     border-radius: 0px !important;
     font-size: 13px !important;
 }
@@ -2985,6 +2918,71 @@ h2.dragon-profile-details-header {
 }
 }
 
+@-moz-document url-prefix("https://www1.flightrising.com/dragon-apparel/") {
+/* Dragon Apparel */
+.choose-dragon-apparel-slot[data-parity="odd"], .choose-dragon-apparel-slot[data-parity="even"] {
+    line-height: 22px !important;
+}
+#clothingnomove li div span {
+    color: #8c9cab !important;
+}
+.common-message-info {
+    color: white;
+    border-color: var(--accent1);
+    background-color: var(--background1) !important;
+    background-image: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Various%20assets/info_dm.png);
+}
+.content-header-sub {
+    color: var(--accent1) !important;
+}
+.dr-clothinglist-alternate, .choose-dragon-apparel-slot[data-parity="even"] {
+    background-color: var(--color-even) !important;
+    border-bottom: none !important;
+}
+.dr-clothinglist-item, .choose-dragon-apparel-slot[data-parity="odd"] {
+    background-color: var(--color-odd) !important;
+    border-bottom: none !important;
+}
+.emptyapparelslot {
+    background-color: #76919e;
+    border: 1px #76919e solid;
+}
+.fayt-search-item-icon img {
+    border-radius: 15px !important;
+}
+.item-list-container, .choose-dragon-apparel-slots {
+    border-left: 2px var(--accent1) solid !important;
+    border-top: 2px var(--accent1) solid !important;
+    border-bottom: 2px var(--accent1) solid !important;
+    border-radius: 10px !important;
+    background-color: #07101b !important;
+}
+.item-list-container-box {
+    /*border: 2px #07101b solid !important;*/
+    border: none !important;
+}
+#itemnomove li.itemnomove, form#changedragon fieldset #window #itemlist #a1, form#changedragon fieldset #window #itemlist #a2, form#changedragon fieldset #window #itemlist #a3, form#changedragon fieldset #window #itemlist #a4, form#changedragon fieldset #window #itemlist #a5, form#changedragon fieldset #window #itemlist #a6, form#changedragon fieldset #window #itemlist #a7, form#changedragon fieldset #window #itemlist #a8, form#changedragon fieldset #window #itemlist #a9, form#changedragon fieldset #window #itemlist #a10, form#changedragon fieldset #window #itemlist #a11, form#changedragon fieldset #window #itemlist #a12, form#changedragon fieldset #window #itemlist #a13, form#changedragon fieldset #window #itemlist #a14, form#changedragon fieldset #window #itemlist #a15, form#changedragon fieldset #window #itemlist #a16, form#changedragon fieldset #window #itemlist #a17, form#changedragon fieldset #window #itemlist #a18, form#changedragon fieldset #window #itemlist #a19, form#changedragon fieldset #window #itemlist #a20 {
+    border-bottom: 1px solid #6c7f93 !important;
+}
+div.fayt-search-item {
+    background-color: #0a131f !important;
+}
+div.fayt-search-item.fayt-search-result-item {
+    color: #92afc3 !important;
+}
+div.fayt-search-item.fayt-search-result-item.selected {
+    color: #007cd1 !important;
+}
+div#skin-box {
+    border: 2px #07101b solid !important;
+    background-color: #07101b !important;
+}
+div#skin-box div {
+    background-color: #141d25 !important;
+    border-radius: 8px !important;
+}
+}
+
 @-moz-document url-prefix("https://www1.flightrising.com/trading/pinkpile"), url-prefix("https://www1.flightrising.com/trading/gift/receive") {
 /* Pinkerton's Plundered Pile */
 
@@ -3015,13 +3013,13 @@ div.main {
         background-color: #293f4b
     }
     #tomo-remaining-count {
-        color: #fff
+        color: white
     }
     #tomo-remaining {
         color: #77695f
     }
     #tomo-reward {
-        color: #fff
+        color: white
     }
 }
 
@@ -3041,7 +3039,7 @@ div.main {
         color: #77695f
     }
     #archaeology-dig-timer-text {
-        color: #fff
+        color: white
     }
     #archaeology-xp-meter-label {
         color: #77695f
@@ -3050,7 +3048,7 @@ div.main {
         color: #77695f
     }
     #archaeology-dig-timer-time {
-        color: #fff !important
+        color: white !important
     }
 }
 
@@ -3310,6 +3308,26 @@ div.main div.content {
 @-moz-document url-prefix("https://www1.flightrising.com/exchange/joxars-spare-inventory") {
 /* Joxar's Spare Inventory */
 
+.ff-joxar-blurb-arrow {
+    background: url(https://i.imgur.com/oJJjBnk.png);
+    left: -26px !important;
+}
+.ff-joxar-item-category, .content-header-sub {
+    color: #859197 !important;
+}
+div#ff-currency-tip {
+    border: 2px solid #00080d !important;
+    background: #0c0f11 !important;
+}
+div.ff-joxar-blurb {
+    border: 2px solid #060d11;
+    color: #cbd7dd !important;
+    background: url(https://i.imgur.com/mhbybET.png);
+}
+
+div.ff-joxar-item-name, div.ff-joxar-chest-name, span.ff-current-tab, span.ff-joxar-itemname {
+    color: white !important;
+}
 div.main {
     background: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-62dcd85a4b611.png) !important;
     background-repeat: no-repeat !important
@@ -3320,6 +3338,7 @@ div.main div.content {
     background-position: -10px -10px
 }
 }
+
 @-moz-document url-prefix("https://www1.flightrising.com/exchange") {
 /* Joxar's Festive Favors */
 
@@ -3342,7 +3361,7 @@ div.main div.content {
 }
 
 .custom-shop-trade-reward-name {
-	color: #fff;
+	color: white;
 }
 
 /*
@@ -3358,11 +3377,11 @@ div#market div div {
 
 div.main #super-container div#market div span, div.main #super-container div#market div div div {
 	color: #cbd7dd !important;
-	text-shadow: .5px 0 0 #000, 0 -.5px 0 #000, 0 .5px 0 #000, -.5px 0 0 #000, 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+	text-shadow: .5px 0 0 black, 0 -.5px 0 black, 0 .5px 0 black, -.5px 0 0 black, 1px 0 0 black, 0 -1px 0 black, 0 1px 0 black, -1px 0 0 black;
 }
 
 div.main #super-container div#market div {
-	border-bottom: 1px solid #fff
+	border-bottom: 1px solid white
 }
 */
 
@@ -3395,7 +3414,7 @@ img[src="/static/layout/market/icons/not-apparelhelmet.png"] {
 }
 
 .market-item-result-name {
-	color: #fff;
+	color: white;
 }
 
 .market-item-price-container, .treasure-pricing-container {
@@ -3404,13 +3423,13 @@ img[src="/static/layout/market/icons/not-apparelhelmet.png"] {
 	outline-style: solid;
 	outline-color: #0b151c;
 	outline-width: 1px;
-	color: #fff;
+	color: white;
 }
 
 .mb_button {
 	border-radius: 7px !important;
 	background-color: #4b6a7f !important;
-	color: #fff !important;
+	color: white !important;
 	border: solid 2px #7ec4c9 !important;
 	padding: 0px !important;
 }
@@ -3544,7 +3563,7 @@ div.main {
 @-moz-document url-prefix("https://www1.flightrising.com/exchange/") {
 div.common-message.custom-shops-common-message
 {
-    background-color: #000 !important;
+    background-color: black !important;
     color: #4f697d;
     border-color: #cad7e1;
 }
