@@ -3,7 +3,7 @@
 @namespace    USO Archive
 @author       FCE300 and crue-lty on GitHub (original by Zoga)
 @description  A dark theme for Flight Rising, with toggles for lower-saturation images. The bulk of this code was originally written by Zoga, and is being brought up to date and improved upon by FCE300 and crue-lty.
-@version      2.1.0
+@version      2.1.1
 @license      CC-BY-NC-4.0
 @preprocessor stylus
 
@@ -3721,11 +3721,29 @@ div.main {
 }
 
 @-moz-document url-prefix("https://www1.flightrising.com/exchange/rockbreakers-ceremony-shop") {
-
+/* Shop Earth */
+div.main {
+    background: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-6381c9fd21841.png) !important;
+    background-repeat: no-repeat !important;
+}
+div.main div.content {
+    background-image: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-6381c9fd21841.png);
+    background-repeat: no-repeat !important;
+    background-position: -10px -10px;
+}
 }
 
 @-moz-document url-prefix("https://www1.flightrising.com/exchange/crystalline-gala-shop") {
-
+/* Shop Ice */
+div.main {
+    background: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-63ccd459735fd.png) !important;
+    background-repeat: no-repeat !important;
+}
+div.main div.content {
+    background-image: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-63ccd459735fd.png);
+    background-repeat: no-repeat !important;
+    background-position: -10px -10px;
+}
 }
 
 @-moz-document url-prefix("https://www1.flightrising.com/exchange/trickmurk-circus-shop") {
