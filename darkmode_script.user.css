@@ -3,7 +3,7 @@
 @namespace    USO Archive
 @author       FCE300 and crue-lty on GitHub (original by Zoga)
 @description  A dark theme for Flight Rising, with toggles for lower-saturation images. The bulk of this code was originally written by Zoga, and is being brought up to date and improved upon by FCE300 and crue-lty.
-@version      2.1.2
+@version      2.1.3
 @license      CC-BY-NC-4.0
 @preprocessor stylus
 
@@ -3757,19 +3757,55 @@ div.main div.content {
 }
 
 @-moz-document url-prefix("https://www1.flightrising.com/exchange/trickmurk-circus-shop") {
-
+/* Shop Shadow */
+div.main {
+    background: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-63f19196965fd.png) !important;
+    background-repeat: no-repeat !important;
+}
+div.main div.content {
+    background-image: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-63f19196965fd.png);
+    background-repeat: no-repeat !important;
+    background-position: -10px -10px;
+}
 }
 
 @-moz-document url-prefix("https://www1.flightrising.com/exchange/mistral-jamboree-shop") {
-
+/* Shop Wind */
+div.main {
+    background: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-64203accc3b31.png) !important;
+    background-repeat: no-repeat !important;
+}
+div.main div.content {
+    background-image: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-64203accc3b31.png);
+    background-repeat: no-repeat !important;
+    background-position: -10px -10px;
+}
 }
 
 @-moz-document url-prefix("https://www1.flightrising.com/exchange/wavecrest-saturnalia-shop") {
-
+/* Shop Water */
+div.main {
+    background: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-644520e6332cf.png) !important;
+    background-repeat: no-repeat !important;
+}
+div.main div.content {
+    background-image: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-644520e6332cf.png);
+    background-repeat: no-repeat !important;
+    background-position: -10px -10px;
+}
 }
 
 @-moz-document url-prefix("https://www1.flightrising.com/exchange/greenskeeper-gathering-shop") {
-
+/* Shop Nature */
+div.main {
+    background: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-6472f05920201.png) !important;
+    background-repeat: no-repeat !important;
+}
+div.main div.content {
+    background-image: url(https://www1.flightrising.com/static/cms/custom-shop/backgrounds/custom-shop-background-6472f05920201.png);
+    background-repeat: no-repeat !important;
+    background-position: -10px -10px;
+}
 }
 
 @-moz-document url-prefix("https://www1.flightrising.com/exchange/") {
