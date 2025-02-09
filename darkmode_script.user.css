@@ -3,7 +3,7 @@
 @namespace    USO Archive
 @author       FCE300 and crue-lty on GitHub (original by Zoga)
 @description  A dark theme for Flight Rising, with toggles for lower-saturation images. The bulk of this code was originally written by Zoga, and is being brought up to date and improved upon by FCE300 and crue-lty.
-@version      2.1.3
+@version      2.1.4
 @license      CC-BY-NC-4.0
 @preprocessor stylus
 
@@ -45,11 +45,23 @@ we need to look for a specific value... */
     --accent2: #a6998b;
     --accent3: #d2ccc5;
     --accent4: #b87d56;
+	--accent1-05-opac: #16151480;
+	--accent2-05-opac: #a6998b80;
+	--accent3-05-opac: #d2ccc580;
+	--accent4-05-opac: #b87d5680;
+
     --background1: #4f4036;
     --background2: #342b27;
     --background3: #2b2522;
+    --background1-05-opac: #4f403680;
+    --background2-05-opac: #342b2780;
+    --background3-05-opac: #2b252280;
+
     --color-even: #2b221c;
     --color-odd: #352b25;
+    --color-even-05-opac: #2b221c80;
+    --color-odd-05-opac: #352b2580;
+
     --infobox: #5d3114;
     --leftcol: #332a26;
     --leftcol-accent: #160f0b;
@@ -514,6 +526,8 @@ div.leftcolumn, .rightcolumn {
 .skybanner {
     background-image: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Various%20assets/adbox_1_dm.png) !important;
     background-size: 100%;
+    margin-left: auto;
+    margin-right: 0;
 }
 span.ui-icon.ui-icon-closethick {
     background-image: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Various%20assets/iconset_dm.png) !important;
@@ -1832,12 +1846,12 @@ img[src="/static/layout/icon_lock.png"] {
 }
 
 img[src="/static/layout/lair/backgrounds/male.png"] {
-    opacity: .4;
+    opacity: .6;
     content: url(https://i.imgur.com/lZJ6PTI.png) !important;
 }
 
 img[src="/static/layout/lair/backgrounds/female.png"] {
-    opacity: .4;
+    opacity: .6;
     content: url(https://i.imgur.com/CgYsdY0.png) !important;
 }
 
@@ -2312,13 +2326,13 @@ a.lair-pagination-page:hover {
 }
 
 .lair-page-dragons .lair-page-dragon .lair-page-dragon-box {
-    border: 1px solid #0b151c;
-    background: linear-gradient(to bottom, #b9c9d9 0%, #3a4450 100%);
+    background: linear-gradient(var(--background3), var(--background1-05-opac));
+	border: 1px solid var(--background1);
 }
 
 .lair-page-dragons .lair-page-dragon .lair-page-dragon-box .lair-page-dragon-energy-bar-full {
-    background: linear-gradient(to right, #235e96 0%, #80efbd 100%);
-    border: 1px solid #3dd6ef;
+    background: linear-gradient(to right, #fd9a32 0%, #fee781 100%);
+    /* border: 1px solid #3dd6ef; */
 }
 
 .modal-tab {
@@ -2344,22 +2358,14 @@ a.lair-pagination-page:hover {
     height: 10px;
 }
 
-.lair-page-dragons .lair-page-dragon .lair-page-dragon-box {
-    background: linear-gradient(rgba(34,40,43,0.5), rgba(51,68,80,0.5));
-}
-
-
 img.lair-page-dragon-element {
     filter: contrast(150%) !important;
 }
 
 .lair-footer .lair-slots-available {
-    background: #0e131a !important;
-    color: #cbd7dd !important;
-}
-
-.lair-footer .lair-slots-available strong {
-    color: #00dcff !important;
+    background: var(--color-odd) !important;
+	border: 1px var(--background1) solid;
+    color: var(--text2) !important;
 }
 
 .common-dialog-warning {
