@@ -1,4 +1,4 @@
-<sup>scrunkly temporary little readme</sup>
+<sup>scrunkly little readme</sup>
 
 # A Dark Theme For _Flight Rising_
 ## Now with 21% more dragon! <sup>And maybe a few corvids</sup>
@@ -9,12 +9,12 @@ Zoga's original work can be found at [this link](https://raw.githubusercontent.c
 
 Disclaimer: We have no idea what we're doing and our code is hacked together worse than Yandere Dev's. But it works!
 
-Another disclaimer: We are not affiliated with Zoga, they are not involved in our project, and they do not endorse us. Zoga's CSS is under the CC-BY-NC-4.0 license, granting us permission to edit and redistribute their work with credit. They wrote almost all of the code that currently exists in this project, and they are very cool for that.
+Another disclaimer: We are not affiliated with Zoga, they are not involved in our project, and they do not endorse us. Zoga's CSS is under the CC-BY-NC-4.0 license, granting us permission to edit and redistribute their work with credit.
 
 -----
 
 ### Oh you wanted previews? Okay
 
-![Main page preview](https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/.GITHUB_PREVIEWS/main_page.png)
+![Main page preview](https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/.GITHUB_PREVIEWS/main.png)
 
-![Dragon bio preview](https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/.GITHUB_PREVIEWS/dragon_bio.png)
+![Dragon bio preview](https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/.GITHUB_PREVIEWS/dragon.png)
