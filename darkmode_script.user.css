@@ -3,7 +3,7 @@
 @namespace    USO Archive
 @author       @FCE300 and @crue-lty on GitHub (original by Zoga)
 @description  A dark theme for Flight Rising, with toggles for lower-saturation images. The bulk of this code was originally written by Zoga, and is being brought up to date and improved upon by FCE300 and crue-lty.
-@version      2.1.7
+@version      2.1.8
 @license      CC-BY-NC-4.0
 @preprocessor stylus
 
@@ -728,7 +728,7 @@ div#bonding.ui-dialog-content.ui-widget-content {
     padding-top: 15px !important;
 }
 .breadcrumbs a, .baldwin-timer-header, .recipe-stats, .recipe-desc-details, .swipp-timer-header, #pl_remaining {
-    color: #8ea9c7 !important;
+    color: var(--text1) !important;
 }
 a.headertargetlink, .recipe-pager .recipe-pager-pagenos, div.ah-pagenumbers strong {
     color: #1affc4 !important;
@@ -1457,6 +1457,11 @@ div.common-hub-item-description {
     border: 2px solid #6a859f;
     background: #263646;
 }
+
+/* .common-tab a:after {
+	display: table;
+	content: "";
+} */
 
 .common-filter select {
     padding: 1 1 1 3px !important;
@@ -2710,8 +2715,8 @@ div #super-container #inv_main div #invent div div a span#bling, div #super-cont
 }
 
 .hoard-result-item-box {
-    border: 2px solid #0b151c;
-    background: linear-gradient(to bottom, #b9c9d9 0%, #3a4450 100%);
+	background: linear-gradient(var(--background3), var(--background1));
+	border: 1px solid var(--background1);
 }
 
 .hoard-result-item[data-selected="1"] .hoard-result-item-box {
@@ -2836,6 +2841,12 @@ div.contentcontainer div.main div#super-container div span {
 #hoard-result-footer-container.hoard-result-footer-container-sticky #hoard-result-footer-background, .hoard-stored-currency-current {
 	background-color: 
 }
+
+.hoard-result-item-box {
+	background: linear-gradient(var(--background3), var(--background1));
+	border: 1px solid var(--background1);
+}
+
 }
 
 @-moz-document url-prefix("https://www1.flightrising.com/hoard"), url-prefix("https://www1.flightrising.com/vault"), url-prefix("https://www1.flightrising.com/forums/") {
@@ -2892,17 +2903,17 @@ a.intclue:hover:after, a.clue:hover:after {
 /* Dragon Profiles */
 
 h2, h3, .dragon-profile-header-name {
-    color: #70d2ff !important;
+    color: var(--title) !important;
     text-shadow: 0 1px 1px black !important;
 }
 .dragon-profile-divider {
-    border-bottom: 1px solid #4c5862 !important;
+    border-bottom: 1px solid var(--background1) !important;
 }
 #dragon-profile-bio hr {
     border-bottom: 0px solid #4c5862 !important;
 }
 #dragon-profile-familiar-type {
-    color: #97d4d9 !important;
+    color: var(--text1) !important;
     text-shadow: 0 1px 1px black !important;
 }
 .choose-dragon-apparel-slot-open-icon {
@@ -2932,7 +2943,7 @@ h2, h3, .dragon-profile-header-name {
     margin-bottom: -4px;
 }
 .dragon-profile-header-subtitle, .dragon-profile-header-number, .dragon-profile-energy-text, .dragon-profile-familiar-bond-level, .choose-familiar-preview-bond-level {
-    color: #a4acb5 !important;
+    color: var(--text1) !important;
 }
 .dragon-profile-customize-category-subheader {
     color: #8cb0b5 !important;
@@ -2964,9 +2975,7 @@ h2, h3, .dragon-profile-header-name {
     border-top-left-radius: 0;
     margin-top: -2px;
 }
-#dragon-profile-details-misc .common-tabs {
-    margin-bottom: -1px;
-}
+
 #dragon-profile-dragon-frame, #dragon-profile-familiar-frame, .dragon-profile-scene-scenic-dragon, .common-animated-familiar {
     filter: drop-shadow(0px 0px 3px #00000082);
 }
@@ -2992,8 +3001,8 @@ h2, h3, .dragon-profile-header-name {
     color: #8aa2b0;
 }
 .dragon-profile-lineage, #dragon-profile-bio.dragon-profile-bio, #dragon-profile-bio.dragon-profile-vista-bio {
-    border: 2px solid #1b2433;
-    background: linear-gradient(to bottom, #2b3844 0%, #415362 100%);
+    border: 2px solid var(--background1);
+    background: var(--background2);
 }
 .dragon-profile-vista-bio .dragon-profile-bio-vista {
     background: linear-gradient(to bottom, #2b3844 0%, #415362 100%);
@@ -3090,15 +3099,15 @@ div.choose-vista-preview {
     width: 167.5px;
 }
 .common-tab-selected, .common-tab-selected:hover {
+    background: var(--background2) !important;
+    border: 2px solid var(--background1) !important;
+	border-bottom: 2px solid var(--background1) !important;
     border-radius: 10px 10px 0px 0px;
-    border: 2px solid #11161c !important;
-    border-bottom: 0px solid #2b2522 !important;
-    background: linear-gradient(to bottom, #222f3c 50%, #222f3c 100%) !important;
 }
 .common-tab, .common-tab:hover {
-    background: linear-gradient(to bottom, #11161c 0%, #11161c 100%);
-    border: 2px solid #11161c;
-    border-bottom: none;
+    background: var(--background3);
+    border: 2px solid var(--background2);
+	border-bottom: 2px solid var(--background1);
     border-radius: 10px 10px 0px 0px;
 }
 .common-tab-center {
@@ -3134,7 +3143,7 @@ h2.dragon-profile-details-header {
     padding-top: 4px;
 }
 #dragon-profile-likes .dragon-profile-likes-count {
-    color: #094886;
+    color: var(--accent1);
 }
 #dragon-profile-likes[data-active="false"] .dragon-profile-likes-icon {
     background: url(https://i.imgur.com/9XO56l9.png);
