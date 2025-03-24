@@ -9,7 +9,7 @@ Zoga's original work can be found at [this link](https://raw.githubusercontent.c
 
 Disclaimer: We have no idea what we're doing and our code is hacked together worse than Yandere Dev's. But it works!
 
-Another disclaimer: We are not affiliated with Zoga, they are not involved in our project, and they do not endorse us. Zoga's CSS is under the CC-BY-NC-4.0 license, granting us permission to edit and redistribute their work with credit.
+Another disclaimer: We are not affiliated with Zoga, and they are not involved in our project. Zoga's CSS is under the CC-BY-NC-4.0 license, granting us permission to edit and redistribute their work with credit.
 
 -----
 
