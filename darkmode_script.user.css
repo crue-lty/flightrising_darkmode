@@ -3,7 +3,7 @@
 @namespace    USO Archive
 @author       @FCE300 and @crue-lty on GitHub (original by Zoga)
 @description  A dark theme for Flight Rising, with toggles for lower-saturation images. The bulk of this code was originally written by Zoga, and is being brought up to date and improved upon by FCE300 and crue-lty.
-@version      2.1.6
+@version      2.1.7
 @license      CC-BY-NC-4.0
 @preprocessor stylus
 
@@ -67,12 +67,17 @@ we need to look for a specific value... */
     --leftcol-accent: #160f0b;
     --text1: #a6998b;
     --text2: #d3ccc5;
-    --text3: #cbd7dd;
+    --text3: #e9e6e2;
     --title: #e9e6e2;
     --tooltiptext: var(--text2); /* what was this for?? @ past me */
+    
+    --data-tails: #4f4036;
+    --speechbubble-in: #4f4036;
+    --speechbubble-out: #342b27;
+    
     --temp: #ffeb7f;
 
-	--strong: #d97939;
+    --strong: #d97939;
 }
 
 a {
@@ -86,7 +91,7 @@ strong {
 h1 {
     color: var(--title) !important;
     font-weight: bold !important;
-	font-size: 22px;
+    font-size: 22px;
 }
 }
 
@@ -147,6 +152,22 @@ div#ticker {
     background-image: url(https://i.imgur.com/Cbfy6xd.png) !important;
 }
 
+
+/* Box */
+.ui-dialog .ui-dialog-content {
+    color: var(--text3) !important;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    border: 2px solid var(--background2) !important;
+    background: var(--background1) !important;
+    font-weight: normal !important;
+    color: red !important;
+}
+
+
+
+
+
 /*Top Bar*/
 .banner {
     background-color: #5b5049;
@@ -154,7 +175,7 @@ div#ticker {
 }
 .beigebutton.thingbutton {
     background-color: #866650 !important;
-    color: var(--text2) !important;
+    color: var(--text3) !important;
     text-shadow: 0 1px 1px black !important;
     padding: 10px !important;
     -webkit-box-shadow: 0 2px 3px #240e00;
@@ -193,8 +214,8 @@ a.alertuser, div.alert-v2-text a {
     color: var(--text2) !important;
 }
 div.alert-v2.alert-v2-unread {
-    background-color: #705b4c !important;
     background: url(https://i.imgur.com/loxI0gk.png) !important;
+    background-color: #705b4c !important;
     border-radius: 10px !important;
 }
 #alertlist .alert-v2, #alertlist .alert-v2.alert-v2-darkline, #alertwin .alert-v2.alert-v2-darkline, #alertwin .alert-v2, #status-box .status-row {
@@ -293,9 +314,8 @@ table#tradereceipts td {
     color: var(--text2) !important;
 }
 .ui-widget-header {
-    border: none !important;
-    background-color: #542303 !important;
-    background-image: url(https://i.imgur.com/loxI0gk.png) !important;
+    border: 1px solid var(--background3) !important;
+    background-color: var(--background3) !important;
     color: var(--text2) !important;
 }
 #msg-editor #bbcode-tag-bar {
@@ -396,8 +416,8 @@ div.itemcategory, div.tooltip-itemid {
     color: var(--text2) !important;
 }
 .ui-widget-content {
-    background-color: #14252f !important;
-    background: #14252f !important;
+/*     background: #14252f !important; */
+    background-color: var(--background2) !important;
 }
 .item-tooltip, .ui-dialog {
     border: 3px solid #060d12 !important;
@@ -763,22 +783,7 @@ div#recipe-no-results {
 {
     color: #182730 !important;
 }
-#tomo_speechBubble2 {
-    background-image: url(https://i.imgur.com/bUmksNP.png) !important;
-}
-#tomo_speechBubble {
-    background-image: url(https://i.imgur.com/XHVwXbP.png) !important;
-}
 
-#tomo_answers a span#answer0, #tomo_answers a span#answer1, #tomo_answers a span#answer2, #tomo_answers a span#answer3 {
-    color: #8adeff !important;
-}
-#super-container #pl_content #tomo_speechBubble div div#tomo_question {
-    color: #33bff7 !important;
-}
-#super-container #pl_content #tomo_speechBubble div div#tomo_speechIntro div {
-    color: #00fd73 !important;
-}
 /*.swipp-redtext,*/ #crimswap p span /*div#speechbubble div span*/
 {
     color: #006ddb !important;
@@ -804,9 +809,7 @@ div#recipe-no-results {
     border-radius: 10px !important;
     padding: 2px !important;
 }
-.ui-dialog .ui-dialog-content {
-    color: #8ea9c7 !important;
-}
+
 div#friendchange.ui-dialog-content.ui-widget-content div span {
     color: var(--text2) !important;
 }
@@ -1337,198 +1340,6 @@ div.common-hub-item-description {
     border-radius: 10px !important;
 }
 
-/* Close Box */
-.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
-    border: 2px solid #000c11 !important;
-    background: #001c23 !important;
-    font-weight: normal !important;
-    color: #222e3d !important;
-}
-
-/* Coliseum */
-#coli-organize-abilities-stats-btn {
-    background: url(https://i.imgur.com/n5ZedIn.png) -163px 0px no-repeat;
-}
-#coli-organize-save-party {
-    background: url(https://i.imgur.com/CwPkkES.png) -240px 0px no-repeat;
-}
-#coli-organize-load-party {
-    background: url(https://i.imgur.com/CwPkkES.png) -80px 0px no-repeat;
-}
-div#coli-dragonlist {
-    background-color: #14252f !important;
-    border-radius: 10px !important;
-    border: 1px solid #14252f !important;
-}
-div#coli-stats-panel, #coli-stats-panel-bg {
-    background-color: #14252f !important;
-}
-.coli-stats-stone {
-    background-color: #101619 !important;
-    background: #101619 !important;
-    border-radius: 2px !important;
-}
-div#infoFrame img {
-    border-radius: 10px !important;
-}
-.coli-stats-health-breath-table th, .coli-stats-health-breath-table td, .coli-stats-points-table th, .coli-stats-points-table td, #coli-equip-stats-table th, #coli-equip-stats-table td {
-    color: var(--text2) !important;
-}
-.coli-dragonlist-row.coli-dragon-in-party {
-    background-color: #0f4d95 !important;
-}
-#coli-tipcontainer, .coli-equip-battlestone-disabled-msg, .coli-equip-stat-tooltip, .coli-equip-tooltip-style, #coli-organize-load-party-tip, .coli-tooltip-style, #coli_condition_tooltip, #coli-equip-errordlg, div#coli-equip-tincdlg-pad {
-    color: var(--text2) !important;
-    background: #0C171D !important;
-    border: 0px solid #0C171D !important;
-    border-color: #0C171D !important;
-    border-radius: 10px !important;
-}
-#coli-equip-statdlg {
-    color: var(--text2) !important;
-    background: #1b2d37 !important;
-    border: 0px solid #1b2d37 !important;
-    border-color: #1b2d37 !important;
-    border-radius: 10px !important;
-}
-.coli-organize-dlg {
-    background: #0C171D !important;
-    border: 1px solid #0C171D !important;
-}
-#coli-equip-statdlg-count {
-    background: url(https://i.imgur.com/8HjzwmZ.png) no-repeat center !important;
-}
-#coli-equip-statdlg-statgroup {
-    border-top: 1px solid #2284f1 !important;
-}
-#coli-equip-statdlg-title {
-    border-bottom: 1px solid #2284f1 !important;
-}
-.coli-equip-statdlg-plus-btn {
-    background: url(https://i.imgur.com/hm0mK3p.png) -38px 0px no-repeat;
-}
-#coli-equip-statpoints-btn {
-    background: url(https://i.imgur.com/Om9ADo0.png) no-repeat !important;
-}
-#coli-organize-up, #coli-organize-down, #coli-equip-inventory-up-image, #coli-equip-inventory-down-image {
-    background-image: url(https://i.imgur.com/o6NMa4U.png) !important;
-}
-#coli-organize-scrollbar-grip-inner {
-    background-color: #07468d !important;
-}
-#coli-organize-scrollbar-bg {
-    background-color: #303a46 !important;
-}
-#organizeMain {
-    background-image: url(https://i.imgur.com/8FqG1F0.png) !important;
-}
-#coli-equip-battlestones {
-    background: url(https://i.imgur.com/m7EQgpn.png) !important;
-}
-#coli-equip-elemental-banner {
-    background: #14252f !important
-}
-#coli_tooltip div div div {
-    background: #13242e !important;
-}
-#coli-equip-inventory-bg {
-    background: url(https://i.imgur.com/AuYYxSu.png) !important;
-}
-#coli-equip-inventory {
-    background-color: #14252f !important;
-}
-#coli-equip-stats {
-    background: url(https://i.imgur.com/NM3fGIB.png) !important;
-}
-#camp-window {
-    background: url(https://i.imgur.com/SvzbDJ3.png) no-repeat !important;
-}
-#pl_content.fullscreen, #pl_fullscreenContainer.fullscreen {
-    background: #2b2522 !important;
-}
-
-/*Who's Online*/
-table#userlist tbody tr {
-    background: #2b2522 !important;
-}
-
-/*Exalted*/
-.common-fieldset-inset {
-    background-color: #54453b !important;
-    color: var(--text2) !important;
-    border: none !important;
-}
-.exalted-lineage-header {
-    color: #43affe !important;
-}
-.exalted-lineage-list li a {
-    color: #47e5ff !important;
-}
-.exalted-details-column strong {
-    color: #0f99ff !important;
-}
-.common-fieldset legend {
-    background-color: #003d75 !important;
-    border: solid 1px #003d75 !important;
-    color: var(--text2) !important;
-}
-
-/* Pagination */
-.common-pagination-page[data-enabled="false"], .common-pagination-page[data-enabled="false"]:hover {
-    font-weight: bold;
-    color: #0075a3 !important;
-    background-color: #bad7f1;
-    border: 3px solid #0aa5be;
-}
-.common-pagination .common-pagination-page:hover {
-    border: 2px solid #54c9e8 !important;
-}
-.common-ui-button, .common-ui-button-disabled, .lair-pagination .lair-pagination-page, .common-pagination .common-pagination-page {
-    color: #3c465e !important;
-    font-weight: normal;
-}
-.common-pagination .common-pagination-page-active, .common-pagination .common-pagination-page-active:hover {
-    border: 3px solid #0aa5be !important;
-    color: #0075a3 !important;
-}
-.recipe-pagination .common-pagination-page[data-enabled="false"], .recipe-pagination .common-pagination-page[data-enabled="false"]:hover {
-    font-weight: bold;
-    color: var(--text2) !important;
-    border: 2px solid #0aa5be;
-    background: #193340;
-}
-
-/* Raffle */
-#raffle-background {
-    background-image: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Trading%20Post/roundsey_dm.png) !important;
-}
-#raffle-winners-show, #raffle-text h2 {
-    color: #0af !important;
-}
-.raffle-dragon .raffle-dragon-tooltip {
-    background: #15242C !important;
-    border: 1px solid #060D11 !important;
-}
-.raffle-dragon .raffle-dragon-tooltip .raffle-dragon-tooltip-title {
-    color: #0af !important;
-}
-#raffle-timer .raffle-timer-value {
-    color: #35ddff !important;
-}
-#raffle-timer .raffle-timer-label {
-    font-size: 10px !important;
-}
-#raffle-counter-frame .raffle-counter-digit.raffle-counter-digit-bounce {
-    color: #780eb1 !important;
-}
-.raffle-window-loading {
-    background-image: url(https://i.imgur.com/N24sLgg.gif) !important;
-}
-.common-checkbox[data-selected="1"] {
-    border-color: #0082d2;
-    background-color: #0082d2;
-    color: var(--text2);
-}
 
 /*Account Settings Vista*/
 .vista-option {
@@ -1593,19 +1404,14 @@ table#userlist tbody tr {
     color: #ff6600 !important;
 }
 
-#glorious-gift-text.common-npc-dialog, #glorious-gift-text-received.common-npc-dialog, #fantastic-familiar-text.common-npc-dialog, #fantastic-familiar-text-flattery.common-npc-dialog {
-    background: linear-gradient(to bottom, rgb(21, 36, 44) 0%, rgba(21, 36, 44, .8) 100%);
-    color: #d8eaf9;
-}
-
-.common-npc-dialog {
-    border: 2px solid #060d11 !important;
-    background: linear-gradient(to bottom, rgb(21, 36, 44) 0%, rgba(21, 36, 44, .8) 100%) !important;
-}
-
-.common-npc-dialog[data-tail="right"]:after, .common-npc-dialog[data-tail="right"]:before, .common-npc-dialog:before, .common-npc-dialog:after, .common-npc-dialog[data-tail="bottom"]:before, .common-npc-dialog[data-tail="bottom"]:after, .common-npc-dialog:after, .common-npc-dialog[data-tail="bottom"]:after, .common-npc-dialog:after, .common-npc-dialog[data-tail="bottom"]:before {
+/* .common-npc-dialog[data-tail="right"]:after,
+.common-npc-dialog[data-tail="right"]:before,
+.common-npc-dialog[data-tail="bottom"]:after,
+.common-npc-dialog[data-tail="bottom"]:before,
+.common-npc-dialog:after,
+.common-npc-dialog:before {
     border-color: transparent transparent transparent #060d11 !important;
-}
+} */
 
 /* Bestiary */
 
@@ -1699,8 +1505,8 @@ div#game-database-filters.common-filters {
     border: 3px solid #060d12 !important;
     border-radius: 10px !important;
     box-shadow: none!important;
+	background: #14252f !important;
     background-color: #14252f !important;
-    background: #14252f !important;
     color: #222e3d;
 }
 
@@ -1802,7 +1608,6 @@ a.gamedb-bbcode {
 }
 
 /* User Bio */
-
 div.clan-information-bio {
     margin-bottom: 0px !important;
     min-height: 122px !important;
@@ -1817,6 +1622,163 @@ textarea#bio {
 
 #pagetut {
     border-radius:4px;
+}
+
+/*Who's Online*/
+table#userlist tbody tr {
+    background: #2b2522 !important;
+}
+
+/*Exalted*/
+.common-fieldset-inset {
+    background-color: #54453b !important;
+    color: var(--text2) !important;
+    border: none !important;
+}
+.exalted-lineage-header {
+    color: #43affe !important;
+}
+.exalted-lineage-list li a {
+    color: #47e5ff !important;
+}
+.exalted-details-column strong {
+    color: #0f99ff !important;
+}
+.common-fieldset legend {
+    background-color: #003d75 !important;
+    border: solid 1px #003d75 !important;
+    color: var(--text2) !important;
+}
+
+/* Pagination */
+.common-pagination-page[data-enabled="false"], .common-pagination-page[data-enabled="false"]:hover {
+    font-weight: bold;
+    color: #0075a3 !important;
+    background-color: #bad7f1;
+    border: 3px solid #0aa5be;
+}
+.common-pagination .common-pagination-page:hover {
+    border: 2px solid #54c9e8 !important;
+}
+.common-ui-button, .common-ui-button-disabled, .lair-pagination .lair-pagination-page, .common-pagination .common-pagination-page {
+    color: #3c465e !important;
+    font-weight: normal;
+}
+.common-pagination .common-pagination-page-active, .common-pagination .common-pagination-page-active:hover {
+    border: 3px solid #0aa5be !important;
+    color: #0075a3 !important;
+}
+.recipe-pagination .common-pagination-page[data-enabled="false"], .recipe-pagination .common-pagination-page[data-enabled="false"]:hover {
+    font-weight: bold;
+    color: var(--text2) !important;
+    border: 2px solid #0aa5be;
+    background: #193340;
+}
+}
+
+@-moz-document url-prefix("https://www1.flightrising.com/coliseum") {
+	
+/* Coliseum */
+
+#coli-organize-abilities-stats-btn {
+    background: url(https://i.imgur.com/n5ZedIn.png) -163px 0px no-repeat;
+}
+#coli-organize-save-party {
+    background: url(https://i.imgur.com/CwPkkES.png) -240px 0px no-repeat;
+}
+#coli-organize-load-party {
+    background: url(https://i.imgur.com/CwPkkES.png) -80px 0px no-repeat;
+}
+div#coli-dragonlist {
+    background-color: #14252f !important;
+    border-radius: 10px !important;
+    border: 1px solid #14252f !important;
+}
+div#coli-stats-panel, #coli-stats-panel-bg {
+    background-color: #14252f !important;
+}
+.coli-stats-stone {
+	background: #101619 !important;
+    background-color: #101619 !important;
+    border-radius: 2px !important;
+}
+div#infoFrame img {
+    border-radius: 10px !important;
+}
+.coli-stats-health-breath-table th, .coli-stats-health-breath-table td, .coli-stats-points-table th, .coli-stats-points-table td, #coli-equip-stats-table th, #coli-equip-stats-table td {
+    color: var(--text2) !important;
+}
+.coli-dragonlist-row.coli-dragon-in-party {
+    background-color: #0f4d95 !important;
+}
+#coli-tipcontainer, .coli-equip-battlestone-disabled-msg, .coli-equip-stat-tooltip, .coli-equip-tooltip-style, #coli-organize-load-party-tip, .coli-tooltip-style, #coli_condition_tooltip, #coli-equip-errordlg, div#coli-equip-tincdlg-pad {
+    color: var(--text2) !important;
+    background: #0C171D !important;
+    border: 0px solid #0C171D !important;
+    border-color: #0C171D !important;
+    border-radius: 10px !important;
+}
+#coli-equip-statdlg {
+    color: var(--text2) !important;
+    background: #1b2d37 !important;
+    border: 0px solid #1b2d37 !important;
+    border-color: #1b2d37 !important;
+    border-radius: 10px !important;
+}
+.coli-organize-dlg {
+    background: #0C171D !important;
+    border: 1px solid #0C171D !important;
+}
+#coli-equip-statdlg-count {
+    background: url(https://i.imgur.com/8HjzwmZ.png) no-repeat center !important;
+}
+#coli-equip-statdlg-statgroup {
+    border-top: 1px solid #2284f1 !important;
+}
+#coli-equip-statdlg-title {
+    border-bottom: 1px solid #2284f1 !important;
+}
+.coli-equip-statdlg-plus-btn {
+    background: url(https://i.imgur.com/hm0mK3p.png) -38px 0px no-repeat;
+}
+#coli-equip-statpoints-btn {
+    background: url(https://i.imgur.com/Om9ADo0.png) no-repeat !important;
+}
+#coli-organize-up, #coli-organize-down, #coli-equip-inventory-up-image, #coli-equip-inventory-down-image {
+    background-image: url(https://i.imgur.com/o6NMa4U.png) !important;
+}
+#coli-organize-scrollbar-grip-inner {
+    background-color: #07468d !important;
+}
+#coli-organize-scrollbar-bg {
+    background-color: #303a46 !important;
+}
+#organizeMain {
+    background-image: url(https://i.imgur.com/8FqG1F0.png) !important;
+}
+#coli-equip-battlestones {
+    background: url(https://i.imgur.com/m7EQgpn.png) !important;
+}
+#coli-equip-elemental-banner {
+    background: #14252f !important
+}
+#coli_tooltip div div div {
+    background: #13242e !important;
+}
+#coli-equip-inventory-bg {
+    background: url(https://i.imgur.com/AuYYxSu.png) !important;
+}
+#coli-equip-inventory {
+    background-color: #14252f !important;
+}
+#coli-equip-stats {
+    background: url(https://i.imgur.com/NM3fGIB.png) !important;
+}
+#camp-window {
+    background: url(https://i.imgur.com/SvzbDJ3.png) no-repeat !important;
+}
+#pl_content.fullscreen, #pl_fullscreenContainer.fullscreen {
+    background: #2b2522 !important;
 }
 }
 
@@ -1853,6 +1815,10 @@ img[src="/static/layout/baldwin/cauldron_loading.gif"] {
 
 img[src="/static/layout/forum_board_new_posts.jpg"] {
     content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Trading%20Post/Baldwin/cauldron_loading_dm.gif) !important;
+}
+
+img[src="/static/layout/delete.png"] {
+    content: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Various%20assets/delete_dm.png) !important;
 }
 
 img[src="/static/layout/icon_lock.png"] {
@@ -2991,8 +2957,8 @@ h2, h3, .dragon-profile-header-name {
     margin-top: -5px;
 }
 #dragon-profile-details-misc .dragon-profile-details-frame {
-    border: 2px solid #0a1826;
-    background: #222f3c;
+    border: 2px solid var(--background1);
+    background: var(--background2);
     border-radius: 10px;
     border-top-right-radius: 0;
     border-top-left-radius: 0;
@@ -3011,8 +2977,7 @@ h2, h3, .dragon-profile-header-name {
     background: linear-gradient(to bottom, rgba(255, 0, 0, 0) 70%, #2b2522 100%) !important;
 }
 .dragon-profile-energy-meter-full {
-    background: linear-gradient(to right, #235e96 0%, #80efbd 100%);
-    border: 1px solid #3dd6ef;
+    border: 1px solid var(--background2);
 }
 .dragon-profile-familiar-meter-frame[data-level="7"] .dragon-profile-familiar-meter-full {
     background: linear-gradient(to right, #aa65ff 0%, #70fffb 100%);
@@ -3022,10 +2987,6 @@ h2, h3, .dragon-profile-header-name {
     background: url(https://i.imgur.com/X2yN3Ek.png);
     background-repeat: no-repeat;
     background-position: center 2px;
-}
-.dragon-profile-familiar-meter-full {
-    background: linear-gradient(to right, #235e96 0%, #80efbd 100%);
-    border: 1px solid #3dd6ef;
 }
 .choose-dragon-apparel-slot-handle {
     color: #8aa2b0;
@@ -3150,8 +3111,8 @@ div.choose-vista-preview {
     font-size: 13px !important;
 }
 .dragon-profile-details-frame {
-    border: 2px solid #0a1826;
-    background: #222f3c;
+    border: 2px solid var(--background1);
+    background: var(--background2);
     border-radius: 10px;
     padding-bottom: 15px;
 }
@@ -3166,6 +3127,7 @@ div.choose-vista-preview {
     background: #18314a;
 }
 h2.dragon-profile-details-header {
+	color: var(--accent3) !important;
     margin-bottom: -2px !important;
 }
 #dragon-profile-report {
@@ -3250,8 +3212,27 @@ div#skin-box div {
 @-moz-document url-prefix("https://www1.flightrising.com/trading/trivia") {
 /* Tomo's Trivia Tablet */
 
-.tomo-question-frame {
-    background-color: #293f4b;
+.common-npc-dialog {
+    background: linear-gradient(to bottom, var(--background1) 0%, var(--background3) 100%) !important;
+    border-color: var(--speechbubble-out) !important;
+}
+.common-npc-dialog-stroke {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 3px solid var(--speechbubble-in) !important;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    pointer-events: none;
+}
+.common-npc-dialog:before {
+    border-color: transparent var(--speechbubble-out) transparent  transparent !important;
+}
+.common-npc-dialog:after {
+    border-color: transparent var(--speechbubble-in) transparent  transparent !important;
 }
 #tomo-remaining-count {
     color: var(--text2);
@@ -3262,6 +3243,10 @@ div#skin-box div {
 #tomo-reward {
     color: var(--text2);
 }
+.tomo-question-frame {
+    background-color: var(--background3);
+	border: 1px solid var(--accent2);
+}
 }
 
 @-moz-document url-prefix("https://www1.flightrising.com/trading/crim") {
@@ -3270,27 +3255,38 @@ div#skin-box div {
 .content-header-sub {
     color: #666 !important;
 }
-
-.common-npc-dialog[data-tail="right"]::before {
-    border-color: transparent transparent transparent var(--background1) !important;
+.common-npc-dialog {
+    background: linear-gradient(to bottom, var(--background1) 0%, var(--background3) 100%) !important;
+    border: 3px solid var(--speechbubble-out)!important;
+}
+.common-npc-dialog[data-tail="right"]:before {
+    border-color: transparent transparent transparent var(--speechbubble-out) !important;
     top: 75px;
     right: -40px;
     bottom: auto;
     left: auto;
 }
-
-.common-npc-dialog {
-    background: linear-gradient(to bottom, var(--background1) 0%, var(--background3) 100%) !important;
-    border-color: var(--background1)!important;
-}
-
-.common-npc-dialog[data-tail="right"]::after {
-    border-color: transparent transparent transparent var(--background2) !important;
+.common-npc-dialog[data-tail="right"]:after {
+    border-color: transparent transparent transparent var(--speechbubble-in) !important;
     top: 78px;
     right: -34px;
     bottom: auto;
     left: auto;
 }
+.common-npc-dialog-stroke {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 3px solid var(--speechbubble-in) !important;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+
 
 #crimswap .crim-item-name, #crimswap .crim-item-category {
     color:var(--accent1);
@@ -3318,23 +3314,35 @@ div.inner-content div div {
 /* Pinkerton's Plundered Pile */
 
 /* #pinkerton-text.common-npc-dialog::before {
-    border-color: #060d11 transparent transparent transparent !important;
+    border-color: #060d12 transparent transparent transparent !important;
 } */
 /* .common-npc-dialog[data-tail="right"]:after, .common-npc-dialog[data-tail="right"]:before, .common-npc-dialog:before, .common-npc-dialog:after, .common-npc-dialog[data-tail="bottom"]:before, .common-npc-dialog[data-tail="bottom"]:after, .common-npc-dialog:after, .common-npc-dialog[data-tail="bottom"]:after, .common-npc-dialog:after, .common-npc-dialog[data-tail="bottom"]:before {
     border-color: transparent transparent transparent #fff0 !important;
 } */
-#pinkerton-text.common-npc-dialog {
+.common-npc-dialog {
 	background: linear-gradient(to bottom, var(--background1) 0%, var(--background3) 100%) !important;
-	border-color: var(--background1)!important;
+    border-color: var(--speechbubble-out)!important;
 }
-.common-npc-dialog::after, .common-npc-dialog[data-tail="bottom"]::after {
-	border-color: var(--background3) transparent transparent transparent;
+.common-npc-dialog-stroke {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 3px solid var(--speechbubble-in) !important;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    pointer-events: none;
+}
+.common-npc-dialog[data-tail="bottom"]:after {
+    border-color: var(--speechbubble-in) transparent transparent transparent;
 	bottom: -33px;
 }
-#pinkerton-text.common-npc-dialog:before {
-    border-color: var(--background1) transparent transparent transparent !important;
+.common-npc-dialog:before {
+    border-color: var(--speechbubble-out) transparent transparent transparent !important;
 }
-#pinkerton-text div span {
+div span {
     color: var(--strong) !important;
 }
 }
@@ -3400,6 +3408,41 @@ div.cluetip-inner.ui-cluetip-content div span {
 }
 }
 
+@-moz-document url-prefix("https://www1.flightrising.com/trading/raffle") {
+/* Roundsey's Raffle Roulette */
+
+#raffle-background {
+    background-image: url(https://file.garden/ZTFsYHKnrXRNz4Z-/FileHosting/.Flight%20Rising/4.%20Dark%20FR%20Theme/Trading%20Post/roundsey_dm.png) !important;
+}
+#raffle-winners-show, #raffle-text h2 {
+    color: #0af !important;
+}
+.raffle-dragon .raffle-dragon-tooltip {
+    background: #15242C !important;
+    border: 1px solid #060d12 !important;
+}
+.raffle-dragon .raffle-dragon-tooltip .raffle-dragon-tooltip-title {
+    color: #0af !important;
+}
+#raffle-timer .raffle-timer-value {
+    color: #35ddff !important;
+}
+#raffle-timer .raffle-timer-label {
+    font-size: 10px !important;
+}
+#raffle-counter-frame .raffle-counter-digit.raffle-counter-digit-bounce {
+    color: #780eb1 !important;
+}
+.raffle-window-loading {
+    background-image: url(https://i.imgur.com/N24sLgg.gif) !important;
+}
+.common-checkbox[data-selected="1"] {
+    border-color: #0082d2;
+    background-color: #0082d2;
+    color: var(--text2);
+}
+}
+
 @-moz-document url-prefix("https://www1.flightrising.com/trading/baldwin") {
 /* Baldwin's Bubbling Brew */
 
@@ -3422,12 +3465,65 @@ div#baldwin.baldwin-index div a img {
 }
 }
 
+@-moz-document url-prefix("https://www1.flightrising.com/trading/gift") {
+/* Galore's Glorious Gifts */
+
+.common-npc-dialog {
+    background: linear-gradient(to bottom, var(--background1) 0%, var(--background3) 100%) !important;
+    border-color: var(--speechbubble-out) !important;
+}
+.common-npc-dialog-stroke {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 3px solid var(--speechbubble-in) !important;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    pointer-events: none;
+}
+.common-npc-dialog:before {
+    border-color: transparent transparent  transparent var(--speechbubble-out) !important;
+}
+.common-npc-dialog:after {
+    border-color: transparent transparent  transparent var(--speechbubble-in) !important;
+}
+}
+
 @-moz-document url-prefix("https://www1.flightrising.com/trading/fantastic-familiars/feats"), url-prefix("https://www1.flightrising.com/trading/fantastic-familiars/flattery") {
 /* Fiona's Fantastic Familiars */
 
+.common-npc-dialog {
+    background: linear-gradient(to bottom, var(--background1) 0%, var(--background3) 100%) !important;
+    border-color: var(--speechbubble-out) !important;
+}
+.common-npc-dialog-stroke {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 3px solid var(--speechbubble-in) !important;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    pointer-events: none;
+}
+.common-npc-dialog:before {
+    border-color: transparent transparent  transparent var(--speechbubble-out) !important;
+}
+.common-npc-dialog:after {
+    border-color: transparent transparent  transparent var(--speechbubble-in) !important;
+}
 div.main {
     background-image: url(https://www1.flightrising.com/static/layout/fantastic-familiar/background.png) !important;
     background-repeat: no-repeat;
+}
+
+#fantastic-familiar-text.common-npc-dialog, #fantastic-familiar-text-flattery.common-npc-dialog {
+    color: var(--text3);
 }
 }
 
@@ -3439,6 +3535,11 @@ div.main {
 }
 #archaeology-dig-timer-text {
     color: var(--text2);
+}
+.archaeology-supply {
+    background-color: var(--background1);
+    border: 1px solid var(--background3);
+    color: var(--text3);
 }
 #archaeology-xp-meter-label {
     color: var(--accent2);
@@ -3748,7 +3849,7 @@ div#ff-currency-tip {
     background: #0c0f11 !important;
 }
 div.ff-joxar-blurb {
-    border: 2px solid #060d11;
+    border: 2px solid #060d12;
     color: var(--text3) !important;
     background: url(https://i.imgur.com/mhbybET.png);
 }
@@ -3769,6 +3870,33 @@ div.main div.content {
 
 @-moz-document url-prefix("https://www1.flightrising.com/exchange") {
 /* Joxar's Festive Favors */
+
+.common-npc-dialog {
+	background: linear-gradient(to bottom, var(--background1) 0%, var(--background3) 100%) !important;
+    border-color: var(--speechbubble-out)!important;
+}
+
+.common-npc-dialog-stroke {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 3px solid var(--speechbubble-in) !important;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+.common-npc-dialog[data-tail="right"]:after {
+    border-color: transparent transparent transparent var(--speechbubble-in);
+	bottom: -33px;
+}
+
+.common-npc-dialog:before {
+    border-color: transparent transparent transparent var(--speechbubble-out) !important;
+}
 
 .common-pagination-page {
     border: 2px solid #546d86 !important;
